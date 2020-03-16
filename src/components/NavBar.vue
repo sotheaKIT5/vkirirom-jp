@@ -75,14 +75,6 @@ export default {
       ]
     };
   },
-  watch: {
-    navs: [
-      {
-        title: this.$t("service"),
-        navUrl: "/"
-      }
-    ]
-  },
   computed: {
     // eslint-disable-next-line vue/return-in-computed-property
     navbarHeight() {
