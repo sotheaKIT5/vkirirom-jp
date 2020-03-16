@@ -14,7 +14,6 @@ import VueProgressBar from "vue-progressbar";
 import "./registerServiceWorker";
 import vuetify from "./plugins/vuetify";
 import i18n from "./i18n";
-import FlagIcon from "vue-flag-icon";
 
 const options = {
   color: "#138690",
@@ -32,7 +31,6 @@ Vue.use(VueAxios, axios);
 Vue.use(VueAwesomeSwiper /* { default global options } */);
 Vue.component("vue-headful", vueHeadful);
 Vue.use(VeeValidate);
-Vue.use(FlagIcon);
 Vue.directive("scroll", {
   inserted: function(el, binding) {
     let f = function(evt) {
