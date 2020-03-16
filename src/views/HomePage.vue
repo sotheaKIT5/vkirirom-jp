@@ -64,7 +64,7 @@ export default {
         quote:
           "Whether you're looking for system development, enterprise solutions, digital marketing & film, graphic design, or other functionality, we have the services to help you build sophisticated applications.",
         btnTxt: "Start Your Solution",
-        bgImg: require("../assets/component/home-hero/bg-img-hero.png")
+        bgImg: require("@/assets/component/home-hero/bg-img-hero.png")
       }
     };
   }
