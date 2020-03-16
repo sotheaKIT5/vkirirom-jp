@@ -1,0 +1,17 @@
+dist: trusty
+sudo: required
+
+addons:
+    sonarcloud:
+      organization: "kiriromjp"
+script:
+  - sonar-scanner
+
+cache:
+  directories:
+    - '$HOME/.sonar/cache'
+
+notifications:
+    email: false
+#name: "a2a_japan"
+#token: 192a7298147a666053b8b2b7e863c5d359b8003b
