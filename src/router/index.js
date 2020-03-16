@@ -15,9 +15,7 @@ export default new Router({
     },
     {
       path: "*",
-      name: "404",
-      component: () =>
-        import(/* webpackChunkName: "Error" */ "@/views/ErrorPage.vue")
+      redirect: "/"
     }
   ],
   scrollBehavior() {
