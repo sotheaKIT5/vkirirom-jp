@@ -1,0 +1,122 @@
+[
+  {
+    "meta": [
+      {
+        "title": "Digital Marketing",
+        "description": "Digital marketing encompasses all marketing efforts that use an electronic device or the internet. Business leverage digital channels such as search engines, social media, email, and other websites to connect with current and prospective customers. It simply means advertising delivered through digital channels.",
+        "keywords": "Digital marketing,advertising,google ad, social media, social media ad,web design,mobile application,Native Mobile Applications, social networking service,Search Engine Optimization,Movie making, video, filming, animation making, Google Analytics,Ad Operations"
+      }
+    ],
+    "header": [
+      {
+        "title": "Digital Marketing ",
+        "question": "What is Digital Marketing?",
+        "shortDesc": "Professional Digital Marketing Services That Drive Results",
+        "description": "Digital marketing encompasses all marketing efforts that use an electronic device or the internet. Business leverage digital channels such as search engines, social media, email, and other websites to connect with current and prospective customers. It is simply means advertising delivered through digital channels.",
+        "imagePath": "loudspeaker.svg"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Areas",
+        "description": "We aim to be best Digital Marketing Service provider in Cambodia by providing our services to improve client’s business values and brand awareness reach to their targeted customers by doing SNS Marketing and we give support and consultant to companies and organization so that they can enhance their business and market value."
+      },
+      {
+        "component": [
+          {
+            "imageUrl": "1.svg",
+            "title": "Web Development",
+            "description": "Web development is the work involved in developing a web site for the Internet or an intranet. It can range from developing a simple single  page of plain text to complex web-based internet applications, electronic businesses, and social network services. The web development."
+          },
+          {
+            "imageUrl": "2.svg",
+            "title": "Mobile Development",
+            "description": "Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources. Hence, the mobile development process involves creating installable software bundles (code, binaries, assets, etc.) , implementing backend services such as data access with an API, and testing the application on target devices. There are four major development approaches when building mobile applications such as Native Mobile Applications, Cross-Platform Native Mobile Applications, Hybrid Mobile Applications and Progressive Web Applications."
+          },
+          {
+            "imageUrl": "3.svg",
+            "title": "SNS Marketing Support",
+            "description": "A social networking service (SNS) is an online vehicle for creating relationships with other people who share an interest, background, or real relationship. Social networking service users create a profile with personal information, photos, etc. and form connections with other profiles. These users then use their connection to grow relationships through sharing, emailing, instant messaging, and commenting. Social networking services may also be referred to as a 'social networking site' or simply 'social media'. We give support to SNS marketing to our clients to improve their business and reach to their targeted customers."
+          },
+          {
+            "imageUrl": "4.svg",
+            "title": "SEO/SEM",
+            "description": "Search Engine Optimization - SEO is the process of increasing the quality and quantity of website traffic by increasing the visibility of a website or a web page to users of a web search engine. SEO refers to the improvement of unpaid results and excludes direct traffic/visitors and the purchase of paid placement. SEO can get quite complex when it comes to all the different factors that impact your ranking, the basic process is not as difficult to understand. It wants to provide the best service for their users. This means delivering results on the search engine page that are not only high quality but also relevant to what the searcher is looking for."
+          },
+          {
+            "imageUrl": "5.svg",
+            "title": "Movie Making",
+            "description": "This advanced technique encompasses a variety of statistical techniques from data mining to predictive modeling. Our company provides the service and contribute to the business and make the improvement. Using this technology, we help you analyze, design, and search for new possibilities in business while making full use of advanced technologies."
+          },
+          {
+            "imageUrl": "6.svg",
+            "title": "Google Analytics",
+            "description": "Google Analytics is a tool allows you to track websites, blogs, and social networks offered by Google to help you analyze your website traffic. In addition, it puts at your disposal predetermined and customizable reports. It puts several lines of tracking code into the code of your website. The code records various activities of your users when they visit your website, along with the attributes (such as age, gender, interests) of those users. It then sends all that information to the Google Analytics server once the user exits your website."
+          },
+          {
+            "imageUrl": "7.svg",
+            "title": "Ad Operation",
+            "description": "Ad Operations refers to processes and systems that support the sale and delivery of online advertising. More specifically this is the workflow processes and software systems that are used to sell, input, serve, target and report on the performance of online ads. Ad Operations doesn’t leave the fate of a campaign to chance. After campaign launch, an Ad Ops team closely monitors the ads to ensure they are doing their job: make the website publisher money. A competent Ad Operations team monitors ad traffic continuously. It is an ongoing relationship that is tweaked and adjusted based on data collected by the invisible hands of the Ad Operations department, team, or company."
+          },
+          {
+            "imageUrl": "8.svg",
+            "title": "Graphic Design",
+            "description": " Graphic design is the craft of creating visual content to communicate messages. Applying visual hierarchy and page layout techniques, graphic designers use typography and pictures to meet users’ specific needs and focus on the logic of displaying elements in interactive designs to optimize the user experience. These are all examples of graphic design, the term encompasses a lot; posters, infographics, book covers, product labels, logos, business cards, signs, website layouts, mobile apps, software interfaces."
+          }
+        ]
+      }
+    ],
+    "compare": [
+      {
+        "header": null
+      },
+      {
+        "components": [
+          {
+            "header": "Important of Digital Marketing",
+            "description": "Digital marketing is an easy way for companies to tell their brand’s story and brings companies to life on an online platform. One of the most important reasons why digital marketing is taking up the traditional marketing channels is as a result of the internet has enabled businesses to interact with targeted audiences in real time. Another reason is its affordability. Digital marketing is infinitely more affordable when compared to traditional marketing channels."
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "header": "Why A2A Digital gives the best Digital Marketing service?",
+        "description": "A2A Digital implement a range of digital marketing services to drive results for clients. We provide integrated brand consulting and creative services to help our clients determine how best to develop and enhance the value of their brands to the world. We aim to offer best services in the areas of Branding and Creative, Website/Mobile Development, Video Making, SEO, SNS support, and Ad operation in Cambodia."
+      },
+      {
+        "header": "Digital Marketing benefits for Business",
+        "imageUrl": "benefit.png",
+        "texts": [
+          {
+            "text": "Cost-effective to marketing your business"
+          },
+          {
+            "text": "Huge return on investment"
+          },
+          {
+            "text": "Most measurable form of marketing "
+          },
+          {
+            "text": "Easy to adjust and easy to share "
+          },
+          {
+            "text": "Brand development"
+          },
+          {
+            "text": "Precise targeting and greater engagement"
+          },
+          {
+            "text": "SEO and local SEO helps you reach more qualified customers online"
+          },
+          {
+            "text": "Easy and quickly adapt your strategy and tactics for best results"
+          },
+          {
+            "text": "Allowing your business more competitive"
+          }
+        ]
+      }
+    ]
+  }
+]

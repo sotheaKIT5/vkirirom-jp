@@ -1,0 +1,49 @@
+[
+  {
+    "meta": [
+      {
+        "title": "Security System",
+        "description": "A2A Digital provides new ways of security system. With our cutting edge services and technologies, we implemented our security solution with a modern way of security like our features below such as license plate detection that detect vehicle plate numbers, VR monitoring and more.",
+        "keywords": "a2a digital, security service, artificial intelligence, vr, security solution, a2a digital cambodia, a2a digital solution"
+      }
+    ],
+    "header": [
+      {
+        "title": "Security System",
+        "shortDesc": "A2A Digital provides new ways of security system with a modern technology"
+      },
+      {
+        "title": "Our Concept",
+        "descriptions": [
+          {
+            "description": "A2A Digital provides new ways of security services. With our cutting edge services and technologies, we implemented our security solution with modern way of security like our features below such as license plate detection that detect vehicle plate numbers and stores all data to our system. Another one of our featured solutions is Object moving detection which we implemented AI technology to detect the movement at night and alert to the administration of the action and check of the alert message. On the other hand, we implemented VR Monitoring system which simply means using VR to streaming from Camera security."
+          }
+        ]
+      }
+    ],
+    "feature": [
+      {
+        "title": "Our Feature"
+      },
+      {
+        "cards": [
+          {
+            "title": "License plate Detection",
+            "description": "We have developed AI system to detect number plate of vehicles in Surveillance System is a system that can detect and capture vehicles, plate numbers of vehicles, uniquely identify them, count the number of vehicles and store the records of vehicles entering or leaving a location.",
+            "imageUrl": "1.svg"
+          },
+          {
+            "title": "Object Moving Detection",
+            "description": "Object Moving detection is to recognize the physical movement of an object in a given place or region. By acting segmentation among moving objects and stationary area or region, the moving objects motion could be tracked and thus could be analyzed later. We have implemented Pool Movement Detection at night when someone enters the pool area at night of forbidden period, the camera will detect the movement and alert to the person in charge about the movement and check.",
+            "imageUrl": "2.svg"
+          },
+          {
+            "title": "VR Monitoring",
+            "description": "A2A Digital brings a new and modern solution in security service, VR Monitoring, simply means a Web Application for monitoring all Security Surveillance Camera of vKirirom with Object Detection option to detect any unwanted events or entity.",
+            "imageUrl": "3.svg"
+          }
+        ]
+      }
+    ]
+  }
+]

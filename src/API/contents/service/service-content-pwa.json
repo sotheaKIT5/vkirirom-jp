@@ -1,0 +1,120 @@
+[
+  {
+    "meta": [
+      {
+        "title": "PWA Development",
+        "description": "Progressive Web Apps are web applications that load in a web browser just like web pages or websites. It gives you a rich mobile experience via native-like functionalities such as the ability to work offline, push notifications, and device hardware accessibility.",
+        "keywords": "PWA, A high-quality responsive,native apps,web solutions,web application,placeholder data"
+      }
+    ],
+    "header": [
+      {
+        "title": "PWA Development",
+        "question": "What is PWA?",
+        "shortDesc": "Make your website look and feel like a mobile app; switch to PWA",
+        "description": "Progressive Web Apps are web applications that load in a web browser just like web pages or websites. It gives you a rich mobile experience via native-like functionalities such as the ability to work offline, push notifications, and device hardware accessibility. It feels like a native app and offers the same experience as a native one. there is no requirement for developers or users to install the web apps via digital distribution systems like Apple App Store or Google Play.. It loads, runs, and functions in a web browser.",
+        "imagePath": "pwa.png"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Areas",
+        "description": null
+      },
+      {
+        "component": [
+          {
+            "imageUrl": "Reliable.svg",
+            "title": "Reliable",
+            "description": "This kind of web application should provide users with meaningful content regardless of network conditions. Some apps can function completely offline, while others display special placeholder data, informing users that they are offline."
+          },
+          {
+            "imageUrl": "Responsive.svg",
+            "title": "Responsive",
+            "description": "PWAs should adapt to various screen sizes and orientations. A high-quality responsive design will help to ensure that the application will continue to work with new devices in the future."
+          },
+          {
+            "imageUrl": "Engaging.svg",
+            "title": "Engaging",
+            "description": " Usually, native apps are considered to be more engaging than web apps. An icon on the screen makes it easy to get into the application and push notifications can help alert users of important info for them. Progressive Web Applications allow users to get the same benefits with web solutions."
+          },
+          {
+            "imageUrl": "Secure.svg",
+            "title": "Secure",
+            "description": "The PWA is secure by default. The technology that powers PWA requires applications to be served over HTTPS to work."
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "header": "Work Result",
+        "cardimgurl": "../assets/component/service-work-result/"
+      },
+      {
+        "cards": [
+          {
+            "imageUrls": [
+              {
+                "imageUrl": "1.jpg"
+              },
+              {
+                "imageUrl": "2.jpg"
+              },
+              {
+                "imageUrl": "3.jpg"
+              },
+              {
+                "imageUrl": "4.jpg"
+              }
+            ],
+            "header": "Vkiriom Resort Site PWA",
+            "description": "We have implemented PWA technology with vKirirom Pine Resort website. After launching our very own PWA, we can see enormous growth in our website performance compared to last year. PWA increased company revenue by 230%. Below is a little report of our performance to illustrate we mean Conversion rates increased by 230%, Sessions increased by 583%, Users increased by 673%, Pageviews increased by 564%, Bounce rate increased by 6%."
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "header": "How a PWA increased our revenue by 230%",
+        "description": "After launching our very own PWA, we can see enormous growth in our website performance compared to last year. Below is a little report of our performance to illustrate we mean: Conversion rates increased by 230%, Sessions increased by 583%, Users increased by 673%, Pageviews increased by 564%, Bounce rate increased by 6%"
+      },
+      {
+        "header": "PWA benefits for Business",
+        "imageUrl": "pwa_benefit.png",
+        "texts": [
+          {
+            "text": "Low development costs"
+          },
+          {
+            "text": "App-like look and feel"
+          },
+          {
+            "text": " Fast installation"
+          },
+          {
+            "text": "Better performance"
+          },
+          {
+            "text": "Platform and device agnosticism"
+          },
+          {
+            "text": "No updating issue"
+          },
+          {
+            "text": " Seamless offline operation"
+          },
+          {
+            "text": "No dependency on app distribution service"
+          },
+          {
+            "text": "Push notification functionality"
+          },
+          {
+            "text": "Enhance security"
+          }
+        ]
+      }
+    ]
+  }
+]

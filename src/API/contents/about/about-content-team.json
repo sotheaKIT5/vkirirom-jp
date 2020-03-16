@@ -1,0 +1,70 @@
+[
+    {
+        "header":"Our Team"
+    },
+    {
+        "cards":[
+            {
+                "name":"Oy Chanphallin",
+                "position":"Designer",
+                "imageUrl":"OyChanphallin.jpeg"
+            },
+            {
+                "name":"Sothy Bunthoeurn",
+                "position":"Designer",
+                "imageUrl":""
+            },
+            {
+                "name":"Yan Chakreya",
+                "position":"Designer",
+                "imageUrl":"YanChakreya.jpg"
+            },
+            {
+                "name":"Pan Sreypich",
+                "position":"Designer",
+                "imageUrl":"pich"
+            },
+            {
+                "name":"Sok Kakvey",
+                "position":"Designer",
+                "imageUrl":"kakvey.jpg"
+            },
+            {
+                "name":"Pen Serey Otdom",
+                "position":"Developer",
+                "imageUrl":"otdom.jpeg"
+            },
+            {
+                "name":"Soem Samrach",
+                "position":"Developer",
+                "imageUrl":""
+            },
+            {
+                "name":"Thorn Methany",
+                "position":"Developer",
+                "imageUrl":"metheany.png"
+            },
+            {
+                "name":"Sub Tam",
+                "position":"Developer",
+                "imageUrl":"SubTam.png"
+            },
+            {
+                "name":"Sadeth Kimheng",
+                "position":"Developer",
+                "imageUrl":"KimhengSadeth.jpg"
+            },
+            {
+                "name":"Seaklim  Lay",
+                "position":"Enterprise Consultant",
+                "imageUrl":""
+            },
+            {
+                "name":"Sokream Pan",
+                "position":"Enterprise Consultant",
+                "imageUrl":"PhanSokream.jpeg"
+            }
+            
+        ]
+    }
+]

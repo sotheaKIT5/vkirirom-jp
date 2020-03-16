@@ -1,0 +1,24 @@
+[
+    {
+        "ContentCard":[
+            {
+                "title":"Who we are?",
+                "description":"We are A2A Digital, an IT solution Company of fully of cutting edge technologies that enhance clients’ business with trust and reliability. We provide consultant, support, design, maintenance and development for organizations and companies with a rapid process in development which help our clients and less time consuming. We believe in leveraging the power of innovation to seize new opportunities. Innovation and simplicity makes us happy. We’re excited to help you on your journey!",
+                "imageUrl":""
+            },
+            {
+                "title":"What to do?",
+                "description":"A2A Digital is working with cutting edge technologies. We are working on Artificial intelligence, Internet of Things, Odoo & ERP, Blockchain, Web & App development, digital marketing & design, and other services. We give consultants to our client and define the problem, and we design and develop systems for solving the problem with scalability and reliability. We help you grow and develop your business, whether they happen to be in any of its phases, always it can get better.",
+                "imageUrl":""
+            },
+            {
+                "title":"Mission and Vision",
+                "imageUrl":"",
+                "descriptions":[
+                    {"description":"Our Mission is to support cambodian companies catch up industry revolution 4.0 in IT field"},
+                    {"description":"Vision is to be leading an IT company in Cambodia with KIT."}
+                ]
+            }
+        ]
+    }
+]

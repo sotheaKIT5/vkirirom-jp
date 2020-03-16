@@ -1,0 +1,124 @@
+[
+  {
+    "meta": [
+      {
+        "title": "Cyber Security",
+        "description": "We aim to be the best Cyber Security Service provider in Cambodia by providing our services to improve client’s business security, more importantly prevent the company from online attack.",
+        "keywords": "Network backbone, A2A, A2A Digital, IT solution, Network Infrastructure, Firewall, Network monitoring, Security camera"
+      }
+    ],
+    "header": [
+      {
+        "title": "Cyber Security",
+        "question": "What is Cyber Security?",
+        "shortDesc": "Keep Your Information Safe and Secure",
+        "description": "Cyber-security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.",
+        "imagePath": "Cyber_main.svg"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Area",
+        "description": "We aim to be the best Cyber Security Service provider in Cambodia by providing our services to improve client’s business security, more importantly prevent the company from online attack. With our expert staff, we provide training and consultant to staff about cyber security and how to protect from hacking."
+      },
+      {
+        "component": [
+          {
+            "imageUrl": "1.svg",
+            "title": "Security Staffing",
+            "description": "As we know security is very important not only for big companies but also for all kinds of companies. So our company provides you the security staffing service that our staff will respond and prepare all the necessary related to security for your company such as cyber security fundamentals, network vulnerable and exploitation, classic threat, attack, counter-measure and IT auditors provide guidance to coworkers and management regarding accounting discrepancies, compliance vulnerabilities and internal controls. IT auditors identify, document, summarize and present audit findings to external shareholders, such as regulatory bodies, and internal shareholders, such as executives."
+          },
+          {
+            "imageUrl": "2.svg",
+            "title": "Security Training Staff",
+            "description": "As a professional of cyber security, we are ready to let you know the way to keep security and Understanding security inside-out,Understanding security inside-out means knowing it is constantly changing and that staff and personnel have to be periodically retrained. MAX Security Solutions’ years of knowledge and experience are available for you, as a business owner or security executive, offering intelligence, consulting services, and on-ground expertise in order to implement the most suitable security training program for your personnel.When training employees to support security efforts, one has to understand that the training’s main purpose is to improve employee security awareness rather than physically train participants to counteract threats. We here to provide you all knowledge of security, you can join us in bootcamp, short course ect."
+          }
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "header": "Technology"
+      },
+      {
+        "cards": [
+          {
+            "header": "Next-Generation Firewalls",
+            "imageUrl": "1.svg",
+            "description": "A next-generation firewall (NGFW), is a sophisticated hardware or software-based infrastructure security system that is able to detect and block cyber-attacks by enforcing security policies at the application level, as well as at the port and protocol level."
+          },
+          {
+            "header": "DNS Filtering",
+            "imageUrl": "2.svg",
+            "description": "DNS filtering offers a form of web security by exposing a request to certain controls. When a user types in the names of websites he/she wants to visit, DNS filters subject that request to controls to ensure that any given domain is safe to visit. For example, known malicious websites and IP addresses are blocked."
+          },
+          {
+            "header": "Malware Protection",
+            "imageUrl": "3.svg",
+            "description": "Malware Protection is protecting against a broad range of malware (including computer viruses, worms, spyware, botnet software and ransomware) and including options for virus removal will protect your computer, your privacy and your important documents from attack."
+          },
+          {
+            "header": "Antivirus Software",
+            "imageUrl": "4.svg",
+            "description": "Antivirus software is a type of program designed and developed to protect computers from malware like viruses, computer worms, spyware, botnets, rootkits, keyloggers and such. Antivirus programs function to scan, detect and remove viruses from your computer. There are many versions and types of anti-virus programs that are on  the market. However, the prime objective of any antivirus program is to protect computers and remove viruses once detected."
+          },
+          {
+            "header": "Email Security",
+            "imageUrl": "5.svg",
+            "description": "Email security describes various techniques for keeping sensitive information in email communication and accounts secure against unauthorized access, loss, or compromise. Email security is necessary for both individual and business email accounts, and there are multiple measures organizations should take to enhance email security."
+          }
+        ]
+      }
+    ],
+    "compare": [
+      {
+        "header": "",
+        "description": ""
+      },
+      {
+        "components": [
+          {
+            "header": "Importance of Cyber Security",
+            "description": "Cybersecurity has become indispensable for both the public and private sectors particularly  amidst  digital  revolution  or  Industrial Revolution  4.0.  When  a  system  is  breached or  attacked,  the  unauthorised  use  has  the potential to cause huge financial and security damage. Therefore, building a strong and resilient  cybersecurity  team  will   protect  the interests of your institutions or corporations. Cybersecurity is important because it encompasses everything that pertains to protecting our sensitive data, personally identifiable information (PII), protected health information (PHI), personal information, intellectual property, data, and governmental and industry information systems from theft and damage attempted by criminals and adversaries."
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "header": "Why A2A Digital gives the best Cyber Security service?",
+        "description": "A2A Digital drives your business and manages risk with our cyber security consulting and training, and managed security services. We aim to be your trusted compliance and risk program advisor, deliver cost-effective technology to reduce enterprise-wide risk, provide expert consulting services and training to support security teams, detect and respond to threats on your behalf, and bring information security leadership to enterprises of all sizes."
+      },
+      {
+        "header": "Cyber Security benefits for Business",
+        "imageUrl": "benefit.png",
+        "texts": [
+          {
+            "text": "Protection your business"
+          },
+          {
+            "text": "Increase productivity"
+          },
+          {
+            "text": "Inspires customer confidence"
+          },
+          {
+            "text": "Protection for your customer"
+          },
+          {
+            "text": "Stop your website from going down"
+          },
+          {
+            "text": "Winning your customer’s trust"
+          },
+          {
+            "text": "Improve your search engine ranking"
+          },
+          {
+            "text": "Stop zero day attack"
+          }
+        ]
+      }
+    ]
+  }
+]

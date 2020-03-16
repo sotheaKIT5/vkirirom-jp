@@ -1,0 +1,34 @@
+[
+  {
+    "meta": [
+      {
+        "title": "Logistic System",
+        "description": "A business logistics system is made up of three main activities:  order processing, inventory management, and freight transportation.",
+        "keywords": "a2a digital, logistic system, logistic solution, logistic service, inventory management"
+      }
+    ],
+    "header": [
+      {
+        "title": "Logistic System",
+        "shortDesc": "A logistics system involves  order processing, inventory management, and freight transportation"
+      },
+      {
+        "title": "Our Concept",
+        "descriptions": [
+          {
+            "description": "A business logistics system is made up of three main activities:  order processing, inventory management, and freight transportation."
+          },
+          {
+            "description": "Order processing is concerned with the information flow in the logistics system and includes a number of operations. The beginning of the process consists of a request from a customer for a particular product via an order form. These orders are then transmitted and checked for completeness and accuracy. The availability of the requested product and the customer’s credit status are verified. Finally, products are retrieved from the stock, packed, and delivered along with their shipping documents.  Throughout this entire process, the customers have to be kept informed about the status of their orders."
+          },
+          {
+            "description": "Inventory management is a key issue in logistics systems. Businesses choose to maintain inventories for a variety of reasons, including: Improving service level; Reducing overall logistics costs; Making seasonal items available throughout the year; Overcoming inefficiencies managing the logistics system."
+          },
+          {
+            "description": "The objective of inventory management is to regulate stock levels for minimizing total operating cost while satisfying customer service requirements."
+          }
+        ]
+      }
+    ]
+  }
+]

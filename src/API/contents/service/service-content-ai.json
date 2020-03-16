@@ -1,0 +1,170 @@
+[
+  {
+    "meta": [
+      {
+        "title": "AI Development",
+        "description": "A2A Digital provides a handful of advanced artificial intelligence software while keeping the quality and security in mind. We aim to reach the highest number of users in Cambodia and provide a more comprehensive user experience. With our skilled team we develop AI service for our clients and ensure the quality of the service.",
+        "keywords": "a2a digital, artificial intelligence, ai, AI development, machine learning, artificial, intelligence, artificial intelligence cambodia, cambodia, ai cambodia, ai service"
+      }
+    ],
+    "header": [
+      {
+        "title": "Artificial Intelligence",
+        "question": "What is Artificial Intelligence?",
+        "shortDesc": "We make the most reliable AI machine to help your business",
+        "description": "Artificial intelligence (AI) is the simulation of human intelligence processes by machines, especially computer systems. It can be enhanced the customer experience in recognition object, chatbot for chat automation, voice detection with technology, GAN AI (Generative Adversarial Network) and more. With AI Services from A2A Digital solution, you can improve the business and automation the interaction with customers and increase work efficiency for business.",
+        "imagePath": "chip.svg"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Areas",
+        "description": "A2A Digital is an IT solution company growing with cutting edge technology service provider. Among that, we provide artificial Intelligence service, we aim to deliver artificial Intelligence solutions into different business verticals and sectors while enhancing business performance."
+      },
+      {
+        "component": [
+          {
+            "cardimgurl": "../assets/component/service-detail-card/",
+            "imageUrl": "object_detection.svg",
+            "title": "Object Detection",
+            "description": "Object detection is a common computer vision problem which deals with identifying and locating objects of certain classes in the image. Interpreting the object localization can be done in various ways, including creating a bounding box around the object or marking every pixel in the image which contains the object."
+          },
+          {
+            "imageUrl": "voice_recognition.svg",
+            "title": "Voice Recognition",
+            "description": "Voice Recognition is alternatively referred to as speech recognition, voice recognition is a computer software program or hardware device with the ability to decode the human voice. It is commonly used to operate a device, perform commands, or write without having a keyboard, mouse or press any button."
+          },
+          {
+            "imageUrl": "chatbot.svg",
+            "title": "Natural Language Processing",
+            "description": "Natural Language Processing, usually shortened as NLP, is a branch of artificial intelligence that deals with the interaction between computers and humans using the natural language. The ultimate objective of NLP is to read, decipher, understand, and make sense of the human languages in a manner that is valuable. Most NLP techniques rely on machine learning to derive meaning from human languages."
+          },
+          {
+            "imageUrl": "gan.svg",
+            "title": "GAN",
+            "description": " Generative Adversarial Network AI is a two-part AI model consisting of a generator that creates samples and a discriminator that attempts to differentiate between the generated sample and real-world samples. It’s been used to produce problematic content like deepfakes, which is media that takes a person in existing media and replace them with someone else’s likeness. Our company aims to provide the best solution for GAN AI."
+          },
+          {
+            "imageUrl": "predictive_analytics.svg",
+            "title": "Predictive Analytics",
+            "description": "This advanced technique encompasses a variety of statistical techniques from data mining to predictive modeling. Our company provides the service and contribute to the business and make the improvement. Using this technology, we help you analyze, design, and search for new possibilities in business while making full use of advanced technologies."
+          }
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "header": "Tools and Technologies used for AI Development"
+      },
+      {
+        "cards": [
+          {
+            "header": "TensorFlow",
+            "imageUrl": "1.svg",
+            "description": "TensorFlow is an open-source library that was originally developed by researchers and engineers working with google brain team. It has APIs available in several languages both for constructing and executing a TensorFlow graph. It’s a numerical computation, data using TensorFlow developers for data graphs."
+          },
+          {
+            "header": "DialogFlow",
+            "imageUrl": "2.svg",
+            "description": "DialogFLow is a natural language understanding platform that makes it easy to design and integrate a conversational user interface into your mobile app, web application, device, bot, interactive voice response system, and more. Using DialogFlow, you can engaging ways for users to interact with your product."
+          },
+          {
+            "header": "OpenCV",
+            "imageUrl": "3.svg",
+            "description": "OpenCV is an open source computer vision and machine learning software library. It was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. It makes it easy for businesses to utilize and modify the code."
+          },
+          {
+            "header": "Dlib",
+            "imageUrl": "4.svg",
+            "description": "Dlib is a modern C++ toolkit containing machine learning algorithms and tools for creating complex software i n C++ to solve real world problems. We used python to wrapping on it which to provide python api."
+          }
+        ]
+      }
+    ],
+    "results": [
+      {
+        "header": "Worked Results",
+        "cardimgurl": "../assets/component/service-work-result/"
+      },
+      {
+        "cards": [
+          {
+            "imageUrls": [
+              {
+                "imageUrl": "plate_recognition/1.png"
+              },
+              {
+                "imageUrl": "plate_recognition/2.png"
+              },
+              {
+                "imageUrl": "plate_recognition/3.png"
+              }
+            ],
+            "header": "License Plate Recognition",
+            "description": "We have developed AI system to detect number plate of vehicles in Surveillance System is a system that can detect and capture vehicles, plate numbers of vehicles, uniquely identify them, count the number of vehicles and store the records of vehicles entering or leaving a location."
+          },
+          {
+            "imageUrls": [
+              {
+                "imageUrl": "face_recognition/1.png"
+              },
+              {
+                "imageUrl": "face_recognition/2.gif"
+              },
+              {
+                "imageUrl": "face_recognition/3.png"
+              }
+            ],
+            "header": "Face Recognition",
+            "description": "This system is being developed in the purpose of “Multi-face detection and attendance checking system for classroom”. We developed using dlib library for detection and opencv library for controlling the camera."
+          },
+          {
+            "imageUrls": [
+              {
+                "imageUrl": "chatbot/1.jpg"
+              },
+              {
+                "imageUrl": "chatbot/2.jpg"
+              },
+              {
+                "imageUrl": "chatbot/2.jpg"
+              }
+            ],
+            "header": "Chatbot",
+            "description": "Chatbot is a software applications that use artificial intelligence & natural language processing to understand what a human wants, and guides them to their desired outcome with as little work for the end user as possible. Like a virtual assistant for your customer experience touchpoints."
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "header": "Why A2A Digital gives the best AI service",
+        "description": "A2A Digital provides a handful advanced artificial intelligent software while keeping the quality and security in mind. We aim to reach the highest number of users in Cambodia and provide a more comprehensive user experience. With our skilled team we develop AI service for our clients and ensure the quality of the service."
+      },
+      {
+        "header": "AI benefits for Business",
+        "imageUrl": "ai_benefit.png",
+        "texts": [
+          {
+            "text": "AI helps in increasing work efficiency and reshape business efficiency"
+          },
+          {
+            "text": "Artificial Intelligence automates customer interaction by analyzing complete data"
+          },
+          {
+            "text": "Get real-time assistance using AI and communicate with millions of customers"
+          },
+          {
+            "text": "Artificial intelligence is used for data mining and to discover relevant data"
+          },
+          {
+            "text": "Increase productivity by stopping repetitive tasks using AI"
+          },
+          {
+            "text": "Improve security system with the help of AI Technology"
+          }
+        ]
+      }
+    ]
+  }
+]

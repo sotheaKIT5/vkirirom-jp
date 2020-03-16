@@ -1,0 +1,193 @@
+[
+  {
+    "meta": [
+      {
+        "title": "VR/AR Development",
+        "description": "VR stands for Virtual Reality, it implies a complete immersion experience that shuts out the physical world.AR stands for Augmented Reality, it adds digital elements to a live view often by using the camera on a smartphone.",
+        "keywords": "Virtual Reality,Augmented Reality,imagined environments,digital experiences,Oculus Go,Samsung Gear VR,PC-powered Oculus Rift,Oculus Rift,HTC Vive,hololens,plethora,mobile AR,VR Architecture walkthrough,ARMenu,VR Monitoring,Unity"
+      }
+    ],
+    "header": [
+      {
+        "title": "VR/AR Development",
+        "question": "What is VR/AR?",
+        "shortDesc": "Bridge the gap between the virtual and real to deliver immersive user experiences",
+        "description": "VR stands for Virtual Reality, it implies a complete immersion experience that shuts out the physical world. Using VR devices such as HTC Vive, Oculus Go/Rift, users can be transported into a number of real-world and imagined environments. AR stands for Augmented Reality, it adds digital elements to a live view often by using the camera on a smartphone. Best example of augmented reality experiences include Snapchat lenses and the game Pokemon Go",
+        "imagePath": "VR.svg",
+        "url": "../assets/component/service-detail-card/VR-AR/"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Areas",
+        "description": "Virtual and Augmented Reality require new ways of interacting, and new user interfaces that we carefully construct to enhance the experience. We build solutions and  transform business needs to business values. We create digital experiences, and we drive digital change to fast-track development of brand new digital worlds. We create. We innovate. We develop. We improve digital lives. We offer a wide range of conceptual and technical experience within designing and building for Augmented and Virtual Reality."
+      },
+      {
+        "component": [
+          {
+            "imageUrl": "Oculus-Go.svg",
+            "title": "Oculus Go Development",
+            "description": "The Oculus Go is a standalone virtual reality headset design for everyone. It doesn’t need to connect to anything. It is the third headset from Oculus, and it’s meant to exist between the phone-powered Samsung Gear VR and PC-powered Oculus Rift. We can develop VR application for Oculus Go by 3 platforms: Native Platform,Unreal Integration and Unity Integration "
+          },
+          {
+            "imageUrl": "HTC-vive.svg",
+            "title": "HTC Vive Development",
+            "description": "HTC Vive is a virtual reality headset developed by HTC and Valve. The headset uses “room scale” tracking technology, allowing the user to move in 3D spaces and use motion-tracked handheld controllers to interact with the environment. It adjustable straps and interchangeable inserts, front-facing camera, eye relief adjustments and fits most glasses. We can develop VR application with HTC Vive and gaming as well with Unity. The reality game is experiencing incredible drive towards merging technical innovation and creative minds to further the ongoing VR revolution."
+          },
+          {
+            "imageUrl": "Hololens.svg",
+            "title": "Hololens Development",
+            "description": "The Hololens is Microsoft’s take on augmented reality, which they call “mixed reality”. Using multiple sensors, advanced optics, and holographic processing that melds seamlessly with its environment, These holograms can be used to display information, blend with the real world, or even simulate a virtual world. The Hololens has a plethora of optical sensors, with two on each side for peripheral “environment understanding” sensing, a main downward facing depth camera to pick up hand motions, and specialized speakers that simulate sound from anywhere in the room."
+          },
+          {
+            "imageUrl": "Mobile.svg",
+            "title": "Mobile AR",
+            "description": "Mobile AR application platform operates on iOS and Android smartphones, tablets and wearable devices to create incredible Augmented Reality experiences straight out of the box. MobileAR is a creative and highly effective education and entertainment tool that adds an extra layer of information – content such as 3D characters, image, video, text, sound and more – to everyday objects and environments. MobileAR can resurrect anyone or anything from any mobile device to create unparalleled educational opportunities in and out of the classroom."
+          }
+        ]
+      }
+    ],
+    "tools": [
+      {
+        "header": "Technologies used for VR/AR Development"
+      },
+      {
+        "cards": [
+          {
+            "header": "Unity",
+            "imageUrl": "1.svg",
+            "description": "Unity is a cross-platform game engine developed by Unity Technologies. It packs a ton of features together and is flexible enough to make almost any game you can imagine. It’s been used to create games like Pokemon Go, Heathstone, Rimworld, Cuphead, and plenty more. While 3D is in the name, unity 3D is also packs tools for 2D game development. We can use C# as scripting API and built-in Visual Studio integration in unity."
+          },
+          {
+            "header": "C# Programming Language",
+            "imageUrl": "4.svg",
+            "description": "C# is a strongly typed object-oriented programming language. C# is open source, simple, modern, flexible, and versatile. In this article, let’s learn what C# is, what C# can do, and how C# is different than C++ and other programming languages. Key characteristics of C# language including open source, modern, easy, fast, cross platform, safe, and versatile."
+          },
+          {
+            "header": "Vuforia",
+            "imageUrl": "2.svg",
+            "description": "Vuforia Engine is the most widely used platform for AR development, with support for leading phones, tablets, and eyewear. Developers can easily add advanced computer vision functionality to Android, iOS, and UWP apps, to create AR experiences that realistically interact with objects and the environment."
+          },
+          {
+            "header": "Maya",
+            "imageUrl": "3.svg",
+            "description": "Autodesk Maya is an industry leading 3D animation software application developed by Autodesk that enables video professionals who work with animated film, television programs, visual effects, and video games to create highly professional three-dimensional (3D) cinematic animations."
+          },
+          {
+            "header": "SketchUp",
+            "imageUrl": "5.svg",
+            "description": "Sketchup is 3D modeling software that’s easy to use and has an extensive database of user-created models available for download. You can use it to sketch (or import) models to assist with all kinds of projects—furniture building, video game creation, 3D printing, interior design, and whatever else you can think of."
+          },
+          {
+            "header": "Blender",
+            "imageUrl": "6.svg",
+            "description": "Blender is a free open source 3D computer graphics software application for developing animated movies, visual effects, 3D games, and physics simulations. It is written in C, C++, and python, and allows the user to write custom extensions to blender in any of those programming languages. It is available for windows, macOS, and Linux."
+          },
+          {
+            "header": "SteamVR",
+            "imageUrl": "7.svg",
+            "description": "SteamVR is a runtime included with the Steam client that powers virtual reality experiences. SteamVR is automatically installed when Steam detects a headset connected to a user’s PC. it can also be installed manually. It lets users manage several areas of their VR experience, including room setup and device status and management."
+          },
+          {
+            "header": "TensorFlow",
+            "imageUrl": "8.svg",
+            "description": "TensorFlow is an open-source library that was originally developed by researchers and engineers working with google brain team. It has APIs available in several languages both for constructing and executing a TensorFlow graph. It’s a numerical computation, data using TensorFlow developers for data graphs."
+          },
+          {
+            "header": "OpenCV",
+            "imageUrl": "9.svg",
+            "description": "OpenCV is an open source computer vision and machine learning software library. It was built to provide a common infrastructure for computer vision applications and to accelerate the use of machine perception in the commercial products. It makes it easy for businesses to utilize and modify the code."
+          },
+          {
+            "header": "Docker",
+            "imageUrl": "10.svg",
+            "description": "Docker is a tool designed to make it easier to create, deploy, and run applications by using containers. Containers allow a developer to package up an application with all of the parts it needs, such as libraries and other dependencies, and ship it all out as one package."
+          },
+          {
+            "header": "MongoDB",
+            "imageUrl": "11.svg",
+            "description": "MongoDB is a general purpose, document-based, distributed database built for modern application developers and for the cloud era. No database makes you more productive."
+          },
+          {
+            "header": "NodeJS",
+            "imageUrl": "12.svg",
+            "description": "Node.js is an open-source server side runtime environment built on Chrome's V8 JavaScript engine. It provides an event driven, non-blocking (asynchronous) I/O and cross-platform runtime environment for building highly scalable server-side application using JavaScript."
+          }
+          
+      ]
+    }
+  ],
+     
+     "results":[
+           {
+                 "header":"Worked Results"
+           },
+           {
+                 "cards":[
+                  {
+                        "imageUrls":[
+                              {
+                                    "imageUrl":"Architecture-walkthrough/VR_vKirirom.png"
+                              }
+                        ],
+                        "header":"VR Architecture walkthrough",
+                        "description":"VR Architecture walkthrough is an application that used for promoting Vkirirom Pine Resort Property in a modern way with the use of VR device and technology. Users can use this application with VR device anywhere, any time to experience the application interface with vKirirom environment."
+                  },
+                  {
+                        "imageUrls":[
+                              {
+                                    "imageUrl":"Golf-Course-Training/Hololens.png"
+                              }
+                        ],
+                      "header":"Golf Course Training with Hololens",
+                      "description":"Golf Course Training application is a holographic application developed to serve as golf training service for customer who wants to learn to play golf. By using this application user will be able to learn from the beginning without the help of a human instructor. We provide users different ways to interact with the application. Users can use their hand gestures or voice commands to manipulate the application."
+                  },
+                  {
+                        "imageUrls":[
+                              {
+                                    "imageUrl":"AR-Menu/AR_Menu.png"
+                              },
+                              {
+                                    "imageUrl":"AR-Menu/Our_App.PNG"
+                              },
+                              {
+                                    "imageUrl":"AR-Menu/Sample.jpg"
+                              }
+                        ],
+                      "header":"AR Menu",
+                      "description":"ARMenu is a mobile-ordering application enables users to see virtual 3D food on their table in the restaurant and when ordering online which is implemented with Augmented reality. This is a modern way to implement new technology with restaurants at vKirirom Pine Resort. This application reduces paper invoice and spend less time with order."
+                  },
+                  {
+                        "imageUrls":[
+                              {
+                                    "imageUrl":"VR-Monitoring/IP_Streaming.png"
+                              }
+                        ],
+                     "header":"VR Monitoring",
+                     "description":"A2A Digital brings a new and modern solution in security service, VR Monitoring, simply means a Web Application for monitoring all Security Surveillance Camera of vKirirom with Object Detection option to detect any unwanted events or entity."
+                 }
+                 ]
+           }
+          
+     ],
+     "business":
+     [     
+           {
+                 "header":"Why A2A Digital gives the best VR/AR service",
+                 "description":"A2A Digital helps companies enhance their capabilities and strengthen business values with brand new perspectives on both process and product. Virtual & Augmented Reality continues to drive change everywhere from healthcare to education with new ways of interacting and experience. We help customers solve problems, with new technology. Some conceptual functionality can be very difficult to realise technically, VR is well-suited for both education and simulations. Due to high levels of immersion, the virtual worlds we design allow us real new perspectives."
+         },
+           {
+                 "header":"VR/AR benefits for Business",
+                 "imageUrl":"Business.jpeg",
+                 "texts":[
+                       {"text":"AR gets more virality"},
+                       {"text":"Personalized content is tailored to the user's particular needs and adopted fast"},
+                       {"text":"AR/VR create rich, immersive and interactive user experience"},
+                       {"text":"AR/VR allows readers to truly connect with the published content"},
+                       {"text":"Brand awareness increase via social shares"},
+                       {"text":"AR/VR helps in customers buying their decisions"}
+                 ]
+           }
+     ]
+    }
+   ] 

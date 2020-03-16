@@ -1,0 +1,36 @@
+[
+    {
+        "title":"Services",
+        "lists":[
+            {"list":"Artificial Intelligence"},
+            {"list":"Digital Marketing"},
+            {"list":"Service"}
+        ]
+    },
+    {
+        "title":"Product",
+        "lists":[
+            {"list":"Home Smart Meter"},
+            {"list":"AI Book"},
+            {"list":"Logo"},
+            {"list":"Brochure"}
+        ]
+    },
+    {
+        "title":"About",
+        "lists":[
+            {"list":"What we do?"},
+            {"list":"Who we are?"},
+            {"list":"Mission and Vision"},
+            {"list":"Manager"},
+            {"title":"Advisors"}
+        ]
+    },
+    {
+        "title":"Career",
+        "lists":[
+            {"list":"Join Our Team"},
+            {"list":"Career Opportuniyies"}
+        ]
+    }
+]

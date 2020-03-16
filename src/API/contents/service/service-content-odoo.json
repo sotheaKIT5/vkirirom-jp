@@ -1,0 +1,111 @@
+[
+  {
+    "meta": [
+      {
+        "title": "Odoo ERP",
+        "description": "Odoo is an open source ERP (Enterprise Resource Planning) was founded by Fabien Pinckaers in 2005. Odoo stands for On-Demand Open Object, it’s a large collection of business-related applications and it contains many modules and those modules collectively called ERP software.",
+        "keywords": "Odoo,ERP,Enterprise,Customer Relationship Management,Human Resource,Point of Sale, Hotel Management,inventory"
+      }
+    ],
+    "header": [
+      {
+        "title": "Odoo ERP",
+        "question": "What is Odoo ERP?",
+        "shortDesc": "Reduce the cost and facilitate the real-time decision-making system",
+        "description": "Odoo is an open source ERP (Enterprise Resource Planning) was founded by Fabien Pinckaers in 2005. Odoo stand for On-Demand Open Object, it’s a large collection of business-related applications and it contains many modules and those modules collectively called ERP software. ERP is a multiple modules transaction based application software that helps organizations to manage the essential parts of the business. It collects, manages and distributes information across functional boundaries and helps break down information those barriers that stand in the way of full cooperation between production, materials, planning, engineering, finance and sales/marketing. ",
+        "imagePath": "ERP.svg"
+      }
+    ],
+    "cards": [
+      {
+        "header": "Our Focus Areas",
+        "cardimgurl": "../assets/component/service-detail-card/",
+        "description": "Odoo provides many modules for your business such as"
+      },
+      {
+        "component": [
+          {
+            "imageUrl": "1.svg",
+            "title": "Accounting and Financial management",
+            "description": "Get your accounting more accurate by integrating purchase orders and invoices. Anyone running a business knows the importance of money - revenue, cashflow, debt, etc. So, of course, it follows that having a handle on accounting is crucial. we're so convinced about the benefits of integrated business software (with different modules for different functions, but interlinked and all under one system) that we'll do whatever we can to spread the word and convert as many companies as possible. But when it comes to accounting, companies can feel worried about making the switch from software they're already using (no matter how dated it may be) to our integrated approach. Understandably, there can be worries to overcome when it comes to managing a company's money."
+          },
+          {
+            "imageUrl": "2.svg",
+            "title": "CRM (Customer Relationship Management)",
+            "description": "CRM is one of the modules in ERP that allows you to see all Lead/Opportunity in one local, manage them from one stage to another and analyze your result. Keep track of all interactions with your opportunities and customers , improve your sales cycle and schedule activities based on your sales scripts: calls, meetings, mailing, and quotations. Get all information you need, directly on the opportunity: website pages viewed, mail received, etc. In today’s marketing and sales environment, salespeople want an easy way to track their prospects and they want all the information in one place. In addition, managers require visibility into the sales pipeline and what actions their salespeople are taking."
+          },
+          {
+            "imageUrl": "3.svg",
+            "title": "Sales",
+            "description": "Automate operations and focus on customer relationships and revenue , Increase sales volume by automatically proposing extra options and accessories, apply closing triggers, discounts, and more. Get custom alerts for relevant activities, communicate directly from quotations via email, automatically keep complete records of your negotiations. Sales module allows us to create professional quotations in just a couple of minutes. We're saving time and our customers are happy with our fast services and response"
+          },
+          {
+            "imageUrl": "4.svg",
+            "title": "Purchase",
+            "description": "In ERP,Purchase module is not just like the flow of normal purchase that we used to do before but that means purchase in different units of measures than sales, set multiple vendors on the system. Our system can improve your purchase and inventory performance with procurement rules depending on stock levels, logistic rules, sales orders, forecast manufacturing orders, etc. Select different replenishment methods for each product depending on your manufacturing and delivery strategies.Easily import suppliers' price lists and references to make smarter purchase decisions based on promotions, quantities and special contract conditions. Keep track of a product availability in your supplier’s stock and check your order status from within the app. You can even base your sales price on your supplier's prices"
+          },
+          {
+            "imageUrl": "5.svg",
+            "title": "POS (Point of Sale)",
+            "description": "Some of your customers might request an invoice when buying from your Point of Sale, you can easily manage it directly from the PoS interface. System making it easy for you to accept and refund those returns is therefore also a key aspect of your Point of Sale interface. Cash control allows you to check the amount of the cashbox at the opening and closing. You can thus make sure no error has been made and that no cash is missing.POS is offering an easy bill splitting solution to your customers will leave them with a positive experience and Connecting a payment terminal allows you to offer a fluid payment flow to your customers and ease the work of your cashiers."
+          },
+          {
+            "imageUrl": "6.svg",
+            "title": "HR (Human Resource)",
+            "description": "From sourcing to contract, handle your recruitment process easily.Set up your job board, promote your job listings and easily keep track of submitted applications. Follow every applicant and build a database of skills and profiles with indexed documents.No need to outsource your recruitment - handle everything internally in a simple and professional way. By Using reports to compare the performance of postings you have made on different external job boards and easily change your strategy and recruitment plan based on the results."
+          },
+          {
+            "imageUrl": "7.svg",
+            "title": "Hotel Management",
+            "description": "Hotel Management in Odoo is an application software which is used to control the day-to-day operations including Check in, Check out, and Reservation. It allows front office users an easy way to perform their tasks and generate daily reports. Hotel Management is integrated with Invoice directly and as well as with POS. We can bill any service in folio from the Hotel Restaurants module and from POS. Not only these, we can integrate Odoo Hotel Management to Hotel Link Solutions in order to synchronize room availability to all websites such as Booking.com, Agoda.com and also your own booking website."
+          },
+          {
+            "imageUrl": "8.svg",
+            "title": "Inventory",
+            "description": "Synchronize your stocks levels based on your purchases and create automatic replenishment rules to avoid stockouts.You are now able to update any transaction (picking, manufacturing order) after being posted through the new lock/unlock button.Easily manage a single inventory or a complex multi-warehouses environment by activating features on demand.Scan products in your warehouse using the barcode scanner. Control your dashboards and track orders wherever you are."
+          }
+        ]
+      }
+    ],
+    "business": [
+      {
+        "header": "Why A2A Digital gives the best Odoo service",
+        "description": "With a rich experience of solving many issues of our value customers, we are clear with what you want and flexible. No matter what you need, we will deliver you on time with quality assurance. We ensure to help your business grow bigger, successful, stand out from competitors and increase profits."
+      },
+      {
+        "header": "List all modules in Odoo ",
+        "description": "Odoo provides many modules for your business such as",
+        "imageUrl": "ERP_Benefit.svg",
+        "texts": [
+          {
+            "text": "Accounting and Financial management"
+          },
+          {
+            "text": "CRM (Customer Relationship Management)"
+          },
+          {
+            "text": "Sales"
+          },
+          {
+            "text": "Purchase"
+          },
+          {
+            "text": "POS (Point of Sale)"
+          },
+          {
+            "text": "Project Management"
+          },
+          {
+            "text": "HR (Human Resource)"
+          },
+          {
+            "text": "Helpdesk"
+          },
+          {
+            "text": "Inventory and ect, "
+          }
+        ]
+      }
+    ]
+  }
+]
