@@ -52,5 +52,5 @@ new Vue({
     AOS.init();
   },
   render: h => h(App),
-  mounted: () => document.dispatchEvent(new Event("x-app-rendered"))
+  mounted: () => document.dispatchEvent(new Event("rendered"))
 }).$mount("#app");
