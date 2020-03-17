@@ -1,6 +1,6 @@
 {
-  "name": "A2A Digital For Industry Revolution 4.0",
-  "short_name": "A2A Digital",
+  "name": "vKirirom Japan",
+  "short_name": "vKirirom Japan",
   "icons": [
     {
       "src": "./img/icons/android-chrome-192x192.png",
@@ -13,9 +13,8 @@
       "type": "image/png"
     }
   ],
-  "start_url": "./",
-  "scope": ".",
-  "theme_color": "#303030",
+  "start_url": "/",
+  "theme_color": "#138690",
   "background_color": "#ffffff",
   "display": "standalone"
 }
