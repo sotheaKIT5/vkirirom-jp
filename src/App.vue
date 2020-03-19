@@ -6,10 +6,10 @@
     <!--      :right="side === 'right' ? true : false"-->
     <!--    ></component>-->
     <nav-bar />
-    <div class="content">
+    <v-content>
       <router-view />
       <vue-progress-bar />
-    </div>
+    </v-content>
     <!--    <Footer />-->
   </v-app>
 </template>
@@ -23,28 +23,8 @@ export default {
       currentMenu: "slide"
     };
   },
-  mounted() {
-    //  [App.vue specific] When App.vue is finish loading finish the progress bar
-    this.$Progress.finish();
-    window.scrollTo(0, 0);
-  },
-  components: { NavBar },
-  created() {
-    //  [App.vue specific] When App.vue is first loaded start the progress bar
-    this.$Progress.start();
-    this.$router.beforeEach((to, from, next) => {
-      if (to.meta.progress !== undefined) {
-        let meta = to.meta.progress;
-        // parse meta tags
-        this.$Progress.parseMeta(meta);
-      }
-      this.$Progress.start();
-      next();
-    });
-    this.$router.afterEach(() => {
-      this.$Progress.finish();
-    });
-  }
+  mounted() {},
+  components: { NavBar }
 };
 </script>
 <style lang="sass">
@@ -53,6 +33,8 @@ html, body
 .container
   padding-top: 0 !important
   padding-bottom: 0 !important
+ul
+  list-style: square outside
 @media (min-width: 1904px)
   .container
     max-width: 1185px !important
