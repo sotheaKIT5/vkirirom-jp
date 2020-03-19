@@ -1,3 +1,15 @@
 {
-  "message": "hello i18n Japanese!!"
+  "message": "hello i18n Japanese!!",
+  "nav": {
+    "service": "Service",
+    "case_detail": "Case Details",
+    "value": "Value",
+    "kit": "What's KIT?",
+    "a2a_digital": "What's A2A Digital?",
+    "vkiriromjp": "What's vKirirom Japan?",
+    "about": "About"
+  },
+  "footer": {
+    "follow_us_on": "Follow us on"
+  }
 }
