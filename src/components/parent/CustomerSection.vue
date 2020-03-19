@@ -36,7 +36,7 @@ export default {
       swiperOption: {
         slidesPerView: 2,
         slidesPerGroup: 1,
-        spaceBetween: 15,
+        spaceBetween: 40,
         freeMode: true,
         mousewheel: true,
         pagination: {
@@ -53,7 +53,7 @@ export default {
         dynamicBullets: true,
         breakpoints: {
           1124: {
-            slidesPerView: 1.2,
+            slidesPerView: 2.2,
             spaceBetween: 20
           },
           640: {
@@ -126,14 +126,14 @@ export default {
   padding-bottom: 45px
   display: flex
 .swiper-button-prev
-  width: 25px !important
+  background-image: url("../../assets/icons/arrow-left.png") !important
   left: -40px !important
 .swiper-button-next
-  /*background-image: url("../../assets/images/why_us.png") !important*/
+  background-image: url("../../assets/icons/arrow-right.png") !important
   right: -40px !important
 .swiper-button-prev, .swiper-button-next
   top: 45% !important
 .swiper-pagination-bullet-custom.swiper-pagination-bullet-active
   color: #fff
-  background: #138690
+  background: #74BEC2
 </style>

@@ -1,7 +1,7 @@
 <template>
   <v-card flat tile color="accent" class="benefits-section container--fluid">
     <v-container>
-      <section-title class="white--text">価値メリット</section-title>
+      <section-title class="white--text">企業が抱える課題</section-title>
       <div class="benefit-main-card d-flex flex-wrap">
         <card-type-two
           class="benefit-card"
@@ -27,46 +27,19 @@ export default {
     return {
       benefits: [
         {
-          title: "高い業務理解力",
+          title: "経営側からグローバル市場へのシフトが求められている",
           description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+            "<li>グローバルでプロジェクトを推進できる人材がいない</li><li>採用が困難、獲得コストも高騰</li>"
         },
         {
-          title: "継続的なエンジニア工数供給力",
+          title: "社内人材の 育成・研修プログラムを探している",
           description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+            "<li>実務とかけ離れたものばかり</li><li>採用が困難、獲得コストも高騰</li>"
         },
         {
           title: "グローバル化への対応における課題",
           description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "お客さまのメリット",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "企業タイプ別の経営課題",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "経営課題への対策と結果",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc., We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+            "<li>欧米先進諸国はコストが高い</li><li>アジアは安全面・生活環境等の体制が不安</li>"
         }
       ]
     };

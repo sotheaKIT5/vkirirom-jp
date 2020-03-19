@@ -1,6 +1,6 @@
 <template>
-  <v-container>
-    <section-title>Services</section-title>
+  <v-container id="service">
+    <section-title>サービス</section-title>
     <div class="service-main-card">
       <card-type-one
         class="service-card"
@@ -8,6 +8,7 @@
         :key="id"
         :title="service.title"
         :description="service.description"
+        :imgUrl="service.imgUrl"
         btn-txt="価値メリット"
         :card-url="service.goTo"
       />
@@ -26,52 +27,29 @@ export default {
       reverse: "flex-direction:row-revers;",
       services: [
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "キリロム工科大学を研究拠点・エンジニアプールとして",
+          imgUrl: "images/service-1.png"
         },
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "奨学金スポンサープログラム",
+          imgUrl: "images/service-2.png",
+          goTo: "kit-sponsor"
         },
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "A2A デジタルをオフショア開発拠点として",
+          imgUrl: "images/service-3.png"
         },
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "国内外でのエンジニア組織立ち上げ支援として",
+          imgUrl: "images/service-4.png"
         },
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "プチCTO派遣",
+          imgUrl: "images/service-5.png"
         },
         {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
-        },
-        {
-          title: "キリロム工科大学を 研究開発拠点として",
-          description:
-            "We provide an advanced artificial intelligent software, keeping the quality and security in mind. We aim to reach the highest number of users and more comprehensive user experience to satisfy clients. With AI services from A2A Digital, you can add the capabilities like images or video analysis, natural language, Object detection, etc.",
-          goTo: "/test"
+          title: "新技術スタートアップへの投資案件として",
+          imgUrl: "images/service-6.png"
         }
       ]
     };

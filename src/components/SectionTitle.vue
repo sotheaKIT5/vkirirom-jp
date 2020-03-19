@@ -1,5 +1,5 @@
 <template>
-  <h1 class="section-title py-6 py-sm-12"><slot /></h1>
+  <h1 class="section-title font-weight-black py-7 py-sm-10"><slot /></h1>
 </template>
 
 <script>
@@ -11,7 +11,7 @@ export default {
 <style lang="sass" scoped>
 @import '~vuetify/src/styles/styles.sass'
 .section-title
-    font-size: 35px
+    font-size: 30px
     text-align: center
     padding-top: 25px
     padding-bottom: 25px

@@ -1,10 +1,10 @@
 <template>
-  <v-card flat class="left-right-card">
-    <div class="card-img">
-      <v-img :src="imgUrl" />
-    </div>
+  <v-row class="left-right-card pb-3">
+    <v-col cols="12" sm="5" class="card-img">
+      <v-img aspect-ratio="1" :src="getAsset(imgUrl)" />
+    </v-col>
     <v-spacer />
-    <div class="card-content">
+    <v-col cols="12" sm="7" class="card-content">
       <h1 class="card-title">
         {{ title }}
       </h1>
@@ -12,8 +12,8 @@
         {{ description }}
       </p>
       <read-more :btn-txt="btnTxt" :card-url="cardUrl" />
-    </div>
-  </v-card>
+    </v-col>
+  </v-row>
 </template>
 
 <script>
@@ -36,11 +36,16 @@ export default {
     },
     imgUrl: {
       type: String,
-      default: require("@/assets/images/dummy/pwa.jpg")
+      default: "images/dummy/pwa.jpg"
     },
     cardUrl: {
       type: String,
       default: "/"
+    }
+  },
+  methods: {
+    getAsset(path) {
+      return require("@/assets/" + path);
     }
   }
 };
@@ -52,7 +57,6 @@ export default {
     max-width: 1185px
     margin-left: auto
     margin-right: auto
-    padding: 0 0 50px 0
 .left-right-card:nth-last-child(1)
   padding-bottom: 0
 .card-content
