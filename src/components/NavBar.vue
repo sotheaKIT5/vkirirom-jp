@@ -10,7 +10,6 @@
       </router-link>
       <v-spacer />
       <button
-        type="button"
         class="v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default hidden-md-and-up"
         @click.stop="drawer = !drawer"
       >
@@ -26,7 +25,7 @@
           class="nav-btn px-3 py-3"
           active-class="primary--text"
           @click="$vuetify.goTo('#service', options)"
-          to="#service"
+          to="/#service"
         >
           <span>{{ $t("nav.service") }}</span>
         </v-card>
@@ -37,7 +36,7 @@
           class="nav-btn px-3 py-3"
           active-class="primary--text"
           @click="$vuetify.goTo('#customer', options)"
-          to="#customer"
+          to="/#customer"
         >
           <span>{{ $t("nav.case_detail") }}</span>
         </v-card>
@@ -48,7 +47,7 @@
           class="nav-btn px-3 py-3"
           active-class="primary--text"
           @click="$vuetify.goTo('#value', options)"
-          to="#value"
+          to="/#value"
         >
           <span>{{ $t("nav.value") }}</span>
         </v-card>
@@ -135,7 +134,7 @@
         <v-list-item-group v-model="group" active-class="primary--text">
           <v-list-item
             @click="$vuetify.goTo('#service', options)"
-            to="#service"
+            to="/#service"
           >
             <v-list-item-title>{{ $t("nav.service") }}</v-list-item-title>
           </v-list-item>

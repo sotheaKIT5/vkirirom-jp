@@ -4,11 +4,11 @@
       flat
       tile
       color="transparent"
+      class="from-left"
       :ripple="false"
       :active-class="false"
       @click="$vuetify.goTo(cardUrl, options)"
       :to="cardUrl"
-      class="from-left"
     >
       <span class="primary--text mr-3">{{ btnTxt }}</span>
       <svg
@@ -33,8 +33,6 @@ export default {
   name: "ReadMore",
   data() {
     return {
-      drawer: false,
-      group: null,
       duration: 1000,
       offset: 0
     };
@@ -50,6 +48,11 @@ export default {
     }
   },
   computed: {
+    target() {
+      const value = this[this.type];
+      if (!isNaN(value)) return Number(value);
+      else return value;
+    },
     options() {
       return {
         duration: this.duration,
