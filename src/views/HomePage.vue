@@ -6,7 +6,6 @@
       :description="description"
       :keywords="keywords"
     />
-    <switch-locales />
     <home-hero
       :title="home_hero.title"
       :quote="home_hero.quote"
@@ -21,6 +20,8 @@
     <why-us-section />
     <customer-section />
     <management-section />
+    <lecturer-section />
+    <vk-structure-section />
   </div>
 </template>
 
@@ -32,14 +33,16 @@ import ValueBenefitsSection from "../components/parent/ValueBenefitsSection";
 import WhyUsSection from "../components/parent/WhyUsSection";
 import CustomerSection from "../components/parent/CustomerSection";
 import ManagementSection from "../components/parent/ManagementSection";
-import SwitchLocales from "../components/SwitchLocales";
 import ConceptTwo from "../components/parent/ConceptTwo";
+import LecturerSection from "../components/parent/LecturerSection";
+import VkStructureSection from "../components/parent/VkStructureSection";
 
 export default {
   name: "Home",
   components: {
+    VkStructureSection,
+    LecturerSection,
     ConceptTwo,
-    SwitchLocales,
     ManagementSection,
     CustomerSection,
     WhyUsSection,

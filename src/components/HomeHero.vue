@@ -19,12 +19,7 @@
       <div class="inner-hero">
         <h1 v-html="title" class="mx-auto" />
         <p v-html="quote" class="mx-auto" />
-        <v-btn
-          color="primary"
-          x-large
-          class="btn mt-8 white--text"
-          to="/contact"
-        >
+        <v-btn color="primary" x-large class="btn mt-8 white--text" to="/about">
           {{ btnTxt }}
         </v-btn>
       </div>

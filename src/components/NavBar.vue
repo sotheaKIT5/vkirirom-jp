@@ -1,18 +1,23 @@
 <template>
-  <v-app-bar :height="navbarHeight" fixed app>
+  <v-app-bar :height="navbarHeight" fixed app style="z-index: 99">
     <v-container class="d-flex pa-0">
       <router-link to="/" class="logo">
         <img
           height="45px"
-          :src="require('../assets/logo/logo_black.svg')"
-          alt="a2a_logo"
+          :src="require('@/assets/logo/logo_black.svg')"
+          alt="a2a_digital_japan_logo"
         />
       </router-link>
       <v-spacer />
-      <v-app-bar-nav-icon
-        class="hidden-md-and-up"
+      <button
+        type="button"
+        class="v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default hidden-md-and-up"
         @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      >
+        <span class="v-btn__content">
+          <v-img height="20" contain src="../assets/icons/bars-solid.svg" />
+        </span>
+      </button>
       <div class="hidden-sm-and-down" style="display:flex; flex-direction: row">
         <v-card
           flat
@@ -29,8 +34,10 @@
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          @click="$vuetify.goTo('#customer', options)"
+          to="#customer"
         >
           <span>{{ $t("nav.case_detail") }}</span>
         </v-card>
@@ -38,8 +45,10 @@
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          @click="$vuetify.goTo('#value', options)"
+          to="#value"
         >
           <span>{{ $t("nav.value") }}</span>
         </v-card>
@@ -47,8 +56,9 @@
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          to="/kit"
         >
           <span>{{ $t("nav.kit") }}</span>
         </v-card>
@@ -56,8 +66,9 @@
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          to="/a2a-digital"
         >
           <span>{{ $t("nav.a2a_digital") }}</span>
         </v-card>
@@ -65,17 +76,19 @@
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          to="/a2a-digital-jp"
         >
-          <span>{{ $t("nav.vkiriromjp") }}</span>
+          <span>{{ $t("nav.a2a-digital-jp") }}</span>
         </v-card>
         <v-card
           flat
           v-ripple="{ center: true }"
           :ripple="{ class: 'primary--text' }"
-          to="/service"
           class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          to="/about"
         >
           <span>{{ $t("nav.about") }}</span>
         </v-card>
@@ -87,7 +100,7 @@
       absolute
       temporary
       right
-      :width="sidebar"
+      width="100%"
     >
       <template v-slot:prepend>
         <v-list-item
@@ -120,28 +133,36 @@
       </template>
       <v-list nav dense flat>
         <v-list-item-group v-model="group" active-class="primary--text">
-          <v-list-item @click="$vuetify.goTo('#service', options)">
+          <v-list-item
+            @click="$vuetify.goTo('#service', options)"
+            to="#service"
+          >
             <v-list-item-title>{{ $t("nav.service") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/#case_detail">
+          <v-list-item
+            @click="$vuetify.goTo('#customer', options)"
+            to="/#customer"
+          >
             <v-list-item-title>{{ $t("nav.case_detail") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/#value_merits">
+          <v-list-item @click="$vuetify.goTo('#value', options)" to="/#value">
             <v-list-item-title>{{ $t("nav.value") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/#kit">
+          <v-list-item to="/kit">
             <v-list-item-title>{{ $t("nav.kit") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/#a2a_digital">
+          <v-list-item to="/a2a-digital">
             <v-list-item-title>{{ $t("nav.a2a_digital") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/#vkiriromjp">
-            <v-list-item-title>{{ $t("nav.vkiriromjp") }}</v-list-item-title>
+          <v-list-item to="/a2a-digital-jp">
+            <v-list-item-title>
+              {{ $t("nav.a2a-digital-jp") }}
+            </v-list-item-title>
           </v-list-item>
           <v-divider />
           <v-list-item to="/about">
@@ -155,13 +176,25 @@
         <div class="pa-2 text-center">
           <div>{{ $t("footer.follow_us_on") }}</div>
           <v-btn small class="ma-2" outlined fab color="black" to="#">
-            <v-icon>fab fa-facebook-f</v-icon>
+            <v-img
+              height="20"
+              contain
+              src="../assets/icons/facebook-f-brands.svg"
+            />
           </v-btn>
           <v-btn small class="ma-2" outlined fab color="black" to="#">
-            <v-icon>fab fa-linkedin-in</v-icon>
+            <v-img
+              height="20"
+              contain
+              src="../assets/icons/linkedin-in-brands.svg"
+            />
           </v-btn>
           <v-btn small class="ma-2" outlined fab color="black" to="#">
-            <v-icon>fab fa-twitter</v-icon>
+            <v-img
+              height="20"
+              contain
+              src="../assets/icons/twitter-brands.svg"
+            />
           </v-btn>
         </div>
       </template>
@@ -211,15 +244,6 @@ export default {
         case "xl":
           return "95px";
       }
-    },
-    // eslint-disable-next-line vue/return-in-computed-property
-    sidebar() {
-      switch (this.$vuetify.breakpoint.name) {
-        case "xs":
-          return "100%";
-        case "sm":
-          return "80%";
-      }
     }
   }
 };
@@ -239,11 +263,7 @@ export default {
     color: #000000 !important
 .nav-btn:hover
     color: #138690 !important
-.icon
-    height: 20px
 @media #{map-get($display-breakpoints, 'md-and-up')}
-    .icon
-        height: 28px
     .nav-btn
         font-size: 16px
 </style>

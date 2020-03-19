@@ -1,5 +1,5 @@
 <template>
-  <v-card flat tile color="accent" class="pa-3 pb-5 pa-md-6 pb-md-0">
+  <v-card flat color="accent" class="pa-3 pb-5 pa-md-6 pb-md-0">
     <v-row class="main-card fill-height align-center fill-height" no-gutters>
       <v-col class="main-img d-flex align-self-end" cols="12" md="5">
         <v-img aspect-ratio="1.1" contain class="img" :src="getAsset(imgSrc)" />

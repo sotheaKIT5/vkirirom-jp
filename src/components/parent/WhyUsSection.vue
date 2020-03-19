@@ -1,5 +1,5 @@
 <template>
-  <div class="why-us">
+  <div id="why-us">
     <section-title>今までにない課題にあたらしい解決方法を</section-title>
     <v-container>
       <v-row class="left-right-card pb-3">

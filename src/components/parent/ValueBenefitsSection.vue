@@ -1,6 +1,6 @@
 <template>
   <v-card flat tile color="accent" class="benefits-section container--fluid">
-    <v-container>
+    <v-container id="value">
       <section-title class="white--text">企業が抱える課題</section-title>
       <div class="benefit-main-card d-flex flex-wrap">
         <card-type-two

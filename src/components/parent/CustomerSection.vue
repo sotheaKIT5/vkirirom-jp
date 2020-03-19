@@ -1,5 +1,5 @@
 <template>
-  <v-container class="l_card_product">
+  <v-container id="customer">
     <section-title>お客様の声</section-title>
     <div style="position: relative; display: flex;">
       <swiper class="swiper" :options="swiperOption">

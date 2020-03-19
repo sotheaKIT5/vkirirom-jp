@@ -1,7 +1,16 @@
 <template>
-  <div id="read-more">
-    <router-link :to="cardUrl" class="from-left">
-      <span class="mr-3">{{ btnTxt }}</span>
+  <div class="read-more">
+    <v-card
+      flat
+      tile
+      color="transparent"
+      :ripple="false"
+      :active-class="false"
+      @click="$vuetify.goTo(cardUrl, options)"
+      :to="cardUrl"
+      class="from-left"
+    >
+      <span class="primary--text mr-3">{{ btnTxt }}</span>
       <svg
         viewBox="0 0 512 512"
         style="vertical-align: middle;"
@@ -15,13 +24,21 @@
           />
         </g>
       </svg>
-    </router-link>
+    </v-card>
   </div>
 </template>
 
 <script>
 export default {
   name: "ReadMore",
+  data() {
+    return {
+      drawer: false,
+      group: null,
+      duration: 1000,
+      offset: 0
+    };
+  },
   props: {
     btnTxt: {
       type: String,
@@ -31,12 +48,20 @@ export default {
       type: String,
       default: "btnTxt"
     }
+  },
+  computed: {
+    options() {
+      return {
+        duration: this.duration,
+        offset: this.offset
+      };
+    }
   }
 };
 </script>
 
 <style scoped>
-#read-more img {
+.read-more img {
   color: #138690;
   margin-left: 15px;
 }

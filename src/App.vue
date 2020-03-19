@@ -1,30 +1,20 @@
 <template>
   <v-app id="app">
-    <!--    <component-->
-    <!--      class="l_navigator"-->
-    <!--      :is="currentMenu"-->
-    <!--      :right="side === 'right' ? true : false"-->
-    <!--    ></component>-->
     <nav-bar />
     <v-content>
-      <router-view />
-      <vue-progress-bar />
+      <router-view class="pb-12" />
     </v-content>
-    <!--    <Footer />-->
+    <vk-footer />
   </v-app>
 </template>
 <script>
 import NavBar from "./components/NavBar";
+import VkFooter from "./components/VkFooter";
 export default {
   name: "App",
-  data() {
-    return {
-      side: "right",
-      currentMenu: "slide"
-    };
-  },
+  data() {},
   mounted() {},
-  components: { NavBar }
+  components: { VkFooter, NavBar }
 };
 </script>
 <style lang="sass">

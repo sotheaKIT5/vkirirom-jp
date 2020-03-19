@@ -26,11 +26,25 @@ export default new Router({
         import(/* webpackChunkName: "HomePage" */ "@/views/HomePage.vue")
     },
     {
-      path: "/kit-sponsor",
+      path: "/kit",
       // eslint-disable-next-line no-unused-vars
       beforeEnter(to, from, next) {
         // Put the full page url including the protocol http(s) below
+        window.location = "https://kit.edu.kh/";
+      }
+    },
+    {
+      path: "/kit-sponsor",
+      // eslint-disable-next-line no-unused-vars
+      beforeEnter(to, from, next) {
         window.location = "https://www.kit-sponsor.com/";
+      }
+    },
+    {
+      path: "/a2a-digital",
+      // eslint-disable-next-line no-unused-vars
+      beforeEnter(to, from, next) {
+        window.location = "https://a2a-digital.com/";
       }
     },
     {
