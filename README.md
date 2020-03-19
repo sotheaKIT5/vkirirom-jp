@@ -7,7 +7,7 @@ development branch: https://vkiriomjp.netlify.com *(Active development branch)*
 netlify preview: https://vkiriomjp.netlify.com
 
 ## Resources
-**Design File:** https://www.figma.com/file/jN8ZRk4fk7TA6RnI9JOR5Z/Vkirirom-JP?node-id=0%3A1
+**Design File:** https://www.figma.com/file/jN8ZRk4fk7TA6RnI9JOR5Z/Vkirirom-JP?node-id=0%3A1 <br>
 **Assets:** https://drive.google.com/drive/folders/1wEuVZxctG36RmUF-pFCtKL1VhZqetZLX
 ## Frontend:
 Vue and Vuetify
