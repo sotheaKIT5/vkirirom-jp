@@ -10,7 +10,7 @@
           <router-link to="/" class="logo">
             <img
               height="45px"
-              :src="require('@/assets/logo/logo-footer.svg')"
+              :src="require('@/assets/logo/logo_white.svg')"
               alt="a2a_digital_japan_logo"
             />
           </router-link>

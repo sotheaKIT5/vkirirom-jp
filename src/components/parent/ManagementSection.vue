@@ -5,7 +5,6 @@
       <card-type-four
         v-for="(people, id) in management"
         :key="id"
-        :name="people.name"
         :position="people.position"
         :img-src="people.imgSrc"
       />

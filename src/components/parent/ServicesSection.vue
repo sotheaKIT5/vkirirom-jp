@@ -27,15 +27,6 @@ export default {
       reverse: "flex-direction:row-revers;",
       services: [
         {
-          title: "キリロム工科大学を研究拠点・エンジニアプールとして",
-          imgUrl: "images/service-1.png"
-        },
-        {
-          title: "奨学金スポンサープログラム",
-          imgUrl: "images/service-2.png",
-          goTo: "kit-sponsor"
-        },
-        {
           title: "A2A デジタルをオフショア開発拠点として",
           imgUrl: "images/service-3.png"
         },

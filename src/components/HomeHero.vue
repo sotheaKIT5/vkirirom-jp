@@ -1,26 +1,31 @@
 <template>
   <div>
-    <v-card class="hero" flat tile>
+    <v-card class="hero">
       <video
-        class="bg-vdo hidden-xs-only"
+        v-if="$vuetify.breakpoint.mdAndUp"
+        class="bg-vdo"
         playsinline
         autoplay
         muted
         loop
-        :poster="bgImg"
       >
-        <source :src="getAsset(bgVdo)" type="video/mp4" />
+        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
       </video>
-      <img
-        class="bg-vdo hidden-sm-and-up"
-        :src="getAsset(bgImg)"
-        alt="bg-img"
-      />
       <div class="inner-hero">
-        <h1 v-html="title" class="mx-auto" />
-        <p v-html="quote" class="mx-auto" />
-        <v-btn color="primary" x-large class="btn mt-8 white--text" to="/about">
-          {{ btnTxt }}
+        <h1 class="mx-auto">
+          新しい時代を新しい仲間と リバースイノベーションを巻き起こそう
+        </h1>
+        <p class="mx-auto">
+          A2Aデジタルジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して、成し遂げる力、新しい知識、素晴らしい経験といった御社の成長に貢献する経験をご提供します。
+        </p>
+        <v-btn
+          color="primary"
+          x-large
+          class="btn mt-8 white--text"
+          @click="$vuetify.goTo('/#contact', options)"
+          to="/about/#contact"
+        >
+          ソリューションを開始する
         </v-btn>
       </div>
     </v-card>
@@ -31,33 +36,22 @@
 export default {
   name: "HomeHero",
   data() {
-    return {};
+    return {
+      duration: 1000,
+      offset: 0
+    };
   },
-  props: {
-    title: {
-      type: String,
-      default: "title"
+  computed: {
+    target() {
+      const value = this[this.type];
+      if (!isNaN(value)) return Number(value);
+      else return value;
     },
-    quote: {
-      type: String,
-      default: "quote"
-    },
-    btnTxt: {
-      type: String,
-      default: "btnTxt"
-    },
-    bgImg: {
-      type: String,
-      default: null
-    },
-    bgVdo: {
-      type: String,
-      default: null
-    }
-  },
-  methods: {
-    getAsset(path) {
-      return require("@/assets/" + path);
+    options() {
+      return {
+        duration: this.duration,
+        offset: this.offset
+      };
     }
   }
 };
@@ -67,6 +61,11 @@ export default {
 @import '~vuetify/src/styles/styles.sass'
 .hero
   height: 93vh
+  background-image: url("../assets/images/bg-img-hero.png")
+  background-color: #000000
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
 .bg-vdo
   height: 93vh
   width: 100%

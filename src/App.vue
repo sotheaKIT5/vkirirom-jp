@@ -1,20 +1,30 @@
 <template>
   <v-app id="app">
-    <nav-bar />
-    <v-content>
-      <router-view class="pb-12" />
-    </v-content>
-    <vk-footer />
+    <splash-screen :isLoading="isLoading" />
+    <div v-if="!isLoading">
+      <nav-bar />
+      <v-content>
+        <router-view class="pb-12" />
+      </v-content>
+      <vk-footer />
+    </div>
   </v-app>
 </template>
 <script>
 import NavBar from "./components/NavBar";
 import VkFooter from "./components/VkFooter";
+import SplashScreen from "./components/SplashScreen";
 export default {
   name: "App",
-  data() {},
-  mounted() {},
-  components: { VkFooter, NavBar }
+  components: { SplashScreen, VkFooter, NavBar },
+  data() {
+    return { isLoading: true };
+  },
+  mounted() {
+    setTimeout(() => {
+      this.isLoading = false;
+    }, 3000);
+  }
 };
 </script>
 <style lang="sass">
