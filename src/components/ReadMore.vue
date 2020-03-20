@@ -6,7 +6,6 @@
       color="transparent"
       class="from-left"
       :ripple="false"
-      :active-class="false"
       @click="$vuetify.goTo(cardUrl, options)"
       :to="cardUrl"
     >
