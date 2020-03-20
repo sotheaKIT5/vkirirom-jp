@@ -13,6 +13,7 @@
       :title="concept.title"
       :description="concept.description"
       :card-url="concept.goTo"
+      :img-url="concept.imgSrc"
       btn-txt="続きを読む"
       :style="[
         id % 2 === 0
@@ -41,18 +42,21 @@ export default {
           title: "-業務理解力- ビジネス経験豊富なマネジメント",
           description:
             "経営課題解決の真のパートナーとなるために、IT分野でのビジネス経験豊富なマネジメントチームを揃えています。 マネジメントメンバー ",
+          imgSrc: "images/concept/1.png",
           goTo: "/#management"
         },
         {
           title: "-工数安定供給-継続的エンジニア 養成・輩出の仕組み",
           description:
             "キリロム工科大学との連携、現地オフショア企業との連携、日本におけるエンジニアパートナーのネットワーク、アフターサポートを通して、継続的な人材リソースの確保が可能です。",
+          imgSrc: "images/concept/2.png",
           goTo: "/#flow"
         },
         {
           title: "-コストメリット- グローバルなエンジニアを適正価格で",
           description:
             "カンボジアに拠点を置くことで、コストメリットを得ることができます。",
+          imgSrc: "images/concept/3.png",
           goTo: "/about"
         }
       ]
