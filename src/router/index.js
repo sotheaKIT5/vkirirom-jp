@@ -26,13 +26,13 @@ export default new Router({
     },
     {
       path: "/about",
-      name: "home",
+      name: "about",
       component: () =>
         import(/* webpackChunkName: "AboutPage" */ "@/views/AboutPage.vue")
     },
     {
       path: "/a2a-digital-jp",
-      name: "home",
+      name: "a2a-digital-jp",
       component: () =>
         import(
           /* webpackChunkName: "A2ADigitalJapanPage" */ "@/views/A2ADigitalJapanPage.vue"

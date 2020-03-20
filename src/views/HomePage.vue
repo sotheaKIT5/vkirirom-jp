@@ -6,19 +6,12 @@
       :description="description"
       :keywords="keywords"
     />
-    <home-hero
-      :title="home_hero.title"
-      :quote="home_hero.quote"
-      :btn-txt="home_hero.btnTxt"
-      :bg-img="home_hero.bgImg"
-      :bg-vdo="home_hero.bgVdo"
-    />
+    <home-hero />
     <concept-one />
     <concept-two />
     <services-section />
     <value-benefits-section />
     <why-us-section />
-    <customer-section />
     <management-section />
     <lecturer-section />
     <vk-structure-section />
@@ -31,7 +24,6 @@ import ConceptOne from "../components/parent/ConceptOne";
 import ServicesSection from "../components/parent/ServicesSection";
 import ValueBenefitsSection from "../components/parent/ValueBenefitsSection";
 import WhyUsSection from "../components/parent/WhyUsSection";
-import CustomerSection from "../components/parent/CustomerSection";
 import ManagementSection from "../components/parent/ManagementSection";
 import ConceptTwo from "../components/parent/ConceptTwo";
 import LecturerSection from "../components/parent/LecturerSection";
@@ -44,7 +36,6 @@ export default {
     LecturerSection,
     ConceptTwo,
     ManagementSection,
-    CustomerSection,
     WhyUsSection,
     ValueBenefitsSection,
     ServicesSection,
@@ -53,18 +44,11 @@ export default {
   },
   data() {
     return {
-      solutionTitle: "Solutions",
-      title: "vKrirom Japan",
-      description: "",
-      keywords: "",
-      home_hero: {
-        title: "新しい時代を新しい仲間と リバースイノベーションを巻き起こそう",
-        quote:
-          "Vキリロムジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して、成し遂げる力、新しい知識、素晴らしい経験といった御社の成長に貢献する経験をご提供します。",
-        btnTxt: "ソリューションを開始する",
-        bgImg: "images/bg-img-hero.png",
-        bgVdo: "videos/Kirirom-Institute-of-Technology.mp4"
-      }
+      title: "A2Aデジタルジャパン | アジアDXによる業務改善・システム開発",
+      description:
+        "バースイノベーションを巻き起こそうA2Aデジタルジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して産業革命4.0に対応したソリューションを提供します。",
+      keywords:
+        "A2Aデジタルジャパン,キリロム,キリロム工科大学,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル"
     };
   }
 };

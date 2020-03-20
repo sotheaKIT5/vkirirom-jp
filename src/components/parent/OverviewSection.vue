@@ -57,6 +57,7 @@ export default {
 </script>
 
 <style lang="sass" scoped>
+@import '~vuetify/src/styles/styles'
 table
     border-collapse: collapse
     border-spacing: 0
@@ -73,8 +74,14 @@ th, td
     line-height: 30px
 table > tr > th
     font-weight: bold
-    font-size: 16px
+    font-size: 14px
+    padding-right: 30px
 table > tr > td
     font-weight: normal
+    font-size: 14px
+@media #{map-get($display-breakpoints, 'sm-and-up')}
+  table > tr > th
+    font-size: 16px
+  table > tr > td
     font-size: 16px
 </style>

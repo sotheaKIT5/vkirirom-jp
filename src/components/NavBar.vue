@@ -14,7 +14,22 @@
         @click.stop="drawer = !drawer"
       >
         <span class="v-btn__content">
-          <v-img height="20" contain src="../assets/icons/bars-solid.svg" />
+          <svg
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fas"
+            data-icon="bars"
+            class="svg-inline--fa fa-bars fa-w-14"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            style="height: 20px; width: 20px"
+          >
+            <path
+              fill="currentColor"
+              d="M16 132h416c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H16C7.163 60 0 67.163 0 76v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h416c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H16c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+            ></path>
+          </svg>
         </span>
       </button>
       <div class="hidden-sm-and-down" style="display:flex; flex-direction: row">
@@ -28,17 +43,6 @@
           to="/#service"
         >
           <span>{{ $t("nav.service") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          @click="$vuetify.goTo('#customer', options)"
-          to="/#customer"
-        >
-          <span>{{ $t("nav.case_detail") }}</span>
         </v-card>
         <v-card
           flat
@@ -137,13 +141,6 @@
             to="/#service"
           >
             <v-list-item-title>{{ $t("nav.service") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-list-item
-            @click="$vuetify.goTo('#customer', options)"
-            to="/#customer"
-          >
-            <v-list-item-title>{{ $t("nav.case_detail") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
           <v-list-item @click="$vuetify.goTo('#value', options)" to="/#value">

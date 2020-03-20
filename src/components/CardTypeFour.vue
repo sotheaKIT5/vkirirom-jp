@@ -2,9 +2,9 @@
   <v-col cols="6" sm="4" md="3" class="pa-1 pa-sm-2">
     <v-card outlined class="card-type-four fill-height">
       <div class="card-head pa-5">
-        <h1 class="card-name">
-          {{ name }}
-        </h1>
+        <!--<h1 class="card-name">-->
+        <!--{{ name }}-->
+        <!--</h1>-->
         <h4 class="card-title">
           {{ position }}
         </h4>
