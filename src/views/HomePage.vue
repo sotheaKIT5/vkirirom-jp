@@ -1,4 +1,3 @@
-<style src="../styles/home.css" scoped></style>
 <template>
   <div id="home-page">
     <vue-headful
@@ -19,15 +18,30 @@
 </template>
 
 <script>
-import HomeHero from "../components/HomeHero";
-import ConceptOne from "../components/parent/ConceptOne";
-import ServicesSection from "../components/parent/ServicesSection";
-import ValueBenefitsSection from "../components/parent/ValueBenefitsSection";
-import WhyUsSection from "../components/parent/WhyUsSection";
-import ManagementSection from "../components/parent/ManagementSection";
-import ConceptTwo from "../components/parent/ConceptTwo";
-import LecturerSection from "../components/parent/LecturerSection";
-import VkStructureSection from "../components/parent/VkStructureSection";
+const HomeHero = () =>
+  import(/* webpackMode: "eager" */ "@/components/HomeHero.vue");
+const ConceptOne = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/ConceptOne.vue");
+const ServicesSection = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/ServicesSection.vue");
+const ValueBenefitsSection = () =>
+  import(
+    /* webpackMode: "eager" */ "@/components/parent/ValueBenefitsSection.vue"
+  );
+const WhyUsSection = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/WhyUsSection.vue");
+const ManagementSection = () =>
+  import(
+    /* webpackMode: "eager" */ "@/components/parent/ManagementSection.vue"
+  );
+const ConceptTwo = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/ConceptTwo.vue");
+const LecturerSection = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/LecturerSection.vue");
+const VkStructureSection = () =>
+  import(
+    /* webpackMode: "eager" */ "@/components/parent/VkStructureSection.vue"
+  );
 
 export default {
   name: "Home",
