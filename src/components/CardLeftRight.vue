@@ -5,9 +5,7 @@
     </v-col>
     <v-spacer />
     <v-col cols="12" sm="7" class="card-content">
-      <h1 class="card-title">
-        {{ title }}
-      </h1>
+      <h1 v-html="title" class="card-title"></h1>
       <p class="card-text">
         {{ description }}
       </p>

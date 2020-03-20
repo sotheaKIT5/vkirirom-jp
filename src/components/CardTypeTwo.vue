@@ -2,9 +2,7 @@
   <v-col cols="12" sm="4" md="4" class="pa-1 px-0 pa-sm-3">
     <v-card flat height="100%" class="type-one-card">
       <div class="card-content">
-        <h1 class="card-title px-5 py-3">
-          {{ title }}
-        </h1>
+        <h1 v-html="title" class="card-title px-5 py-3"></h1>
         <v-divider class="divider" />
         <ul v-html="description" class="card-text pa-5 ma-0"></ul>
       </div>
