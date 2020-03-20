@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ loader: true, fadeout: !isLoading }">
+  <div :class="{ loader: true }">
     <v-img height="50" contain src="../assets/logo/logo_white.svg" alt="logo" />
   </div>
 </template>
@@ -26,16 +26,5 @@ export default {
   position: fixed;
 
   text-align: center;
-}
-
-.fadeout {
-  animation: fadeout 2s forwards;
-}
-
-@keyframes fadeout {
-  to {
-    opacity: 0;
-    visibility: hidden;
-  }
 }
 </style>
