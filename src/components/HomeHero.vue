@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="hero">
+    <v-card flat tile class="hero overflow-hidden">
       <video
         v-if="$vuetify.breakpoint.mdAndUp"
         class="bg-vdo"
@@ -67,10 +67,14 @@ export default {
   background-repeat: no-repeat
   background-size: cover
 .bg-vdo
-  height: 93vh
-  width: 100%
-  object-fit: cover
-  object-position: 50% 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
 .inner-hero
   width: 100%
   position: absolute
@@ -78,10 +82,9 @@ export default {
   left: 50%
   text-align: center
   color: #ffffff
+  -webkit-transform: translateX(-50%) translateY(-50%)
   transform: translateX(-50%) translateY(-50%)
-  text-shadow: 0 5px 5px #00000080
-  -webkit-filter: drop-shadow(0 5px 5px #00000080)
-  filter: drop-shadow(0 5px 5px #00000080)
+  text-shadow: 0 5px 5px rgba(0,0,0,0.8)
 .inner-hero h1
   font-style: normal
   font-weight: bold
