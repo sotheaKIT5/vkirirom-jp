@@ -108,8 +108,6 @@ export default {
     height: 96vh
   .inner-hero h1, .inner-hero p
     width: 540px
-  .bg-vdo
-    height: 96vh
   .inner-hero h1
     font-size: 35px
     line-height: 42px
@@ -121,8 +119,6 @@ export default {
 @media #{map-get($display-breakpoints, 'md-and-up')}
   .hero
     height: 90vh
-  .bg-vdo
-    height: 100vh - 9.5vh
   .inner-hero h1
     font-size: 50px
     line-height: 60px
