@@ -5,7 +5,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="6" class="pa-0">
-            <v-card flat tile color="accent" class="pa-3">
+            <v-card flat tile color="accent" class="px-3 py-5">
               <div>
                 <span>
                   <v-btn
@@ -20,8 +20,9 @@
                       height="20"
                       contain
                       src="@/assets/icons/briefcase.svg"
-                    /> </v-btn
-                ></span>
+                    />
+                  </v-btn>
+                </span>
                 <span class="title">ADDRESS</span>
               </div>
               <div>
