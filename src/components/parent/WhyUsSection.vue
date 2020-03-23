@@ -117,6 +117,8 @@ export default {
 .text
   font-size: 14px
 @media #{map-get($display-breakpoints, 'sm-only')}
+  .left-right-card
+    flex-flow: row
   .num
     font-size: 40px
   .title
@@ -126,7 +128,6 @@ export default {
     font-size: 10px
 @media #{map-get($display-breakpoints, 'md-and-up')}
   .left-right-card
-    display: flex
     flex-flow: row
   .card-content
     width: 50%
