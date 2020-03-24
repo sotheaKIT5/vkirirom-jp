@@ -66,7 +66,7 @@ table, th, td
     border: 0 solid black
     border-collapse: collapse
 table > tr
-    border-bottom: 1px solid #eee
+    /*border-bottom: 1px solid #eee*/
     margin-right: 15px
 th, td
     padding: 5px 0
@@ -76,6 +76,7 @@ table > tr > th
     font-weight: bold
     font-size: 14px
     padding-right: 30px
+    vertical-align: top
 table > tr > td
     font-weight: normal
     font-size: 14px

@@ -11,9 +11,12 @@
   </v-app>
 </template>
 <script>
-import NavBar from "./components/NavBar";
-import VkFooter from "./components/VkFooter";
-import SplashScreen from "./components/SplashScreen";
+const NavBar = () => import(/* webpackMode: "eager" */ "./components/NavBar");
+const VkFooter = () =>
+  import(/* webpackMode: "eager" */ "./components/VkFooter");
+const SplashScreen = () =>
+  import(/* webpackMode: "eager" */ "./components/SplashScreen");
+
 export default {
   name: "App",
   components: { SplashScreen, VkFooter, NavBar },
