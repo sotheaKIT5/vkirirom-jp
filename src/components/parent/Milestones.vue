@@ -98,9 +98,9 @@
         <div class="timeline-article d-flex flex-column-reverse d-sm-block">
           <div class="content-left-container text-container">
             <div class="content-left text-parent">
-              <h2 class="title">Vキリロムジャパン株式会社 設立</h2>
+              <h2 class="title">A2Aデジタルジャパン株式会社 設立</h2>
               <p class="text">
-                Vキリロムキリロムグループの日本事務所としてVキリロムジャパン株式会社を設立しました。日本人学生を募集し、奨学金スポンサー企業を見つける主要な事業として設立されました。
+                Vキリロムキリロムグループの日本事務所としてA2Aデジタルジャパン株式会社を設立しました。日本人学生を募集し、奨学金スポンサー企業を見つける主要な事業として設立されました。
               </p>
             </div>
           </div>
