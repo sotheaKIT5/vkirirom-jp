@@ -28,16 +28,33 @@
           ></v-textarea>
         </v-col>
       </v-row>
-      <v-btn
-        outlined
-        x-large
-        color="accent"
-        class="btn text-capitalize"
-        @click="submitForm"
-        :disabled="!valid"
-      >
-        <span class="px-12">Send</span>
-      </v-btn>
+      <v-dialog v-model="dialog" persistent max-width="360">
+        <template v-slot:activator="{ on }">
+          <v-btn
+            outlined
+            x-large
+            color="accent"
+            class="btn text-capitalize"
+            :disabled="!valid"
+            v-on="on"
+            @click="submitForm"
+            @click.stop="dialog = true"
+          >
+            <span class="px-12">Send</span>
+          </v-btn>
+        </template>
+        <v-card>
+          <v-card-title class="headline">
+            Thank you for your message. It has been sent.
+          </v-card-title>
+          <v-card-actions>
+            <v-spacer></v-spacer>
+            <v-btn color="green darken-1" text @click="dialog = false">
+              ok
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-dialog>
     </v-form>
   </div>
 </template>
@@ -46,6 +63,7 @@
 export default {
   name: "ContactForm",
   data: () => ({
+    dialog: false,
     valid: true,
     first_name: "",
     last_name: "",
@@ -54,7 +72,10 @@ export default {
     email: "",
     emailRules: [
       v => !!v || "E-mail is required",
-      v => /.+@.+\..+/.test(v) || "E-mail must be valid"
+      v =>
+        // eslint-disable-next-line no-useless-escape
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+        "E-mail must be valid"
     ],
     lazy: false
   }),
@@ -79,14 +100,12 @@ export default {
         .catch(function(error) {
           currentObj.output = error;
         });
+      this.reset();
       // eslint-disable-next-line no-console
       console.log("Submitted!!!!!!!!!!!!!!!!!!!!!");
     },
     reset() {
       this.$refs.form.reset();
-    },
-    resetValidation() {
-      this.$refs.form.resetValidation();
     }
   }
 };
