@@ -10,14 +10,7 @@ module.exports = {
       renderRoutes: ["/", "/a2a-digital-jp", "/about"],
       useRenderEvent: true,
       onlyProduction: true,
-      headless: true,
-      postProcess: route => {
-        // Defer scripts and tell Vue it's been server rendered to trigger hydration
-        route.html = route.html
-          .replace(/<script (.*?)>/g, "<script $1 defer>")
-          .replace('id="app"', 'id="app" data-server-rendered="true"');
-        return route;
-      }
+      headless: true
     },
     i18n: {
       locale: "ja",
