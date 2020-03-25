@@ -40,8 +40,8 @@
         <v-img
           height="100%"
           max-height="355px"
-          src="@/assets/images/pvk.png"
-          alt="pvk view"
+          src="@/assets/images/city.jpg"
+          alt="city view"
         />
       </v-col>
     </v-row>
