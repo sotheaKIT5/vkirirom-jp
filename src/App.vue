@@ -1,7 +1,6 @@
 <template>
   <v-app id="app">
-    <splash-screen :isLoading="isLoading" />
-    <div v-if="!isLoading">
+    <div>
       <nav-bar />
       <v-content>
         <router-view class="pb-12" />
@@ -14,20 +13,10 @@
 const NavBar = () => import(/* webpackMode: "eager" */ "./components/NavBar");
 const VkFooter = () =>
   import(/* webpackMode: "eager" */ "./components/VkFooter");
-const SplashScreen = () =>
-  import(/* webpackMode: "eager" */ "./components/SplashScreen");
 
 export default {
   name: "App",
-  components: { SplashScreen, VkFooter, NavBar },
-  data() {
-    return { isLoading: true };
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  }
+  components: { VkFooter, NavBar }
 };
 </script>
 <style lang="sass">
