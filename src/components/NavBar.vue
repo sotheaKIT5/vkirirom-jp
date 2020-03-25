@@ -55,16 +55,6 @@
           :ripple="{ class: 'primary--text' }"
           class="nav-btn px-3 py-3"
           active-class="primary--text"
-          to="/a2a-digital-jp"
-        >
-          <span>{{ $t("nav.a2a-digital-jp") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
           to="/about"
         >
           <span>{{ $t("nav.about") }}</span>
@@ -115,13 +105,6 @@
           <v-divider />
           <v-list-item @click="$vuetify.goTo('#value', options)" to="/#value">
             <v-list-item-title>{{ $t("nav.value") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-divider />
-          <v-list-item to="/a2a-digital-jp">
-            <v-list-item-title>
-              {{ $t("nav.a2a-digital-jp") }}
-            </v-list-item-title>
           </v-list-item>
           <v-divider />
           <v-list-item to="/about">
