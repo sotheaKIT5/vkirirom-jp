@@ -61,26 +61,6 @@
           :ripple="{ class: 'primary--text' }"
           class="nav-btn px-3 py-3"
           active-class="primary--text"
-          to="/kit"
-        >
-          <span>{{ $t("nav.kit") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          to="/a2a-digital"
-        >
-          <span>{{ $t("nav.a2a_digital") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
           to="/a2a-digital-jp"
         >
           <span>{{ $t("nav.a2a-digital-jp") }}</span>
@@ -147,13 +127,6 @@
             <v-list-item-title>{{ $t("nav.value") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
-          <v-list-item to="/kit">
-            <v-list-item-title>{{ $t("nav.kit") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-list-item to="/a2a-digital">
-            <v-list-item-title>{{ $t("nav.a2a_digital") }}</v-list-item-title>
-          </v-list-item>
           <v-divider />
           <v-list-item to="/a2a-digital-jp">
             <v-list-item-title>
@@ -171,21 +144,42 @@
         <v-divider />
         <div class="pa-2 text-center">
           <div>{{ $t("footer.follow_us_on") }}</div>
-          <v-btn small class="ma-2" outlined fab color="black" to="#">
+          <v-btn
+            small
+            class="ma-2"
+            outlined
+            fab
+            color="black"
+            href="https://www.facebook.com/a2adigitalcambodia/"
+          >
             <v-img
               height="20"
               contain
               src="../assets/icons/facebook-f-brands.svg"
             />
           </v-btn>
-          <v-btn small class="ma-2" outlined fab color="black" to="#">
+          <v-btn
+            small
+            class="ma-2"
+            outlined
+            fab
+            color="black"
+            href="https://www.linkedin.com/in/a2a-digital-a757421a2/"
+          >
             <v-img
               height="20"
               contain
               src="../assets/icons/linkedin-in-brands.svg"
             />
           </v-btn>
-          <v-btn small class="ma-2" outlined fab color="black" to="#">
+          <v-btn
+            small
+            class="ma-2"
+            outlined
+            fab
+            color="black"
+            href="https://twitter.com/a2adigital"
+          >
             <v-img
               height="20"
               contain
