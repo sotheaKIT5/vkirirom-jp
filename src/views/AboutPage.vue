@@ -6,6 +6,8 @@
       :keywords="keywords"
     />
     <overview-section />
+    <management-section />
+    <vk-structure-section />
     <contact-section />
   </div>
 </template>
@@ -13,9 +15,16 @@
 <script>
 import OverviewSection from "../components/parent/OverviewSection";
 import ContactSection from "../components/parent/ContactSection";
+import ManagementSection from "../components/parent/ManagementSection";
+import VkStructureSection from "../components/parent/VkStructureSection";
 export default {
   name: "AboutPage",
-  components: { ContactSection, OverviewSection },
+  components: {
+    VkStructureSection,
+    ManagementSection,
+    ContactSection,
+    OverviewSection
+  },
   data() {
     return {
       title: "About | A2Aデジタルジャパン",

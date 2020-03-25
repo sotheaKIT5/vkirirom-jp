@@ -31,6 +31,12 @@ export default new Router({
         import(/* webpackChunkName: "AboutPage" */ "@/views/AboutPage.vue")
     },
     {
+      path: "/news",
+      name: "news",
+      component: () =>
+        import(/* webpackChunkName: "NewsPage" */ "@/views/NewsPage.vue")
+    },
+    {
       path: "/a2a-digital-jp",
       name: "a2a-digital-jp",
       component: () =>

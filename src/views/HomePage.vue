@@ -11,9 +11,6 @@
     <services-section />
     <value-benefits-section />
     <why-us-section />
-    <management-section />
-    <lecturer-section />
-    <vk-structure-section />
   </div>
 </template>
 
@@ -30,26 +27,13 @@ const ValueBenefitsSection = () =>
   );
 const WhyUsSection = () =>
   import(/* webpackMode: "eager" */ "@/components/parent/WhyUsSection.vue");
-const ManagementSection = () =>
-  import(
-    /* webpackMode: "eager" */ "@/components/parent/ManagementSection.vue"
-  );
 const ConceptTwo = () =>
   import(/* webpackMode: "eager" */ "@/components/parent/ConceptTwo.vue");
-const LecturerSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/LecturerSection.vue");
-const VkStructureSection = () =>
-  import(
-    /* webpackMode: "eager" */ "@/components/parent/VkStructureSection.vue"
-  );
 
 export default {
   name: "Home",
   components: {
-    VkStructureSection,
-    LecturerSection,
     ConceptTwo,
-    ManagementSection,
     WhyUsSection,
     ValueBenefitsSection,
     ServicesSection,

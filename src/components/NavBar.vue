@@ -59,6 +59,16 @@
         >
           <span>{{ $t("nav.about") }}</span>
         </v-card>
+        <v-card
+          flat
+          v-ripple="{ center: true }"
+          :ripple="{ class: 'primary--text' }"
+          class="nav-btn px-3 py-3"
+          active-class="primary--text"
+          to="/news"
+        >
+          <span>{{ $t("nav.news") }}</span>
+        </v-card>
       </div>
     </v-container>
     <v-navigation-drawer
@@ -109,6 +119,10 @@
           <v-divider />
           <v-list-item to="/about">
             <v-list-item-title>{{ $t("nav.about") }}</v-list-item-title>
+          </v-list-item>
+          <v-divider />
+          <v-list-item to="/news">
+            <v-list-item-title>{{ $t("nav.news") }}</v-list-item-title>
           </v-list-item>
           <v-divider />
         </v-list-item-group>
