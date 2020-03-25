@@ -45,7 +45,7 @@
         </template>
         <v-card>
           <v-card-title class="headline">
-            Thank you for your message. It has been sent.
+            お問合せありがとうございます。メッセージを承りました。
           </v-card-title>
           <v-card-actions>
             <v-spacer></v-spacer>
