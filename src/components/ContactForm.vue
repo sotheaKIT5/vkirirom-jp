@@ -28,7 +28,7 @@
           ></v-textarea>
         </v-col>
       </v-row>
-      <v-dialog v-model="dialog" persistent max-width="360">
+      <v-dialog v-model="dialog" max-width="360">
         <template v-slot:activator="{ on }">
           <v-btn
             outlined
