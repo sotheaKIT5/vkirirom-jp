@@ -26,7 +26,7 @@
           to="/about/#contact"
           @click="$vuetify.goTo('#contact', options)"
         >
-          ソリューションを開始する
+          アプリ・Webサービス開発のご相談
         </v-btn>
       </div>
     </v-card>

@@ -23,7 +23,7 @@
                     />
                   </v-btn>
                 </span>
-                <span class="title">ADDRESS</span>
+                <span class="title">住所</span>
               </div>
               <div>
                 <p class="text">
@@ -49,7 +49,7 @@
                       src="@/assets/icons/mobile.svg"
                     /> </v-btn
                 ></span>
-                <span class="title">PHONE NUMBER</span>
+                <span class="title">電話番号</span>
               </div>
               <div>
                 <p class="text">
@@ -72,7 +72,7 @@
                       src="@/assets/icons/message.svg"
                     /> </v-btn
                 ></span>
-                <span class="title">EMAIL</span>
+                <span class="title">メールアドレス</span>
               </div>
               <div>
                 <p class="text">

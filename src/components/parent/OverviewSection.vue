@@ -1,6 +1,6 @@
 <template>
   <v-container id="overview">
-    <section-title>Overview</section-title>
+    <section-title>会社概要</section-title>
     <v-row
       :style="[
         $vuetify.breakpoint.xs ? { 'flex-direction': 'column-reverse' } : {}

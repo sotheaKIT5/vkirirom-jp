@@ -1,19 +1,19 @@
 <template>
   <div>
-    <h1 class="send-title">Send Us A Message</h1>
+    <h1 class="send-title">開発に関するご相談</h1>
     <v-form ref="form" v-model="valid" :lazy-validation="lazy">
       <v-row>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="first_name" label="First Name"></v-text-field>
+          <v-text-field v-model="last_name" label="名"></v-text-field>
         </v-col>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="last_name" label="Last Name"></v-text-field>
+          <v-text-field v-model="first_name" label="姓"></v-text-field>
         </v-col>
         <v-col cols="12">
           <v-text-field
             v-model="email"
             :rules="emailRules"
-            label="E-mail*"
+            label="メールアドレス*"
             required
           ></v-text-field>
         </v-col>
@@ -24,7 +24,7 @@
             required
             auto-grow
             name="message"
-            label="Your message here...*"
+            label="お問い合わせ内容*"
           ></v-textarea>
         </v-col>
       </v-row>
@@ -40,7 +40,7 @@
             @click="submitForm"
             @click.stop="dialog = true"
           >
-            <span class="px-12">Send</span>
+            <span class="px-12">送信</span>
           </v-btn>
         </template>
         <v-card>
@@ -68,10 +68,10 @@ export default {
     first_name: "",
     last_name: "",
     message: "",
-    messageRules: [v => !!v || "Message is required"],
+    messageRules: [v => !!v || "お問い合わせ内容を入力してください"],
     email: "",
     emailRules: [
-      v => !!v || "E-mail is required",
+      v => !!v || "メールアドレスを入力してください",
       v =>
         // eslint-disable-next-line no-useless-escape
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
