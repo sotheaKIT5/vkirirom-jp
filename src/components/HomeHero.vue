@@ -8,6 +8,7 @@
         autoplay
         muted
         loop
+        poster="@/assets/images/bg-img-hero.png"
       >
         <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
       </video>

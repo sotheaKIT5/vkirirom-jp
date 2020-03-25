@@ -233,8 +233,6 @@ export default {
 
 <style lang="sass" scoped>
 @import '~vuetify/src/styles/styles.sass'
-.logo
-    height: 45px
 .nav-btn
     display: flex
     flex-flow: column
