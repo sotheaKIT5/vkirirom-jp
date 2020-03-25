@@ -1,13 +1,7 @@
 <template>
   <v-app-bar :height="navbarHeight" fixed app style="z-index: 99">
     <v-container class="d-flex pa-0">
-      <router-link to="/" class="logo">
-        <img
-          height="45px"
-          :src="require('@/assets/logo/logo_black.svg')"
-          alt="a2a_digital_japan_logo"
-        />
-      </router-link>
+      <logo />
       <v-spacer />
       <button
         class="v-app-bar__nav-icon v-btn v-btn--flat v-btn--icon v-btn--round theme--light v-size--default hidden-md-and-up"
@@ -91,11 +85,7 @@
           style="box-shadow: 0 0 10px rgba(140, 140, 140, 0.2);"
         >
           <router-link to="/" class="logo">
-            <img
-              height="45px"
-              :src="require('../assets/logo/logo_black.svg')"
-              alt="a2a_logo"
-            />
+            <logo />
           </router-link>
           <v-spacer />
           <button
@@ -193,8 +183,10 @@
 </template>
 
 <script>
+import Logo from "./Logo";
 export default {
   name: "NavBar",
+  components: { Logo },
   data() {
     return {
       drawer: false,

@@ -15,6 +15,7 @@
       :title="concept.title"
       :description="concept.description"
       :card-url="concept.goTo"
+      :scroll-to="concept.scrollTo"
       :img-url="concept.imgSrc"
       btn-txt="続きを読む"
       :style="[
@@ -45,14 +46,14 @@ export default {
           description:
             "現在実施しているプロジェクトを引き続き研修の一環として進めることが可能です。拠点を海外に移し、海外のメンバーと一緒に、既存の業務を推進していくことができます。",
           imgSrc: "images/concept/4.png",
-          goTo: "/#value"
+          scrollTo: "#value"
         },
         {
           title: "-使える英語-<br />開発者(英語話者)と案件のマネジメント",
           description:
             "英語環境で自社案件の開発に携わることで、業務に直結し、実務経験を生かした語学習得が可能です。開発現場での実践的なコミュニケーションと英語環境での試行錯誤を通して、意思疎通を図るサバイバル力を養うことができます。",
           imgSrc: "images/concept/5.png",
-          goTo: "/#value"
+          scrollTo: "#value"
         },
         {
           title: "-安心・安全-<br />日本人学生受入実績のあるITトップ大学",

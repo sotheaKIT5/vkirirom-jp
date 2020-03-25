@@ -9,7 +9,7 @@
       <p class="card-text">
         {{ description }}
       </p>
-      <read-more :btn-txt="btnTxt" :card-url="cardUrl" />
+      <read-more :btn-txt="btnTxt" :card-url="cardUrl" :scroll-to="scrollTo" />
     </v-col>
   </v-row>
 </template>
@@ -39,6 +39,10 @@ export default {
     cardUrl: {
       type: String,
       default: "/"
+    },
+    scrollTo: {
+      type: String,
+      default: null
     }
   },
   methods: {

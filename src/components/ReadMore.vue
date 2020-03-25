@@ -6,7 +6,7 @@
       color="transparent"
       class="from-left"
       :ripple="false"
-      @click="$vuetify.goTo(cardUrl, options)"
+      @click="$vuetify.goTo(scrollTo, options)"
       :to="cardUrl"
     >
       <span class="primary--text mr-3">{{ btnTxt }}</span>
@@ -44,6 +44,10 @@ export default {
     cardUrl: {
       type: String,
       default: "btnTxt"
+    },
+    scrollTo: {
+      type: String,
+      default: "#management"
     }
   },
   computed: {

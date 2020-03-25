@@ -22,8 +22,8 @@
           color="primary"
           x-large
           class="btn mt-8 white--text"
-          @click="$vuetify.goTo('/#contact', options)"
           to="/about/#contact"
+          @click="$vuetify.goTo('#contact', options)"
         >
           ソリューションを開始する
         </v-btn>
