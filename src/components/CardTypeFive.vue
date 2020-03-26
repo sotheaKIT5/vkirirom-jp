@@ -1,9 +1,9 @@
 <template>
   <v-col cols="12" sm="4" md="3" class="pa-2">
     <v-card flat outlined class="fill-height">
-      <div class="card-img">
+      <v-card :href="hrefTo" target="_blank" flat tile class="card-img">
         <v-img contain class="image" :src="getAsset(imgUrl)" />
-      </div>
+      </v-card>
       <div class="card-content">
         <h4 class="card-title">
           {{ title }}
@@ -22,7 +22,12 @@
           </tr>
         </table>
 
-        <read-more class="btn" :btn-txt="btnTxt" :href-to="hrefTo" />
+        <read-more
+          class="btn"
+          :btn-txt="btnTxt"
+          :href-to="hrefTo"
+          target-nav="_black"
+        />
       </div>
     </v-card>
   </v-col>

@@ -9,6 +9,7 @@
       @click="$vuetify.goTo(scrollTo, options)"
       :to="cardUrl"
       :href="hrefTo"
+      :target="targetNav"
     >
       <span class="primary--text mr-3">{{ btnTxt }}</span>
       <svg
@@ -51,6 +52,10 @@ export default {
       default: null
     },
     scrollTo: {
+      type: String,
+      default: null
+    },
+    targetNav: {
       type: String,
       default: null
     }
