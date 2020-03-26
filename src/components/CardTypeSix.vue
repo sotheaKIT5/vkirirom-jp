@@ -8,39 +8,23 @@
         <h4 class="card-title">
           {{ title }}
         </h4>
-        <p class="card-text">
-          {{ location }}
-        </p>
-        <table>
-          <tr>
-            <th>代表取締役:</th>
-            <td>{{ ceo }}</td>
-          </tr>
-          <tr>
-            <th>事業内容:</th>
-            <td>{{ bizDesc }}</td>
-          </tr>
-        </table>
-
-        <read-more class="btn" :btn-txt="btnTxt" :href-to="hrefTo" />
+        <p v-html="description" class="card-text"></p>
       </div>
     </v-card>
   </v-col>
 </template>
 
 <script>
-import ReadMore from "./ReadMore";
 export default {
-  name: "CardTypeFive",
-  components: { ReadMore },
+  name: "CardTypeSix",
   props: {
     title: {
       type: String,
       default: "title"
     },
-    location: {
+    description: {
       type: String,
-      default: "location"
+      default: "description"
     },
     ceo: {
       type: String,
@@ -48,7 +32,7 @@ export default {
     },
     bizDesc: {
       type: String,
-      default: "business location"
+      default: "business description"
     },
     btnTxt: {
       type: String,
@@ -85,7 +69,7 @@ export default {
     display: flex
     flex-flow: column
     width: 100%
-    padding: 12px 12px 50px 12px
+    padding: 12px 12px 30px 12px
 .card-title
     font-weight: bold
     font-size: 16px
@@ -99,21 +83,21 @@ export default {
     align-items: center
     background-color: #A5DBDE
 .image
-  margin-right: auto
-  margin-left: auto
-  max-height: 100px
-  max-width: 180px
+    margin-right: auto
+    margin-left: auto
+    max-height: 100px
+    max-width: 180px
 .btn
-  position: absolute
-  bottom: 15px
+    position: absolute
+    bottom: 15px
 th
-  min-width: 95px
+    min-width: 95px
 th, td
-  padding: 2px 0
-  text-align: left
-  line-height: 30px
+    padding: 2px 0
+    text-align: left
+    line-height: 30px
 table > tr > th
-  vertical-align: top
+    vertical-align: top
 @media #{map-get($display-breakpoints, 'md-and-up')}
     .card-content
         justify-content: center
