@@ -14,7 +14,7 @@ export default {
       navbarOptions: {
         elementId: "main-navbar",
         isUsingVueRouter: true,
-        mobileBreakpoint: 992,
+        mobileBreakpoint: 960,
         brandImagePath: "./",
         brandImage: require("@/assets/logo/logo_black.png"),
         brandImageAltText: "brand-image",
