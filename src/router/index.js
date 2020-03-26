@@ -31,6 +31,14 @@ export default new Router({
         import(/* webpackChunkName: "AboutPage" */ "@/views/AboutPage.vue")
     },
     {
+      path: "/investor",
+      name: "news",
+      component: () =>
+        import(
+          /* webpackChunkName: "InvestorPage" */ "@/views/InvestorPage.vue"
+        )
+    },
+    {
       path: "/news",
       name: "news",
       component: () =>
