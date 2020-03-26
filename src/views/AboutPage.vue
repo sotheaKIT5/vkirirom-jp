@@ -6,8 +6,9 @@
       :keywords="keywords"
     />
     <overview-section />
-    <management-section />
+    <group-company />
     <vk-structure-section />
+    <management-section />
     <contact-section />
   </div>
 </template>
@@ -17,9 +18,11 @@ import OverviewSection from "../components/parent/OverviewSection";
 import ContactSection from "../components/parent/ContactSection";
 import ManagementSection from "../components/parent/ManagementSection";
 import VkStructureSection from "../components/parent/VkStructureSection";
+import GroupCompany from "../components/parent/GroupCompany";
 export default {
   name: "AboutPage",
   components: {
+    GroupCompany,
     VkStructureSection,
     ManagementSection,
     ContactSection,
