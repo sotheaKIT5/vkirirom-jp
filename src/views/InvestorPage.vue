@@ -321,7 +321,7 @@ export default {
   font-size: 14px
 .chip
   font-size: 12px !important
-  height: auto
+  height: auto !important
   text-align: center
 @media #{map-get($display-breakpoints, 'sm-only')}
   .left-right-card
