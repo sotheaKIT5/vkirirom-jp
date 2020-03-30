@@ -9,18 +9,8 @@
           {{ title }}
         </h4>
         <p class="card-text">
-          {{ location }}
+          {{ description }}
         </p>
-        <table>
-          <tr>
-            <th>代表取締役:</th>
-            <td>{{ ceo }}</td>
-          </tr>
-          <tr>
-            <th>事業内容:</th>
-            <td>{{ bizDesc }}</td>
-          </tr>
-        </table>
 
         <read-more
           class="btn"
@@ -43,17 +33,9 @@ export default {
       type: String,
       default: "title"
     },
-    location: {
+    description: {
       type: String,
-      default: "location"
-    },
-    ceo: {
-      type: String,
-      default: "name"
-    },
-    bizDesc: {
-      type: String,
-      default: "business location"
+      default: "description"
     },
     btnTxt: {
       type: String,
@@ -61,7 +43,7 @@ export default {
     },
     imgUrl: {
       type: String,
-      default: require("@/assets/images/dummy/pwa.jpg")
+      default: null
     },
     hrefTo: {
       type: String,
