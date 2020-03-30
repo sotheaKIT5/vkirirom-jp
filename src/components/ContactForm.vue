@@ -122,8 +122,4 @@ export default {
     color: #FFFFFF
 .btn:hover span
     color: #FFFFFF
-@media #{map-get($display-breakpoints, 'sm-and-up')}
-    .send-title
-        font-weight: bold
-        font-size: 45px
 </style>
