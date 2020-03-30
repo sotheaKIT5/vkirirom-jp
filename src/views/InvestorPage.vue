@@ -135,7 +135,7 @@ export default {
         {
           title: "Jobify",
           description:
-            "Jobifyは求人マッチングプラットフォームです。 私たちは、求職者、特に新卒の学生に、私たちの幅広い就職機会へのアクセスを提供します。 従業員の採用を検討している企業の場合、市場で最高の候補者がいることを保証します。\n",
+            "Jobifyは求人マッチングプラットフォームを提供しています。 求職者、特に新卒の学生に、幅広い就職機会を提供しています。また、従業員の採用を検討している企業の場合、市場で最高の候補者を探すことができます。",
           imgUrl: "images/company/jobify.png",
           hrefTo: "http://www.jobify.works/",
           tags: ["HR"]
@@ -175,7 +175,7 @@ export default {
         {
           title: "Zeal",
           description:
-            "Zealのコアバリューは、情熱を持って世界をより良く変えることができると信じています。 私たちは、人々が世界をより良く変えるのに役立つ技術的なソリューションと最新のテクノロジーを提供することを目指しています。",
+            "ZealはARやVRを用いて、社会に役立つ技術的なソリューションと最新のテクノロジーを提供することを目指しています。",
           imgUrl: "images/page_investor/logo-7.png",
           tags: ["建設技術(VR/AR)"],
           btnVisibility: "none"
@@ -199,7 +199,7 @@ export default {
         {
           title: "COIN",
           description:
-            "COINがホストするサービスプロバイダーは、信頼できる信頼できるパブリッククラウドとプライベートクラウドを配布します。 私たちは、拡張性が高く、安全で、最適化されたデータセンターを調べます。",
+            "COINはホスティングサービスプロバイダーとして信頼できるパブリッククラウドとプライベートクラウドを提供しています。<br />より拡張性が高く、安全で、最適化されたデータセンターになるよう日々研究しています。",
           imgUrl: "images/page_investor/logo-11.png",
           tags: ["ITインフラ（クラウド）"],
           btnVisibility: "none"
@@ -223,7 +223,7 @@ export default {
         {
           title: "Escott",
           description:
-            "ESCOTTはIoTを使用して、キリロムで直面している問題の解決方法を提供しています。中でも現在注力しているのはSmart Lockerです。物理的な鍵は不要で、スマートフォンに表示されたRQコードを読取ることで鍵を開けることができます。",
+            "ESCOTTはIoTを使用して、キリロムで直面している問題の解決方法を提供しています。中でも現在注力しているのはSmart Lockerです。物理的な鍵は不要で、スマートフォンに表示されたRQコードを読取ることで鍵を開けることができます。<br />開発した製品は新興国だけでなく、日本などの先進国でも利用いただくことが可能です。",
           imgUrl: "images/page_investor/logo-6.png",
           tags: ["ロボット工学", "IoT"],
           btnVisibility: "none"
@@ -231,7 +231,7 @@ export default {
         {
           title: "Canopy",
           description:
-            "Canopyは2019年に設立された仮想企業で、デジタルプラットフォームを通じてKITのブランド認知度を世界中の学生や関係者に広めることにより、グローバルデジタルマーケティングに注力しています。",
+            "グローバルデジタルマーケティングを行っています。<br />>デジタルプラットフォームを通じてキリロム工科大学（KIT）のブランド認知度を世界中の学生や関係者に広める活動を行っています。",
           imgUrl: "images/page_investor/logo-9.png",
           tags: ["デジタルマーケティング"],
           btnVisibility: "none"
@@ -263,7 +263,7 @@ export default {
         {
           title: "Chain Solution",
           description:
-            "チェーンは、モバイルアプリケーション開発に焦点を当てています。 私たちは単により便利なライフスタイルのために研究開発を行っています。",
+            "Chainは、モバイルアプリケーション開発に焦点を当てています。 私たちは単により便利なライフスタイルのために研究開発を行っています。",
           imgUrl: "images/page_investor/logo-2.png",
           hrefTo: "https://chain-solution.jimdofree.com/",
           tags: ["ソフトウェア開発"]

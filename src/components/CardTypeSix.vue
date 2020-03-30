@@ -1,7 +1,7 @@
 <template>
   <v-col cols="12" sm="4" md="3" class="pa-2">
     <v-card flat outlined class="fill-height">
-      <v-card tile flat class="card-img" :href="hrefTo">
+      <v-card tile flat class="card-img" :href="hrefTo" target="_blank">
         <v-img contain class="image" :src="getAsset(imgUrl)" />
       </v-card>
       <div class="card-content">
@@ -18,6 +18,7 @@
           :btn-txt="btnTxt"
           :href-to="hrefTo"
           :visibility="btnVisibility"
+          target-nav="_blank"
         />
       </div>
     </v-card>
