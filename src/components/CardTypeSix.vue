@@ -119,6 +119,8 @@ table > tr > th
 @media #{map-get($display-breakpoints, 'md-and-up')}
     .card-content
         justify-content: center
+    .card-title
+      font-size: 20px
     .card-text
         font-size: 16px
 </style>
