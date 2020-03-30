@@ -33,7 +33,7 @@
         <v-col cols="12" sm="6" md="4">
           <v-card class="shadow pa-3 fill-height">
             <v-img
-              class="ma-2"
+              class="mb-2"
               src="../assets/images/page_investor/image-3.png"
             />
             <p>ジョイントベンチャー</p>
