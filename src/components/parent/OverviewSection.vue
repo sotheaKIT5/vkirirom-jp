@@ -97,12 +97,18 @@ table > tr > th
     font-weight: bold
     font-size: 14px
     vertical-align: top
+    min-width: 100px
 table > tr > td
     font-weight: normal
     font-size: 14px
+.heading
+    font-size: 20px !important
+    font-weight: bold !important
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   table > tr > th
     font-size: 16px
   table > tr > td
     font-size: 16px
+  .heading
+    font-size: 30px !important
 </style>

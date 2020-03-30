@@ -6,26 +6,23 @@
       :keywords="keywords"
     />
     <overview-section />
+    <main-company />
     <group-company />
-    <vk-structure-section />
     <management-section />
-    <contact-section />
   </div>
 </template>
 
 <script>
 import OverviewSection from "../components/parent/OverviewSection";
-import ContactSection from "../components/parent/ContactSection";
 import ManagementSection from "../components/parent/ManagementSection";
-import VkStructureSection from "../components/parent/VkStructureSection";
 import GroupCompany from "../components/parent/GroupCompany";
+import MainCompany from "../components/parent/MainCompany";
 export default {
   name: "AboutPage",
   components: {
+    MainCompany,
     GroupCompany,
-    VkStructureSection,
     ManagementSection,
-    ContactSection,
     OverviewSection
   },
   data() {

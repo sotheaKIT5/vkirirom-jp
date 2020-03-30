@@ -1,18 +1,15 @@
 <template>
   <v-container id="group-of-company">
-    <section-title>グループ各社事業の紹介</section-title>
-    <div class="company-main-card">
+    <section-title>ITサービス事業</section-title>
+    <div class="company-main-card justify-center">
       <card-type-five
         class="company-card"
         v-for="(company, id) in companies"
         :key="id"
         :title="company.title"
-        :location="company.location"
-        :ceo="company.ceo"
-        :bizDesc="company.bizDesc"
+        :description="company.description"
         :imgUrl="company.imgUrl"
         btn-txt="続きを読む"
-        :card-url="company.goTo"
         :hrefTo="company.hrefTo"
       />
     </div>
@@ -29,54 +26,23 @@ export default {
     return {
       companies: [
         {
-          title: "vKirirom Pte. Ltd",
-          location: "57 Ubi Crescent, Unit 03-00, Singapore 408596",
-          ceo: "猪塚武",
-          bizDesc: "グループ本社、グローバルIT事業",
-          imgUrl: "images/company/vkirirom.png",
-          hrefTo: "https://vkirirom.com/"
+          title: "A2A Digital",
+          description:
+            "A2A Digitalは、A2A Town（Cambodia）Co.、LTdのITサービス事業部門です。最先端のテクノロジーを利用したオフショア開発やERP(Odoo)導入支援を提供します。",
+          imgUrl: "images/company/a2a-digital-logo.png",
+          hrefTo: "http://a2a-digital.com/"
         },
         {
-          title: "A2A Town (Cambodia) Co., Ltd.",
-          location:
-            "#12, Street 2001, Phum Paprak Khang Tboung, Sangkat Kakab,  Khan Porsenchey, Phnom Penh, Cambodia",
-          ceo: "猪塚武",
-          bizDesc: "キリロム工科大学の運営、vKirirom Nature の運営",
-          imgUrl: "images/company/a2a.png",
-          hrefTo: "https://asiato.asia/"
-        },
-        {
-          title: "キリロム工科大学",
-          location:
-            "#12, Street 2001, Phum Paprak Khang Tboung, Sangkat Kakab,  Khan Porsenchey, Phnom Penh, Cambodia",
-          ceo: "猪塚武",
-          bizDesc: "キリロム工科大学の運営、vKirirom Nature の運営",
-          imgUrl: "images/company/kit.png",
-          hrefTo: "https://kit.edu.kh/"
-        },
-        {
-          title: "vKirirom SG",
-          location:
-            "#12, Street 2001, Phum Paprak Khang Tboung, Sangkat Kakab,  Khan Porsenchey, Phnom Penh, Cambodia",
-          ceo: "猪塚武",
-          bizDesc: "キリロム工科大学の運営、vKirirom Nature の運営",
-          imgUrl: "images/company/vkirirom.png",
-          hrefTo: "#"
-        },
-        {
-          title: "Jobify",
-          location: "57 Ubi Crescent, Unit 03-00, Singapore 408596",
-          ceo: "",
-          bizDesc: "",
+          title: "JOBIFY",
+          description:
+            "Jobifyは求人マッチングプラットフォームです。 私たちは、求職者、特に新卒の学生に、私たちの幅広い就職機会へのアクセスを提供します。 従業員の採用を検討している企業の場合、市場で最高の候補者がいることを保証します。",
           imgUrl: "images/company/jobify.png",
           hrefTo: "http://jobify.work/"
         },
         {
           title: "FIXH.ME",
-          location:
-            "#12, Street 2001, Phum Paprak Khang Tboung, Sangkat Kakab,  Khan Porsenchey, Phnom Penh, Cambodia",
-          ceo: "",
-          bizDesc: "",
+          description:
+            "Fixh.meは、サービスプロバイダーを、電気機器、水道、電気などの家庭の問題に直面している人々に接続するプラットフォームです。 2018年に、現在カンボジアのプノンペンで事業を行っている100人以上のサービスプロバイダーと共に4人の創設メンバーから始めました。",
           imgUrl: "images/company/fixhme.png",
           hrefTo: "https://fixh.me/en"
         }
