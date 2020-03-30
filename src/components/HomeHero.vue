@@ -23,7 +23,7 @@
           color="primary"
           x-large
           class="btn mt-8 white--text"
-          to="/about/#contact"
+          to="/contact"
           @click="$vuetify.goTo('#contact', options)"
         >
           アプリ・Webサービス開発のご相談

@@ -26,49 +26,71 @@
           </svg>
         </span>
       </button>
-      <div class="hidden-sm-and-down" style="display:flex; flex-direction: row">
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          @click="$vuetify.goTo('#service', options)"
-          to="/#service"
-        >
-          <span>{{ $t("nav.service") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          @click="$vuetify.goTo('#value', options)"
-          to="/#value"
-        >
-          <span>{{ $t("nav.value") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          to="/about"
-        >
-          <span>{{ $t("nav.about") }}</span>
-        </v-card>
-        <v-card
-          flat
-          v-ripple="{ center: true }"
-          :ripple="{ class: 'primary--text' }"
-          class="nav-btn px-3 py-3"
-          active-class="primary--text"
-          to="/news"
-        >
-          <span>{{ $t("nav.news") }}</span>
-        </v-card>
+      <div class="hidden-sm-and-down">
+        <div class="d-flex flex-row align-center">
+          <v-menu open-on-hover bottom offset-y>
+            <template class="fill-height" v-slot:activator="{ on }">
+              <v-card class="nav-btn pa-3" :ripple="false" v-on="on">
+                <span>
+                  サービス
+                  <svg
+                    width="11"
+                    height="6"
+                    viewBox="0 0 11 6"
+                    fill="#303030"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M9.36604 0L5.71168 3.65903L2.05733 0L0.929688 1.12908L5.71168 5.9172L10.4937 1.12908L9.36604 0Z"
+                    />
+                  </svg>
+                </span>
+              </v-card>
+            </template>
+            <v-list class="nav-list pa-2">
+              <v-list-item
+                v-for="(service, id) in services"
+                :key="id"
+                :to="service.goTo"
+                active-class="primary--text"
+                class="sub-nav"
+              >
+                <v-list-item-title>{{ service.title }}</v-list-item-title>
+              </v-list-item>
+            </v-list>
+          </v-menu>
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
+            @click="$vuetify.goTo('#value', options)"
+            to="/investor"
+          >
+            <span>企業・投資家の皆様</span>
+          </v-card>
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
+            to="/about"
+          >
+            <span>会社概要</span>
+          </v-card>
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
+            to="/contact"
+          >
+            <span>お問い合わせ</span>
+          </v-card>
+        </div>
       </div>
     </v-container>
     <v-navigation-drawer
@@ -105,27 +127,33 @@
         </v-list-item>
       </template>
       <v-list nav dense flat>
-        <v-list-item-group v-model="group" active-class="primary--text">
+        <v-list-group>
+          <template v-slot:activator>
+            <v-list-item-title>サービス</v-list-item-title>
+          </template>
           <v-list-item
-            @click="$vuetify.goTo('#service', options)"
-            to="/#service"
+            v-for="(service, id) in services"
+            :key="id"
+            link
+            class="ml-5"
+            :to="service.goTo"
           >
-            <v-list-item-title>{{ $t("nav.service") }}</v-list-item-title>
+            {{ service.title }}
           </v-list-item>
-          <v-divider />
-          <v-list-item @click="$vuetify.goTo('#value', options)" to="/#value">
-            <v-list-item-title>{{ $t("nav.value") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-list-item to="/about">
-            <v-list-item-title>{{ $t("nav.about") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-          <v-list-item to="/news">
-            <v-list-item-title>{{ $t("nav.news") }}</v-list-item-title>
-          </v-list-item>
-          <v-divider />
-        </v-list-item-group>
+        </v-list-group>
+        <v-divider />
+        <v-list-item active-class="primary--text" to="/investor">
+          <v-list-item-title>企業・投資家の皆様</v-list-item-title>
+        </v-list-item>
+        <v-divider />
+        <v-list-item active-class="primary--text" to="/about">
+          <v-list-item-title>会社概要</v-list-item-title>
+        </v-list-item>
+        <v-divider />
+        <v-list-item active-class="primary--text" to="/contact">
+          <v-list-item-title>お問い合わせ</v-list-item-title>
+        </v-list-item>
+        <v-divider />
       </v-list>
       <template v-slot:append>
         <v-divider />
@@ -189,7 +217,12 @@ export default {
       drawer: false,
       group: null,
       duration: 1000,
-      offset: 0
+      offset: 0,
+      services: [
+        { title: "オフショア開発", goTo: "/#オフショア開発" },
+        { title: "エンジニア採用", goTo: "/#エンジニア採用" },
+        { title: "アジアDX", goTo: "/#アジアDX" }
+      ]
     };
   },
   watch: {
@@ -217,11 +250,11 @@ export default {
         case "sm":
           return "64px";
         case "md":
-          return "95px";
+          return "80px";
         case "lg":
-          return "95px";
+          return "80px";
         case "xl":
-          return "95px";
+          return "80px";
       }
     }
   }
@@ -239,7 +272,17 @@ export default {
     background-color: transparent !important
     color: #000000 !important
 .nav-btn:hover
-    color: #138690 !important
+  color: #138690 !important
+  svg
+    fill: #138690
+.btn-dropdown
+  height: 20px
+.btn-dropdown:hover
+  height: 85px
+.sub-nav *:hover
+  color: #138690
+.nav-list
+  box-shadow: 0px 1px 4px rgba(187, 187, 187, 0.5) !important
 @media #{map-get($display-breakpoints, 'md-and-up')}
     .nav-btn
         font-size: 16px

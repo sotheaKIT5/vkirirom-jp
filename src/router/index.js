@@ -45,6 +45,12 @@ export default new Router({
         import(/* webpackChunkName: "NewsPage" */ "@/views/NewsPage.vue")
     },
     {
+      path: "/contact",
+      name: "contact",
+      component: () =>
+        import(/* webpackChunkName: "ContactPage" */ "@/views/ContactPage.vue")
+    },
+    {
       path: "/a2a-digital-jp",
       name: "a2a-digital-jp",
       component: () =>

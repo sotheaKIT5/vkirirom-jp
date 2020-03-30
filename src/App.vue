@@ -1,7 +1,7 @@
 <template>
   <v-app id="app">
     <div>
-      <navbar-v2 />
+      <nav-bar />
       <v-content class="page">
         <router-view class="pb-12" />
       </v-content>
@@ -10,14 +10,13 @@
   </v-app>
 </template>
 <script>
-const NavbarV2 = () =>
-  import(/* webpackMode: "eager" */ "./components/NavbarV2");
+const NavBar = () => import(/* webpackMode: "eager" */ "./components/NavBar");
 const VkFooter = () =>
   import(/* webpackMode: "eager" */ "./components/VkFooter");
 
 export default {
   name: "App",
-  components: { NavbarV2, VkFooter }
+  components: { NavBar, VkFooter }
 };
 </script>
 <style lang="sass">
