@@ -7,26 +7,38 @@
       </p>
       <v-row>
         <v-col cols="12" sm="6" md="4">
-          <v-card class="shadow pa-3">
-            <v-img src="../assets/images/page_investor/image-1.png" />
+          <v-card class="shadow pa-3 fill-height">
+            <v-img
+              class="mb-2"
+              src="../assets/images/page_investor/image-1.png"
+            />
+            <p>テクノロジー実績</p>
             <p>
-              A2Aデジタルジャパンはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
+              我々はキリロム工科大学と協働し、様々な先端ITテクノロジーを遂行しています。
             </p>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="4">
-          <v-card class="shadow pa-3">
-            <v-img src="../assets/images/page_investor/image-2.png" />
+          <v-card class="shadow pa-3 fill-height">
+            <v-img
+              class="mb-2"
+              src="../assets/images/page_investor/image-2.png"
+            />
+            <p>協同開発</p>
             <p>
-              A2Aデジタルジャパンはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
+              キリロム工科大学の技術力で開発を促進させます。
             </p>
           </v-card>
         </v-col>
         <v-col cols="12" sm="6" md="4">
-          <v-card class="shadow pa-3">
-            <v-img src="../assets/images/page_investor/image-3.png" />
+          <v-card class="shadow pa-3 fill-height">
+            <v-img
+              class="ma-2"
+              src="../assets/images/page_investor/image-3.png"
+            />
+            <p>ジョイントベンチャー</p>
             <p>
-              A2Aデジタルジャパンはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
+              双方の力を終結してイノベーションを起こします。
             </p>
           </v-card>
         </v-col>
@@ -35,13 +47,13 @@
     <v-container>
       <section-title>エコ・テクノロジーパーク参加</section-title>
       <v-row class="left-right-card pb-3">
-        <v-col cols="12" sm="6" class="card-content">
+        <v-col cols="12" sm="7" class="card-content">
           <p class="card-text">
             国連のSDGsの方向性に沿った形で、エコツーリズムを基盤に社会問題が発生しないようデザインされた学びとイノベーションの街づくりに参加しています。
           </p>
         </v-col>
         <v-spacer />
-        <v-col cols="12" sm="6">
+        <v-col cols="12" sm="5">
           <v-img
             class="card-img mx-auto"
             width="100%"
