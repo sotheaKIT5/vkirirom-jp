@@ -1,22 +1,34 @@
 <template>
   <v-col cols="12" sm="4" md="3" class="pa-2">
     <v-card flat outlined class="fill-height">
-      <div class="card-img">
+      <v-card tile flat class="card-img" :href="hrefTo">
         <v-img contain class="image" :src="getAsset(imgUrl)" />
-      </div>
+      </v-card>
       <div class="card-content">
         <h4 class="card-title">
           {{ title }}
         </h4>
         <p v-html="description" class="card-text"></p>
+        <span>
+          <span class="font-size-12 font-weight-bold">Industry:</span>
+          <slot />
+        </span>
+        <read-more
+          class="btn"
+          :btn-txt="btnTxt"
+          :href-to="hrefTo"
+          :visibility="btnVisibility"
+        />
       </div>
     </v-card>
   </v-col>
 </template>
 
 <script>
+import ReadMore from "./ReadMore";
 export default {
   name: "CardTypeSix",
+  components: { ReadMore },
   props: {
     title: {
       type: String,
@@ -45,6 +57,10 @@ export default {
     hrefTo: {
       type: String,
       default: null
+    },
+    btnVisibility: {
+      type: String,
+      default: "block"
     }
   },
   methods: {
@@ -69,7 +85,7 @@ export default {
     display: flex
     flex-flow: column
     width: 100%
-    padding: 12px 12px 30px 12px
+    padding: 12px 12px 50px 12px
 .card-title
     font-weight: bold
     font-size: 16px
@@ -90,6 +106,8 @@ export default {
 .btn
     position: absolute
     bottom: 15px
+.font-size-12
+  font-size: 12px
 th
     min-width: 95px
 th, td
