@@ -2,6 +2,7 @@
   <v-col cols="6" sm="4" md="3" class="pa-1 pa-sm-2">
     <v-card outlined class="card-type-four fill-height pa-2">
       <v-img
+        style="border-radius: 0"
         aspect-ratio="4:6"
         :src="getAsset(imgSrc)"
         lazy-src="@/assets/images/lazy-image.png"
