@@ -51,6 +51,14 @@ export default new Router({
         import(/* webpackChunkName: "ContactPage" */ "@/views/ContactPage.vue")
     },
     {
+      path: "/offshore-development",
+      name: "contact",
+      component: () =>
+        import(
+          /* webpackChunkName: "OffshoreDevelopmentPage" */ "@/views/OffshoreDevelopmentPage.vue"
+        )
+    },
+    {
       path: "/a2a-digital-jp",
       name: "a2a-digital-jp",
       component: () =>

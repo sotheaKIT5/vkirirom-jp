@@ -219,7 +219,7 @@ export default {
       duration: 1000,
       offset: 0,
       services: [
-        { title: "オフショア開発", goTo: "/#オフショア開発" },
+        { title: "オフショア開発", goTo: "/offshore-development" },
         { title: "エンジニア採用", goTo: "/#エンジニア採用" },
         { title: "アジアDX", goTo: "/#アジアDX" }
       ]
