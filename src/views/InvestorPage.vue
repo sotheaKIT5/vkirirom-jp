@@ -9,6 +9,7 @@
         <v-col cols="12" sm="6" md="4">
           <v-card class="shadow pa-3 fill-height">
             <v-img
+              style="border-radius: 0"
               class="mb-2"
               src="../assets/images/page_investor/image-1.png"
             />
@@ -21,6 +22,7 @@
         <v-col cols="12" sm="6" md="4">
           <v-card class="shadow pa-3 fill-height">
             <v-img
+              style="border-radius: 0"
               class="mb-2"
               src="../assets/images/page_investor/image-2.png"
             />
@@ -33,6 +35,7 @@
         <v-col cols="12" sm="6" md="4">
           <v-card class="shadow pa-3 fill-height">
             <v-img
+              style="border-radius: 0"
               class="mb-2"
               src="../assets/images/page_investor/image-3.png"
             />
