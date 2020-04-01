@@ -101,8 +101,6 @@ export default {
           currentObj.output = error;
         });
       this.reset();
-      // eslint-disable-next-line no-console
-      console.log("Submitted!!!!!!!!!!!!!!!!!!!!!");
     },
     reset() {
       this.$refs.form.reset();
