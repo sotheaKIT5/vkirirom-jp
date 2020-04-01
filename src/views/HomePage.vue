@@ -8,7 +8,6 @@
     <home-hero />
     <concept-one />
     <concept-two />
-    <services-section />
     <value-benefits-section />
     <why-us-section />
   </div>
@@ -19,8 +18,6 @@ const HomeHero = () =>
   import(/* webpackMode: "eager" */ "@/components/HomeHero.vue");
 const ConceptOne = () =>
   import(/* webpackMode: "eager" */ "@/components/parent/ConceptOne.vue");
-const ServicesSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/ServicesSection.vue");
 const ValueBenefitsSection = () =>
   import(
     /* webpackMode: "eager" */ "@/components/parent/ValueBenefitsSection.vue"
@@ -36,7 +33,6 @@ export default {
     ConceptTwo,
     WhyUsSection,
     ValueBenefitsSection,
-    ServicesSection,
     ConceptOne,
     HomeHero
   },
