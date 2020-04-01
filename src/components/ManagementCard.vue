@@ -15,7 +15,7 @@
         <h4 v-html="position" class="card-title" />
       </div>
       <v-divider class="my-2" />
-      <p v-html="selfIntro" />
+      <p class="card-intro" v-html="selfIntro" />
     </v-card>
   </v-col>
 </template>
@@ -63,6 +63,8 @@ export default {
 .card-title
     font-weight: normal
     font-size: 14px
+.card-intro
+  font-size: 14px
 @media #{map-get($display-breakpoints, 'sm-only')}
     .card-head
         height: 115px
@@ -70,6 +72,8 @@ export default {
         font-size: 20px
     .card-title
         font-size: 16px
+    .card-intro
+      font-size: 16px
 @media #{map-get($display-breakpoints, 'md-and-up')}
     .card-head
         height: auto
@@ -77,4 +81,6 @@ export default {
         font-size: 20px
     .card-title
         font-size: 16px
+    .card-intro
+      font-size: 16px
 </style>

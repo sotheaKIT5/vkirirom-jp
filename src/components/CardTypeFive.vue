@@ -1,5 +1,5 @@
 <template>
-  <v-col cols="12" sm="4" md="3" class="pa-2">
+  <v-col cols="6" sm="4" md="3" class="pa-1 pa-sm-2">
     <v-card flat outlined class="fill-height">
       <v-card :href="hrefTo" target="_blank" flat tile class="card-img">
         <v-img contain class="image" :src="getAsset(imgUrl)" />
@@ -75,10 +75,12 @@ export default {
     padding: 12px 12px 50px 12px
 .card-title
     font-weight: bold
-    font-size: 16px
+    font-size: 20px
     line-height: 30px
     text-align: center
     margin-bottom: 16px
+.card-text
+  font-size: 14px
 .card-img
     width: 100%
     height: 150px
@@ -89,7 +91,7 @@ export default {
   margin-right: auto
   margin-left: auto
   max-height: 100px
-  max-width: 180px
+  max-width: 130px
 .btn
   position: absolute
   bottom: 15px
@@ -106,4 +108,7 @@ table > tr > th
         justify-content: center
     .card-text
         font-size: 16px
+    .image
+      max-height: 100px
+      max-width: 170px
 </style>

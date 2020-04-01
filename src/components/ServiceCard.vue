@@ -60,11 +60,13 @@ export default {
     padding: 20px
 .card-title
     font-weight: bold
-    font-size: 16px
+    font-size: 20px
     line-height: 30px
     text-align: center
     margin-bottom: 16px
     color: #138690
+.card-text
+  font-size: 14px
 .card-img
     width: 100%
     max-height: 300px
