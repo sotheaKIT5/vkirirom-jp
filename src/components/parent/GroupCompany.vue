@@ -1,7 +1,7 @@
 <template>
   <v-container id="group-of-company">
     <section-title>ITサービス事業</section-title>
-    <div class="company-main-card justify-center">
+    <div class="company-main-card justify-sm-center">
       <card-type-five
         class="company-card"
         v-for="(company, id) in companies"
