@@ -37,29 +37,6 @@
             <th>事業内容</th>
             <td>IT事業、マーケティング支援事業</td>
           </tr>
-          <tr>
-            <th><h2 class="heading mt-5 mb-3">沿革</h2></th>
-          </tr>
-          <tr>
-            <th>2011</th>
-            <td>A2A Town (Cambodia) Co., Ltd 設立</td>
-          </tr>
-          <tr>
-            <th>2014</th>
-            <td>vKirirom Pte. Ltd.設立</td>
-          </tr>
-          <tr>
-            <th>2014</th>
-            <td>キリロム工科大学設立</td>
-          </tr>
-          <tr>
-            <th>2018</th>
-            <td>vKirirom Japan株式会社設立</td>
-          </tr>
-          <tr>
-            <th>2018</th>
-            <td>vKirirom International School(小学校) 設立</td>
-          </tr>
         </table>
       </v-col>
       <v-col cols="12" sm="6">
