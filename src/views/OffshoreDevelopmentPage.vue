@@ -40,6 +40,26 @@
     </v-container>
     <v-container>
       <section-title>ツール</section-title>
+      <p class="text-center">
+        以下のツールを利用してシステム開発やITサービスをご提供しています。
+      </p>
+      <v-row>
+        <v-col
+          cols="4"
+          sm="2"
+          v-for="(technology, id) in technologies"
+          :key="id"
+          class="pb-12"
+        >
+          <v-img
+            contain
+            max-height="90"
+            max-width="150"
+            :src="getAsset(technology.imageSrc)"
+            :title="technology.title"
+          />
+        </v-col>
+      </v-row>
     </v-container>
   </div>
 </template>
@@ -57,6 +77,72 @@ export default {
         "オフショア開発",
         "私たちはユーザのご要望に合わせて様々なオフショアソフトウェア開発をご提供しています",
         "images/service/service-tagline.png"
+      ],
+      technologies: [
+        {
+          imageSrc: "images/technology/tensorflow.png",
+          title: "TensorFlow"
+        },
+        {
+          imageSrc: "images/technology/opencv.png",
+          title: "OpenCV"
+        },
+        {
+          imageSrc: "images/technology/vuejs.png",
+          title: "VueJS"
+        },
+        {
+          imageSrc: "images/technology/postgre-sql.png",
+          title: "PostgreSQL"
+        },
+        {
+          imageSrc: "images/technology/python.png",
+          title: "Python"
+        },
+        {
+          imageSrc: "images/technology/unity.png",
+          title: "Unity"
+        },
+        {
+          imageSrc: "images/technology/aws.png",
+          title: "AWS - Cloud Computing Services"
+        },
+        {
+          imageSrc: "images/technology/google-cloud.png",
+          title: "Google Cloud Platform"
+        },
+        {
+          imageSrc: "images/technology/digital-ocean.png",
+          title: "DigitalOcean"
+        },
+        {
+          imageSrc: "images/technology/tensorflow.png",
+          title: "TensorFlow"
+        },
+        {
+          imageSrc: "images/technology/c-plus-plus.png",
+          title: "C++"
+        },
+        {
+          imageSrc: "images/technology/ethereum.png",
+          title: "Ethereum"
+        },
+        {
+          imageSrc: "images/technology/maya.png",
+          title: "Autodesk Maya"
+        },
+        {
+          imageSrc: "images/technology/docker.png",
+          title: "Docker"
+        },
+        {
+          imageSrc: "images/technology/steam-vr.png",
+          title: "SteamVR"
+        },
+        {
+          imageSrc: "images/technology/arduino-yun.png",
+          title: "ArduinoYun"
+        }
       ],
       services: [
         {
@@ -164,6 +250,11 @@ export default {
         }
       ]
     };
+  },
+  methods: {
+    getAsset(path) {
+      return require("@/assets/" + path);
+    }
   }
 };
 </script>
