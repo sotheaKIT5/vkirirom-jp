@@ -76,7 +76,7 @@
               </div>
               <div>
                 <p class="text">
-                  info@kit.edu.kh
+                  a2adigital-japan@kit.edu.kh
                 </p>
               </div>
             </v-card>
