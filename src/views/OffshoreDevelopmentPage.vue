@@ -116,10 +116,6 @@ export default {
           title: "DigitalOcean"
         },
         {
-          imageSrc: "images/technology/tensorflow.png",
-          title: "TensorFlow"
-        },
-        {
           imageSrc: "images/technology/c-plus-plus.png",
           title: "C++"
         },
