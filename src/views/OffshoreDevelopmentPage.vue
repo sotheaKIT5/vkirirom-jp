@@ -201,7 +201,7 @@ export default {
           imageSrc: "images/service/arvr.png",
           title: "VR/AR開発",
           description:
-            "VRは「Virtual Reality」の略で、「人工現実感」や「仮想現実」と訳されます。HTC Vive、Oculus Go / RiftなどのVRデバイスを使用して、視界の360°を完全なバーチャル空間に移動した験ができます。<br />ARとは「Augmented Reality」の略で、一般的に「拡張現実」と訳されます。実在する風景にバーチャルの視覚情報を重ねて表示することで、目の前にある世界を“仮想的に拡張する”というものです",
+            "VRは「Virtual Reality」の略で、「人工現実感」や「仮想現実」と訳されます。HTC Vive、Oculus Go / RiftなどのVRデバイスを使用して、視界の360°を完全なバーチャル空間に移動した体験ができます。<br />ARとは「Augmented Reality」の略で、一般的に「拡張現実」と訳されます。実在する風景にバーチャルの視覚情報を重ねて表示することで、目の前にある世界を“仮想的に拡張する”というものです",
           tags: [
             "Oculus Go 開発",
             "HTC Vive 開発",
