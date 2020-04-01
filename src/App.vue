@@ -20,6 +20,7 @@ export default {
 };
 </script>
 <style lang="sass">
+@import '~vuetify/src/styles/styles'
 html, body
   overflow-x: hidden
 .container
@@ -27,8 +28,13 @@ html, body
   padding-bottom: 0 !important
 ul
   list-style: square outside
+p, span
+  font-size: 14px
 .page
   min-height: 100vh
+@media #{map-get($display-breakpoints, 'md-and-up')}
+  p, span
+    font-size: 16px
 @media (min-width: 1904px)
   .container
     max-width: 1185px !important

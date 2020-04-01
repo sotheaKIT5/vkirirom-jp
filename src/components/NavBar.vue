@@ -65,7 +65,6 @@
             :ripple="{ class: 'primary--text' }"
             class="nav-btn pa-3"
             active-class="primary--text"
-            @click="$vuetify.goTo('#value', options)"
             to="/investor"
           >
             <span>企業・投資家の皆様</span>
@@ -220,8 +219,7 @@ export default {
       offset: 0,
       services: [
         { title: "オフショア開発", goTo: "/offshore-development" },
-        { title: "エンジニア採用", goTo: "/#エンジニア採用" },
-        { title: "アジアDX", goTo: "/#アジアDX" }
+        { title: "エンジニア採用", goTo: "/engineer-recruitment" }
       ]
     };
   },

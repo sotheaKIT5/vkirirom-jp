@@ -32,7 +32,7 @@ export default new Router({
     },
     {
       path: "/investor",
-      name: "news",
+      name: "investor",
       component: () =>
         import(
           /* webpackChunkName: "InvestorPage" */ "@/views/InvestorPage.vue"
@@ -52,10 +52,18 @@ export default new Router({
     },
     {
       path: "/offshore-development",
-      name: "contact",
+      name: "offshore-development",
       component: () =>
         import(
           /* webpackChunkName: "OffshoreDevelopmentPage" */ "@/views/OffshoreDevelopmentPage.vue"
+        )
+    },
+    {
+      path: "/engineer-recruitment",
+      name: "engineer-recruitment",
+      component: () =>
+        import(
+          /* webpackChunkName: "EngineerRecruitmentPage" */ "@/views/EngineerRecruitmentPage.vue"
         )
     },
     {

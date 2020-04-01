@@ -1,22 +1,25 @@
 <template>
-  <v-hover v-slot:default="{ hover }" open-delay="20">
-    <v-card
-      :to="cardUrl"
-      flat
-      tile
-      class="type-one-card"
-      :elevation="hover ? 5 : 1"
-    >
-      <div class="card-img mb-7">
-        <v-img contain aspect-ratio="1.1" :src="getAsset(imgUrl)" />
-      </div>
-      <div class="card-content">
-        <h1 class="card-title primary--text">
-          {{ title }}
-        </h1>
-      </div>
-    </v-card>
-  </v-hover>
+  <v-col cols="12" sm="6" class="pa-0">
+    <v-hover v-slot:default="{ hover }" open-delay="20">
+      <v-card
+        :to="cardUrl"
+        flat
+        tile
+        class="type-one-card fill-height"
+        :elevation="hover ? 5 : 1"
+      >
+        <div class="card-img mb-7">
+          <v-img contain aspect-ratio="1.1" :src="getAsset(imgUrl)" />
+        </div>
+        <div class="card-content">
+          <h1 class="card-title primary--text">
+            {{ title }}
+          </h1>
+          <p v-html="description" />
+        </div>
+      </v-card>
+    </v-hover>
+  </v-col>
 </template>
 
 <script>
@@ -30,11 +33,11 @@ export default {
     },
     description: {
       type: String,
-      default: "description"
+      default: null
     },
     imgUrl: {
       type: String,
-      default: "images/dummy/pwa.jpg"
+      default: null
     },
     cardUrl: {
       type: String,
@@ -59,6 +62,8 @@ export default {
     width: 100%
     max-width: 1185px
     padding: 15px 15px 50px 15px
+    &:hover
+      z-index: 1
 .card-title
     font-weight: bold
     font-size: 18px
