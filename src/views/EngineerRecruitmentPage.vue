@@ -45,14 +45,10 @@
 </template>
 
 <script>
-const Tagline = () =>
-  import(/* webpackMode: "eager" */ "@/components/Tagline.vue");
-const CardLeftRight = () =>
-  import(/* webpackMode: "eager" */ "@/components/CardLeftRight.vue");
-const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
-const CardTypeOne = () =>
-  import(/* webpackMode: "eager" */ "@/components/CardTypeOne.vue");
+const Tagline = () => import("@/components/Tagline.vue");
+const CardLeftRight = () => import("@/components/CardLeftRight.vue");
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeOne = () => import("@/components/CardTypeOne.vue");
 export default {
   name: "EngineerRecruitmentPage",
   components: { CardTypeOne, SectionTitle, CardLeftRight, Tagline },

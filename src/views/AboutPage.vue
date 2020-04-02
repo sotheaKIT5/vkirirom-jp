@@ -13,16 +13,11 @@
 </template>
 
 <script>
-const OverviewSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/OverviewSection.vue");
+const OverviewSection = () => import("@/components/parent/OverviewSection.vue");
 const ManagementSection = () =>
-  import(
-    /* webpackMode: "eager" */ "@/components/parent/ManagementSection.vue"
-  );
-const GroupCompany = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/GroupCompany.vue");
-const MainCompany = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/MainCompany.vue");
+  import("@/components/parent/ManagementSection.vue");
+const GroupCompany = () => import("@/components/parent/GroupCompany.vue");
+const MainCompany = () => import("@/components/parent/MainCompany.vue");
 export default {
   name: "AboutPage",
   components: {

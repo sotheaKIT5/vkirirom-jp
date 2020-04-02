@@ -132,10 +132,8 @@
 </template>
 
 <script>
-const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
-const CardTypeSix = () =>
-  import(/* webpackMode: "eager" */ "@/components/CardTypeSix.vue");
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeSix = () => import("@/components/CardTypeSix.vue");
 export default {
   name: "InvestorPage",
   components: { CardTypeSix, SectionTitle },

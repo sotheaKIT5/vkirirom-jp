@@ -10,8 +10,7 @@
 </template>
 
 <script>
-const ContactSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/ContactSection.vue");
+const ContactSection = () => import("@/components/parent/ContactSection.vue");
 export default {
   name: "ContactPage",
   components: { ContactSection },

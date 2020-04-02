@@ -70,12 +70,9 @@
 </template>
 
 <script>
-const ServiceCard = () =>
-  import(/* webpackMode: "eager" */ "@/components/ServiceCard.vue");
-const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
-const Tagline = () =>
-  import(/* webpackMode: "eager" */ "@/components/Tagline.vue");
+const ServiceCard = () => import("@/components/ServiceCard.vue");
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const Tagline = () => import("@/components/Tagline.vue");
 export default {
   name: "OffshoreDevelopmentPage",
   components: { Tagline, SectionTitle, ServiceCard },

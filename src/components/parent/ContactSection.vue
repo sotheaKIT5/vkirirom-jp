@@ -104,8 +104,8 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
-import ContactForm from "../ContactForm";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const ContactForm = () => import("@/components/ContactForm.vue");
 export default {
   name: "ContactSection",
   components: { ContactForm, SectionTitle }
