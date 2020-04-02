@@ -106,7 +106,7 @@ export default {
   box-shadow: none
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .hero
-    height: 96vh
+    height: 93.90vh
   .inner-hero h1, .inner-hero p
     width: 540px
   .inner-hero h1
@@ -119,7 +119,7 @@ export default {
     width: 670px
 @media #{map-get($display-breakpoints, 'md-and-up')}
   .hero
-    height: 90vh
+    height: 94.5vh
   .inner-hero h1
     font-size: 50px
     line-height: 60px

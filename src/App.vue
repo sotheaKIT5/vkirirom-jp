@@ -31,7 +31,7 @@ ul
 p, span
   font-size: 14px
 .page
-  min-height: 100vh
+  min-height: 90vh
 @media #{map-get($display-breakpoints, 'md-and-up')}
   p, span
     font-size: 16px
