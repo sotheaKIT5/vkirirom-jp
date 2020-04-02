@@ -9,7 +9,6 @@
     <main-company />
     <group-company />
     <management-section />
-    <job-section />
   </div>
 </template>
 
@@ -24,12 +23,9 @@ const GroupCompany = () =>
   import(/* webpackMode: "eager" */ "@/components/parent/GroupCompany.vue");
 const MainCompany = () =>
   import(/* webpackMode: "eager" */ "@/components/parent/MainCompany.vue");
-const JobSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/JobSection.vue");
 export default {
   name: "AboutPage",
   components: {
-    JobSection,
     MainCompany,
     GroupCompany,
     ManagementSection,
