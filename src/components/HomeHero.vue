@@ -24,9 +24,8 @@
           x-large
           class="btn mt-8 white--text"
           to="/contact"
-          @click="$vuetify.goTo('#contact', options)"
         >
-          アプリ・Webサービス開発のご相談
+          お問い合わせ
         </v-btn>
       </div>
     </v-card>
