@@ -6,7 +6,15 @@ module.exports = {
   },
   pluginOptions: {
     prerenderSpa: {
-      renderRoutes: ["/"],
+      registry: undefined,
+      renderRoutes: [
+        "/",
+        "/contact",
+        "/about",
+        "/investor",
+        "/engineer-recruitment",
+        "/offshore-development"
+      ],
       useRenderEvent: true,
       onlyProduction: true,
       headless: true

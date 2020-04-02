@@ -13,6 +13,7 @@
       :title="concept.title"
       :description="concept.description"
       :card-url="concept.goTo"
+      :scroll-to="concept.scrollTo"
       :img-url="concept.imgSrc"
       btn-txt="続きを読む"
       :style="[
@@ -29,8 +30,8 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
-import CardLeftRight from "../CardLeftRight";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardLeftRight = () => import("@/components/CardLeftRight.vue");
 export default {
   name: "ConceptOne",
   components: { CardLeftRight, SectionTitle },
@@ -39,21 +40,21 @@ export default {
       reverse: "flex-direction:row-revers;",
       concepts: [
         {
-          title: "-業務理解力- ビジネス経験豊富なマネジメント",
+          title: "-業務理解力-<br />ビジネス経験豊富なマネジメント",
           description:
             "経営課題解決の真のパートナーとなるために、IT分野でのビジネス経験豊富なマネジメントチームを揃えています。",
           imgSrc: "images/concept/1.png",
-          goTo: "/#management"
+          scrollTo: "#management"
         },
         {
-          title: "-工数安定供給-継続的エンジニア 養成・輩出の仕組み",
+          title: "-工数安定供給-<br />継続的エンジニア 養成・輩出の仕組み",
           description:
             "キリロム工科大学との連携、現地オフショア企業との連携、日本におけるエンジニアパートナーのネットワーク、アフターサポートを通して、継続的な人材リソースの確保が可能です。",
           imgSrc: "images/concept/2.png",
-          goTo: "/#flow"
+          scrollTo: "#flow"
         },
         {
-          title: "-コストメリット- グローバルなエンジニアを適正価格で",
+          title: "-コストメリット-<br />グローバルなエンジニアを適正価格で",
           description:
             "カンボジアに拠点を置くことで、コストメリットを得ることができます。",
           imgSrc: "images/concept/3.png",

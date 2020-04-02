@@ -15,6 +15,7 @@
       :title="concept.title"
       :description="concept.description"
       :card-url="concept.goTo"
+      :scroll-to="concept.scrollTo"
       :img-url="concept.imgSrc"
       btn-txt="続きを読む"
       :style="[
@@ -31,8 +32,8 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
-import CardLeftRight from "../CardLeftRight";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardLeftRight = () => import("@/components/CardLeftRight.vue");
 export default {
   name: "ConceptTwo",
   components: { CardLeftRight, SectionTitle },
@@ -41,21 +42,21 @@ export default {
       reverse: "flex-direction:row-revers;",
       concepts: [
         {
-          title: "-実務の継続- 研修の一環として自社案件を推進",
+          title: "-実務の継続-<br />研修の一環として自社案件を推進",
           description:
             "現在実施しているプロジェクトを引き続き研修の一環として進めることが可能です。拠点を海外に移し、海外のメンバーと一緒に、既存の業務を推進していくことができます。",
           imgSrc: "images/concept/4.png",
-          goTo: "/#value"
+          scrollTo: "#value"
         },
         {
-          title: "-使える英語- 開発者(英語話者)と案件のマネジメント",
+          title: "-使える英語-<br />開発者(英語話者)と案件のマネジメント",
           description:
             "英語環境で自社案件の開発に携わることで、業務に直結し、実務経験を生かした語学習得が可能です。開発現場での実践的なコミュニケーションと英語環境での試行錯誤を通して、意思疎通を図るサバイバル力を養うことができます。",
           imgSrc: "images/concept/5.png",
-          goTo: "/#value"
+          scrollTo: "#value"
         },
         {
-          title: "-安心・安全- 日本人学生受入実績のあるITトップ大学",
+          title: "-安心・安全-<br />日本人学生受入実績のあるITトップ大学",
           description:
             "オールインクルーシブで集中できる安全な研修環境をご提供します。実績のある全寮制の大学でモチベーションの高い学生と共同生活の中で、多文化理解を得ることができます。",
           imgSrc: "images/concept/6.png",

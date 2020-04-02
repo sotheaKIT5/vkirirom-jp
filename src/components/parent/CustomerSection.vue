@@ -26,8 +26,8 @@
 </template>
 
 <script>
-import CardTypeThree from "../CardTypeThree";
-import SectionTitle from "../SectionTitle";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeThree = () => import("@/components/CardTypeThree.vue");
 export default {
   name: "CustomerSection",
   components: { SectionTitle, CardTypeThree },

@@ -1,9 +1,8 @@
 <template>
   <v-app id="app">
-    <splash-screen :isLoading="isLoading" />
-    <div v-if="!isLoading">
+    <div>
       <nav-bar />
-      <v-content>
+      <v-content class="page">
         <router-view class="pb-12" />
       </v-content>
       <vk-footer />
@@ -11,23 +10,17 @@
   </v-app>
 </template>
 <script>
-import NavBar from "./components/NavBar";
-import VkFooter from "./components/VkFooter";
-import SplashScreen from "./components/SplashScreen";
+const NavBar = () => import(/* webpackMode: "eager" */ "./components/NavBar");
+const VkFooter = () =>
+  import(/* webpackMode: "eager" */ "./components/VkFooter");
+
 export default {
   name: "App",
-  components: { SplashScreen, VkFooter, NavBar },
-  data() {
-    return { isLoading: true };
-  },
-  mounted() {
-    setTimeout(() => {
-      this.isLoading = false;
-    }, 3000);
-  }
+  components: { NavBar, VkFooter }
 };
 </script>
 <style lang="sass">
+@import '~vuetify/src/styles/styles'
 html, body
   overflow-x: hidden
 .container
@@ -35,6 +28,13 @@ html, body
   padding-bottom: 0 !important
 ul
   list-style: square outside
+p, span
+  font-size: 14px
+.page
+  min-height: 90vh
+@media #{map-get($display-breakpoints, 'md-and-up')}
+  p, span
+    font-size: 16px
 @media (min-width: 1904px)
   .container
     max-width: 1185px !important

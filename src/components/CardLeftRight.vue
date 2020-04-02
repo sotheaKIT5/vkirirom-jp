@@ -1,17 +1,23 @@
 <template>
   <v-row class="left-right-card pb-3">
-    <v-col cols="12" sm="5" class="card-img">
-      <v-img aspect-ratio="1" :src="getAsset(imgUrl)" />
+    <v-col cols="12" md="5">
+      <v-img
+        class="card-img"
+        contain
+        aspect-ratio="1"
+        :src="getAsset(imgUrl)"
+      />
     </v-col>
     <v-spacer />
-    <v-col cols="12" sm="7" class="card-content">
-      <h1 class="card-title">
-        {{ title }}
-      </h1>
-      <p class="card-text">
-        {{ description }}
-      </p>
-      <read-more :btn-txt="btnTxt" :card-url="cardUrl" />
+    <v-col cols="12" md="7" class="card-content">
+      <h1 v-html="title" class="card-title" />
+      <p v-html="description" class="card-text" />
+      <read-more
+        :btn-txt="btnTxt"
+        :card-url="cardUrl"
+        :scroll-to="scrollTo"
+        :visibility="btnVisibility"
+      />
     </v-col>
   </v-row>
 </template>
@@ -41,6 +47,14 @@ export default {
     cardUrl: {
       type: String,
       default: "/"
+    },
+    scrollTo: {
+      type: String,
+      default: null
+    },
+    btnVisibility: {
+      type: String,
+      default: "block"
     }
   },
   methods: {
@@ -65,9 +79,14 @@ export default {
     width: 100%
 .card-title
   margin-bottom: 16px
+  font-size: 30px
 .card-img
     width: 100%
-@media #{map-get($display-breakpoints, 'sm-and-up')}
+    margin: 0 auto
+@media #{map-get($display-breakpoints, 'sm-only')}
+  .card-img
+    width: 50%
+@media #{map-get($display-breakpoints, 'md-and-up')}
     .left-right-card
         display: flex
         flex-flow: row
@@ -81,5 +100,5 @@ export default {
     .card-text
         font-size: 16px
     .card-img
-        width: 40%
+        width: 100%
 </style>

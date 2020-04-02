@@ -12,16 +12,8 @@
       <v-img
         aspect-ratio="4:6"
         :src="getAsset(imgSrc)"
-        :lazy-src="`https://i.picsum.photos/id/10/10/10.jpg`"
+        lazy-src="@/assets/images/lazy-image.png"
       >
-        <template v-slot:placeholder>
-          <v-row class="fill-height ma-0" align="center" justify="center">
-            <v-progress-circular
-              indeterminate
-              color="grey lighten-5"
-            ></v-progress-circular>
-          </v-row>
-        </template>
       </v-img>
     </v-card>
   </v-col>

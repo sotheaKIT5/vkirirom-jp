@@ -1,6 +1,6 @@
 <template>
   <div>
-    <v-card class="hero">
+    <v-card flat tile class="hero overflow-hidden">
       <video
         v-if="$vuetify.breakpoint.mdAndUp"
         class="bg-vdo"
@@ -8,12 +8,13 @@
         autoplay
         muted
         loop
+        poster="@/assets/images/bg-img-hero.png"
       >
         <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
       </video>
       <div class="inner-hero">
         <h1 class="mx-auto">
-          新しい時代を新しい仲間と リバースイノベーションを巻き起こそう
+          新しい時代を新しい仲間と<br />リバースイノベーションを巻き起こそう
         </h1>
         <p class="mx-auto">
           A2Aデジタルジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して、成し遂げる力、新しい知識、素晴らしい経験といった御社の成長に貢献する経験をご提供します。
@@ -22,10 +23,9 @@
           color="primary"
           x-large
           class="btn mt-8 white--text"
-          @click="$vuetify.goTo('/#contact', options)"
-          to="/about/#contact"
+          to="/contact"
         >
-          ソリューションを開始する
+          お問い合わせ
         </v-btn>
       </div>
     </v-card>
@@ -67,10 +67,14 @@ export default {
   background-repeat: no-repeat
   background-size: cover
 .bg-vdo
-  height: 93vh
-  width: 100%
-  object-fit: cover
-  object-position: 50% 50%
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
 .inner-hero
   width: 100%
   position: absolute
@@ -78,10 +82,9 @@ export default {
   left: 50%
   text-align: center
   color: #ffffff
+  -webkit-transform: translateX(-50%) translateY(-50%)
   transform: translateX(-50%) translateY(-50%)
-  text-shadow: 0 5px 5px #00000080
-  -webkit-filter: drop-shadow(0 5px 5px #00000080)
-  filter: drop-shadow(0 5px 5px #00000080)
+  text-shadow: 0 5px 5px rgba(0,0,0,0.8)
 .inner-hero h1
   font-style: normal
   font-weight: bold
@@ -102,11 +105,9 @@ export default {
   box-shadow: none
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .hero
-    height: 96vh
+    height: 93.90vh
   .inner-hero h1, .inner-hero p
     width: 540px
-  .bg-vdo
-    height: 96vh
   .inner-hero h1
     font-size: 35px
     line-height: 42px
@@ -117,9 +118,7 @@ export default {
     width: 670px
 @media #{map-get($display-breakpoints, 'md-and-up')}
   .hero
-    height: 90vh
-  .bg-vdo
-    height: 100vh - 9.5vh
+    height: 94.5vh
   .inner-hero h1
     font-size: 50px
     line-height: 60px
