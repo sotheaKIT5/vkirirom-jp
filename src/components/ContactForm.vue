@@ -4,10 +4,10 @@
     <v-form ref="form" v-model="valid" :lazy-validation="lazy">
       <v-row>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="last_name" label="名"></v-text-field>
+          <v-text-field v-model="first_name" label="姓"></v-text-field>
         </v-col>
         <v-col cols="12" sm="6">
-          <v-text-field v-model="first_name" label="姓"></v-text-field>
+          <v-text-field v-model="last_name" label="名"></v-text-field>
         </v-col>
         <v-col cols="12">
           <v-text-field
