@@ -31,34 +31,40 @@ export default new Router({
         import(/* webpackChunkName: "AboutPage" */ "@/views/AboutPage.vue")
     },
     {
-      path: "/a2a-digital-jp",
-      name: "a2a-digital-jp",
+      path: "/investor",
+      name: "investor",
       component: () =>
         import(
-          /* webpackChunkName: "A2ADigitalJapanPage" */ "@/views/A2ADigitalJapanPage.vue"
+          /* webpackChunkName: "InvestorPage" */ "@/views/InvestorPage.vue"
         )
     },
     {
-      path: "/kit",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        // Put the full page url including the protocol http(s) below
-        window.location = "https://kit.edu.kh/";
-      }
+      path: "/news",
+      name: "news",
+      component: () =>
+        import(/* webpackChunkName: "NewsPage" */ "@/views/NewsPage.vue")
     },
     {
-      path: "/kit-sponsor",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        window.location = "https://www.kit-sponsor.com/";
-      }
+      path: "/contact",
+      name: "contact",
+      component: () =>
+        import(/* webpackChunkName: "ContactPage" */ "@/views/ContactPage.vue")
     },
     {
-      path: "/a2a-digital",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        window.location = "https://a2a-digital.com/";
-      }
+      path: "/offshore-development",
+      name: "offshore-development",
+      component: () =>
+        import(
+          /* webpackChunkName: "OffshoreDevelopmentPage" */ "@/views/OffshoreDevelopmentPage.vue"
+        )
+    },
+    {
+      path: "/engineer-recruitment",
+      name: "engineer-recruitment",
+      component: () =>
+        import(
+          /* webpackChunkName: "EngineerRecruitmentPage" */ "@/views/EngineerRecruitmentPage.vue"
+        )
     },
     {
       path: "*",

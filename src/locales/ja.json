@@ -1,14 +1,15 @@
 {
   "message": "hello i18n Japanese!!",
   "nav": {
-    "service": "Service",
+    "service": "サービス",
     "case_detail": "Case Details",
-    "value": "Value",
+    "value": " 企業・投資家の皆様",
     "kit": "What's KIT?",
     "a2a_digital": "What's A2A Digital?",
     "vkiriromjp": "What's vKirirom Japan?",
     "a2a-digital-jp": "What's A2A Digital Japan?",
-    "about": "About"
+    "about": "会社概要",
+    "news": "ニュース"
   },
   "footer": {
     "follow_us_on": "Follow us on"

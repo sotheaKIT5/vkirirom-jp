@@ -23,14 +23,14 @@
                     />
                   </v-btn>
                 </span>
-                <span class="title">ADDRESS</span>
+                <span class="title">住所</span>
               </div>
               <div>
                 <p class="text">
                   東京オフィス 〒150-0043 <br />
                   東京都渋谷区道玄坂一丁目10番8号 <br />
                   渋谷道玄坂東急ビル1F 渋谷PLUG&PLAY内 <br />
-                  キリロム工科大学 東京事務所
+                  vKirirom Japan 株式会社
                 </p>
               </div>
               <div>
@@ -49,7 +49,7 @@
                       src="@/assets/icons/mobile.svg"
                     /> </v-btn
                 ></span>
-                <span class="title">PHONE NUMBER</span>
+                <span class="title">電話番号</span>
               </div>
               <div>
                 <p class="text">
@@ -72,11 +72,11 @@
                       src="@/assets/icons/message.svg"
                     /> </v-btn
                 ></span>
-                <span class="title">EMAIL</span>
+                <span class="title">メールアドレス</span>
               </div>
               <div>
                 <p class="text">
-                  info@kit.edu.kh
+                  a2adigital-japan@kit.edu.kh
                 </p>
               </div>
             </v-card>

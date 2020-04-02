@@ -8,6 +8,7 @@
         autoplay
         muted
         loop
+        poster="@/assets/images/bg-img-hero.png"
       >
         <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
       </video>
@@ -22,10 +23,9 @@
           color="primary"
           x-large
           class="btn mt-8 white--text"
-          @click="$vuetify.goTo('/#contact', options)"
-          to="/about/#contact"
+          to="/contact"
         >
-          ソリューションを開始する
+          お問い合わせ
         </v-btn>
       </div>
     </v-card>
@@ -105,7 +105,7 @@ export default {
   box-shadow: none
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .hero
-    height: 96vh
+    height: 93.90vh
   .inner-hero h1, .inner-hero p
     width: 540px
   .inner-hero h1
@@ -118,7 +118,7 @@ export default {
     width: 670px
 @media #{map-get($display-breakpoints, 'md-and-up')}
   .hero
-    height: 90vh
+    height: 94.5vh
   .inner-hero h1
     font-size: 50px
     line-height: 60px

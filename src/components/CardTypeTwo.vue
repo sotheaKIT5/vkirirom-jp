@@ -1,6 +1,6 @@
 <template>
   <v-col cols="12" sm="4" md="4" class="pa-1 px-0 pa-sm-3">
-    <v-card flat height="100%" class="type-one-card">
+    <v-card flat height="100%">
       <div class="card-content">
         <h1 v-html="title" class="card-title px-5 py-3"></h1>
         <v-divider class="divider" />
@@ -41,8 +41,6 @@ ul
   list-style: square inside url("../assets/icons/square.svg")
 .divider
   border-color: #138690
-.type-one-card
-    /*padding: 35px 15px 35px 15px*/
 .card-content
     display: flex
     flex-flow: column
@@ -56,6 +54,7 @@ ul
     .card-title
       font-size: 24px
       line-height: 42px
+      min-height: 150px
     .card-text
       font-weight: 900
       font-size: 16px

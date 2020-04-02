@@ -1,14 +1,16 @@
 <template>
-  <div class="read-more">
+  <div class="read-more" :style="'display' + ':' + visibility + ';'">
     <v-card
       flat
       tile
       color="transparent"
       class="from-left"
       :ripple="false"
-      @click="$vuetify.goTo(cardUrl, options)"
       :to="cardUrl"
+      :href="hrefTo"
+      :target="targetNav"
     >
+      <!--@click="$vuetify.goTo(scrollTo, options)"-->
       <span class="primary--text mr-3">{{ btnTxt }}</span>
       <svg
         viewBox="0 0 512 512"
@@ -39,11 +41,27 @@ export default {
   props: {
     btnTxt: {
       type: String,
-      default: "btnTxt"
+      default: "続きを読む"
     },
     cardUrl: {
       type: String,
-      default: "btnTxt"
+      default: null
+    },
+    hrefTo: {
+      type: String,
+      default: null
+    },
+    scrollTo: {
+      type: String,
+      default: null
+    },
+    targetNav: {
+      type: String,
+      default: null
+    },
+    visibility: {
+      type: String,
+      default: "block"
     }
   },
   computed: {

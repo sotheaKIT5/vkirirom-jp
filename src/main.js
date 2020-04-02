@@ -12,11 +12,14 @@ import vueHeadful from "vue-headful";
 import "./registerServiceWorker";
 import vuetify from "./plugins/vuetify";
 import i18n from "./i18n";
+import "vue-navigation-bar/dist/vue-navigation-bar.css";
+import VueNavigationBar from "vue-navigation-bar";
 
 Vue.config.productionTip = false;
 Vue.use(VueAxios, axios);
 Vue.use(VueAwesomeSwiper /* { default global options } */);
 Vue.component("vue-headful", vueHeadful);
+Vue.component("vue-navigation-bar", VueNavigationBar);
 
 new Vue({
   router,
