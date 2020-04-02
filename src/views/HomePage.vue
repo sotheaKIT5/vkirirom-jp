@@ -12,7 +12,6 @@
 <script>
 const HomeHero = () =>
   import(/* webpackMode: "eager" */ "@/components/HomeHero.vue");
-
 export default {
   name: "Home",
   components: {

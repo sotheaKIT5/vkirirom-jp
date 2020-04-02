@@ -9,17 +9,27 @@
     <main-company />
     <group-company />
     <management-section />
+    <job-section />
   </div>
 </template>
 
 <script>
-import OverviewSection from "../components/parent/OverviewSection";
-import ManagementSection from "../components/parent/ManagementSection";
-import GroupCompany from "../components/parent/GroupCompany";
-import MainCompany from "../components/parent/MainCompany";
+const OverviewSection = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/OverviewSection.vue");
+const ManagementSection = () =>
+  import(
+    /* webpackMode: "eager" */ "@/components/parent/ManagementSection.vue"
+  );
+const GroupCompany = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/GroupCompany.vue");
+const MainCompany = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/MainCompany.vue");
+const JobSection = () =>
+  import(/* webpackMode: "eager" */ "@/components/parent/JobSection.vue");
 export default {
   name: "AboutPage",
   components: {
+    JobSection,
     MainCompany,
     GroupCompany,
     ManagementSection,
@@ -27,7 +37,7 @@ export default {
   },
   data() {
     return {
-      title: "About | A2Aデジタルジャパン",
+      title: "会社概要 | A2Aデジタルジャパン",
       description:
         "リバースイノベーションを巻き起こそう！A2Aデジタルジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して産業革命4.0に対応したソリューションを提供します。",
       keywords:
