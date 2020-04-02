@@ -67,36 +67,6 @@ export default new Router({
         )
     },
     {
-      path: "/a2a-digital-jp",
-      name: "a2a-digital-jp",
-      component: () =>
-        import(
-          /* webpackChunkName: "A2ADigitalJapanPage" */ "@/views/A2ADigitalJapanPage.vue"
-        )
-    },
-    {
-      path: "/kit",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        // Put the full page url including the protocol http(s) below
-        window.location = "https://kit.edu.kh/";
-      }
-    },
-    {
-      path: "/kit-sponsor",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        window.location = "https://www.kit-sponsor.com/";
-      }
-    },
-    {
-      path: "/a2a-digital",
-      // eslint-disable-next-line no-unused-vars
-      beforeEnter(to, from, next) {
-        window.location = "https://a2a-digital.com/";
-      }
-    },
-    {
       path: "*",
       redirect: "/"
     }

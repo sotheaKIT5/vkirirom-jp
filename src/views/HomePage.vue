@@ -6,34 +6,16 @@
       :keywords="keywords"
     />
     <home-hero />
-    <concept-one />
-    <concept-two />
-    <value-benefits-section />
-    <why-us-section />
   </div>
 </template>
 
 <script>
 const HomeHero = () =>
   import(/* webpackMode: "eager" */ "@/components/HomeHero.vue");
-const ConceptOne = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/ConceptOne.vue");
-const ValueBenefitsSection = () =>
-  import(
-    /* webpackMode: "eager" */ "@/components/parent/ValueBenefitsSection.vue"
-  );
-const WhyUsSection = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/WhyUsSection.vue");
-const ConceptTwo = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/ConceptTwo.vue");
 
 export default {
   name: "Home",
   components: {
-    ConceptTwo,
-    WhyUsSection,
-    ValueBenefitsSection,
-    ConceptOne,
     HomeHero
   },
   data() {
@@ -47,3 +29,8 @@ export default {
   }
 };
 </script>
+
+<style lang="sass" scoped>
+#home-page
+  padding: 0 !important
+</style>

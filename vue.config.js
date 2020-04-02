@@ -7,7 +7,14 @@ module.exports = {
   pluginOptions: {
     prerenderSpa: {
       registry: undefined,
-      renderRoutes: ["/", "/a2a-digital-jp", "/about"],
+      renderRoutes: [
+        "/",
+        "/contact",
+        "/about",
+        "/investor",
+        "/engineer-recruitment",
+        "/offshore-development"
+      ],
       useRenderEvent: true,
       onlyProduction: true,
       headless: true
