@@ -174,6 +174,7 @@
           >
             <v-img
               height="20"
+              width="20"
               contain
               src="../assets/icons/facebook-f-brands.svg"
             />
@@ -188,6 +189,7 @@
           >
             <v-img
               height="20"
+              width="20"
               contain
               src="../assets/icons/linkedin-in-brands.svg"
             />
@@ -202,6 +204,7 @@
           >
             <v-img
               height="20"
+              width="20"
               contain
               src="../assets/icons/twitter-brands.svg"
             />
