@@ -8,14 +8,11 @@
     <overview-section />
     <main-company />
     <group-company />
-    <management-section />
   </div>
 </template>
 
 <script>
 const OverviewSection = () => import("@/components/parent/OverviewSection.vue");
-const ManagementSection = () =>
-  import("@/components/parent/ManagementSection.vue");
 const GroupCompany = () => import("@/components/parent/GroupCompany.vue");
 const MainCompany = () => import("@/components/parent/MainCompany.vue");
 export default {
@@ -23,7 +20,6 @@ export default {
   components: {
     MainCompany,
     GroupCompany,
-    ManagementSection,
     OverviewSection
   },
   data() {
