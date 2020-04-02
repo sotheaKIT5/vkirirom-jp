@@ -136,7 +136,7 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
 export default {
   name: "MainCompany",
   components: { SectionTitle }

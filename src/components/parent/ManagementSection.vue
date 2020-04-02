@@ -15,8 +15,8 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
-import ManagementCard from "../ManagementCard";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const ManagementCard = () => import("@/components/ManagementCard.vue");
 export default {
   name: "ManagementSection",
   components: { ManagementCard, SectionTitle },

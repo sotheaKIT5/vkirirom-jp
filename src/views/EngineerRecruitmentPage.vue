@@ -1,5 +1,10 @@
 <template>
   <div>
+    <vue-headful
+      :title="title"
+      :description="description"
+      :keywords="keywords"
+    />
     <tagline
       :title="tagline[0]"
       :description="tagline[1]"
@@ -40,15 +45,20 @@
 </template>
 
 <script>
-import Tagline from "../components/Tagline";
-import CardLeftRight from "../components/CardLeftRight";
-import SectionTitle from "../components/SectionTitle";
-import CardTypeOne from "../components/CardTypeOne";
+const Tagline = () => import("@/components/Tagline.vue");
+const CardLeftRight = () => import("@/components/CardLeftRight.vue");
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeOne = () => import("@/components/CardTypeOne.vue");
 export default {
   name: "EngineerRecruitmentPage",
   components: { CardTypeOne, SectionTitle, CardLeftRight, Tagline },
   data() {
     return {
+      title: "エンジニア採用 | A2Aデジタルジャパン",
+      description:
+        "A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。",
+      keywords:
+        "A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       tagline: [
         "エンジニア採用",
         "A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています",

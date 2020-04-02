@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import CardTypeFive from "../CardTypeFive";
-import SectionTitle from "../SectionTitle";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeFive = () => import("@/components/CardTypeFive.vue");
 export default {
   name: "GroupCompany",
   components: { SectionTitle, CardTypeFive },

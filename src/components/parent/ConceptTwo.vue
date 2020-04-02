@@ -32,8 +32,8 @@
 </template>
 
 <script>
-import SectionTitle from "../SectionTitle";
-import CardLeftRight from "../CardLeftRight";
+const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardLeftRight = () => import("@/components/CardLeftRight.vue");
 export default {
   name: "ConceptTwo",
   components: { CardLeftRight, SectionTitle },
