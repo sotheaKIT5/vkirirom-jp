@@ -17,7 +17,7 @@ export default {
   components: { ContactSection },
   data() {
     return {
-      title: " お問い合わせ| A2Aデジタルジャパン",
+      title: " お問い合わせ | A2Aデジタルジャパン",
       description:
         "お問合わせはメールアドレスa2adigital-japan@kit.edu.kh、住所〒150-0043東京都渋谷区道玄坂一丁目10番8号渋谷道玄坂東急ビル1F 渋谷PLUG&PLAY内vKirirom Japan 株式会社まで。",
       keywords:
