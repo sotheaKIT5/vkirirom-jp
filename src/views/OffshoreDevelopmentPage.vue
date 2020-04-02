@@ -71,11 +71,11 @@
 
 <script>
 const ServiceCard = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/ServiceCard.vue");
+  import(/* webpackMode: "eager" */ "@/components/ServiceCard.vue");
 const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/SectionTitle.vue");
+  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
 const Tagline = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/Tagline.vue");
+  import(/* webpackMode: "eager" */ "@/components/Tagline.vue");
 export default {
   name: "OffshoreDevelopmentPage",
   components: { Tagline, SectionTitle, ServiceCard },

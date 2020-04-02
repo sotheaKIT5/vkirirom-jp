@@ -46,13 +46,13 @@
 
 <script>
 const Tagline = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/Tagline.vue");
+  import(/* webpackMode: "eager" */ "@/components/Tagline.vue");
 const CardLeftRight = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/CardLeftRight.vue");
+  import(/* webpackMode: "eager" */ "@/components/CardLeftRight.vue");
 const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/SectionTitle.vue");
+  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
 const CardTypeOne = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/CardTypeOne.vue");
+  import(/* webpackMode: "eager" */ "@/components/CardTypeOne.vue");
 export default {
   name: "EngineerRecruitmentPage",
   components: { CardTypeOne, SectionTitle, CardLeftRight, Tagline },

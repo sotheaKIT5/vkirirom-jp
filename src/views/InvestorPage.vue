@@ -133,9 +133,9 @@
 
 <script>
 const SectionTitle = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/SectionTitle.vue");
+  import(/* webpackMode: "eager" */ "@/components/SectionTitle.vue");
 const CardTypeSix = () =>
-  import(/* webpackMode: "eager" */ "@/components/parent/CardTypeSix.vue");
+  import(/* webpackMode: "eager" */ "@/components/CardTypeSix.vue");
 export default {
   name: "InvestorPage",
   components: { CardTypeSix, SectionTitle },
