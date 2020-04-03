@@ -11,7 +11,10 @@
         <table>
           <tr>
             <th>会社名</th>
-            <td>vKirirom Japan 株式会社</td>
+            <td>
+              vKirirom Japan 株式会社 <br />
+              (英文社名 vKirirom Japan, Inc. )
+            </td>
           </tr>
           <tr>
             <th>所在地</th>
