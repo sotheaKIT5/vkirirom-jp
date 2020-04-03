@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1 class="send-title">開発に関するご相談</h1>
+    <h1 class="send-title">ご相談・お問い合わせ</h1>
     <v-form ref="form" v-model="valid" :lazy-validation="lazy">
       <v-row>
         <v-col cols="12" sm="6">
@@ -75,7 +75,7 @@ export default {
       v =>
         // eslint-disable-next-line no-useless-escape
         /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
-        "E-mail must be valid"
+        "メールアドレスに誤りがあります。"
     ],
     lazy: false
   }),

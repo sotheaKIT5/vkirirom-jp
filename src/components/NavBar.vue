@@ -1,11 +1,5 @@
 <template>
-  <v-app-bar
-    :height="navbarHeight"
-    fixed
-    hide-on-scroll
-    app
-    style="z-index: 99"
-  >
+  <v-app-bar :height="navbarHeight" fixed app style="z-index: 99">
     <v-container class="d-flex pa-0">
       <logo />
       <v-spacer />
