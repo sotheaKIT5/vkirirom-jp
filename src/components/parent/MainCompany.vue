@@ -117,7 +117,7 @@
               <th>事業内容</th>
               <td>
                 1. vKirirom Pine Resort運営<br />
-                2.不動産開発サービス（Asset development service）<br />
+                2.不動産開発サービス <br />
                 3.大学運営: キリロム工科大学<br />
                 4.ITサービス事業 <br />
                 <div class="pl-7 pl-sm-12">

@@ -77,15 +77,14 @@ export default {
     fnameRules: [v => v.length <= 32 || "姓は32文字以下にする必要があります"],
     lnameRules: [v => v.length <= 32 || "名は32文字以下にする必要があります"],
     message: "",
-    messageRules: [v => !!v || "お問い合わせ内容を入力し てください"],
+    messageRules: [v => !!v || "お問い合わせ内容を入力してください"],
     email: "",
     emailRules: [
       v => !!v || "メールアドレスを入力してください",
       v =>
         // eslint-disable-next-line no-useless-escape
-        /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
-          v
-        ) || "メールアドレスに誤りがあります。"
+        /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(v) ||
+        "E-mail must be valid"
     ],
     lazy: false
   }),

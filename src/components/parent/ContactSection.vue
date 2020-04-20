@@ -27,7 +27,7 @@
               </div>
               <div>
                 <p class="text">
-                  東京オフィス 〒150-0043 <br />
+                  〒150-0043 <br />
                   東京都渋谷区道玄坂一丁目10番8号 <br />
                   渋谷道玄坂東急ビル1F 渋谷PLUG&PLAY内 <br />
                   vKirirom Japan 株式会社

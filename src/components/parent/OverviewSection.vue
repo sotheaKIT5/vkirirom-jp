@@ -10,15 +10,34 @@
         <h2 class="heading mb-3">vKirirom Japan 株式会社</h2>
         <table>
           <tr>
+            <th>会社名</th>
+            <td>
+              vKirirom Japan 株式会社 <br />
+              (英文社名 vKirirom Japan, Inc. )
+            </td>
+          </tr>
+          <tr>
+            <th>所在地</th>
+            <td>東京都渋谷区道玄坂１丁目１０番８号</td>
+          </tr>
+          <tr>
+            <th>設立年月日</th>
+            <td>2018年4月24日</td>
+          </tr>
+          <tr>
             <th>資本金</th>
             <td>10百万円</td>
           </tr>
           <tr>
-            <th>議決権</th>
-            <td>vKirirom Pte. Ltd. 100%</td>
+            <th>決算期</th>
+            <td>12月末日</td>
           </tr>
           <tr>
-            <th>代表取締役社長</th>
+            <th>取引金融機関</th>
+            <td>三井住友銀行</td>
+          </tr>
+          <tr>
+            <th>代表取締役</th>
             <td>猪塚武</td>
           </tr>
           <tr>
