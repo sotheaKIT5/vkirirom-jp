@@ -14,10 +14,12 @@
       </video>
       <div class="inner-hero">
         <h1 class="mx-auto">
-          新しい時代を新しい仲間と<br />リバースイノベーションを巻き起こそう
+          新型コロナ対応を受けた緊急IT業務サポート<br />「クラウドDevチーム」
         </h1>
-        <p class="mx-auto">
-          A2Aデジタルジャパンは、アジア・デジタルトランスフォーメーション(アジアDX)によるグローバルな環境を通して、成し遂げる力、新しい知識、素晴らしい経験といった御社の成長に貢献する経験をご提供します。
+        <p class="mx-2 mx-sm-auto">
+          の提供を開始いたしました。<br />
+          企業が必要な時に必要なだけエンジニアを活用できる<br />
+          ポストコロナ時代に適した従量課金型ITエンジニア供給サービスです。
         </p>
         <v-btn
           color="primary"
@@ -25,7 +27,7 @@
           class="btn mt-8 white--text"
           to="/contact"
         >
-          お問い合わせ
+          今すぐ試す
         </v-btn>
       </div>
     </v-card>
@@ -60,7 +62,9 @@ export default {
 <style lang="sass" scoped>
 @import '~vuetify/src/styles/styles.sass'
 .hero
-  height: 93vh
+  height: 100vh
+  padding-top: 80px
+  margin-top: -80px
   background-image: url("../assets/images/bg-img-hero.png")
   background-color: #000000
   background-position: center
@@ -88,43 +92,38 @@ export default {
 .inner-hero h1
   font-style: normal
   font-weight: bold
-  font-size: 35px
+  font-size: 32px
   line-height: 42px
   color: #ffffff
-  width: 350px
 .inner-hero p
   font-style: normal
   font-weight: normal
   font-size: 18px
   line-height: 20px
   color: #ffffff
-  width: 350px
   margin-top: 25px
 .btn
   text-shadow: none
   box-shadow: none
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .hero
-    height: 93.90vh
-  .inner-hero h1, .inner-hero p
-    width: 540px
+    height: 100vh
+    padding-top: 80px
+    margin-top: -80px
+    padding-bottom: 80px
+    margin-bottom: -80px
   .inner-hero h1
     font-size: 35px
     line-height: 42px
-    width: 462px
   .inner-hero p
     font-size: 25px
     line-height: 30px
-    width: 670px
 @media #{map-get($display-breakpoints, 'md-and-up')}
-  .hero
-    height: 94.5vh
   .inner-hero h1
     font-size: 50px
     line-height: 60px
-    width: 900px
+    width: 100%
   .inner-hero p
     font-size: 25px
     line-height: 30px
-    width: 850px
 </style>
