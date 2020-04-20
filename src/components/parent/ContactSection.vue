@@ -5,7 +5,7 @@
       <v-container>
         <v-row>
           <v-col cols="12" md="6" class="pa-0">
-            <v-card flat tile color="accent" class="px-3 py-5">
+            <v-card flat tile color="accent" class="pl-0 pr-3 py-5">
               <div>
                 <span>
                   <v-btn
@@ -14,7 +14,7 @@
                     fab
                     color="white"
                     :ripple="false"
-                    class="ma-2"
+                    class="ma-2 cursor-default"
                   >
                     <v-img
                       height="20"
@@ -41,7 +41,7 @@
                     fab
                     color="white"
                     :ripple="false"
-                    class="ma-2"
+                    class="ma-2 cursor-default"
                   >
                     <v-img
                       height="20"
@@ -64,7 +64,7 @@
                     fab
                     color="white"
                     :ripple="false"
-                    class="ma-2"
+                    class="ma-2 cursor-default"
                   >
                     <v-img
                       height="17"
@@ -82,7 +82,7 @@
             </v-card>
           </v-col>
           <v-col cols="12" md="6" class="pa-0">
-            <v-card flat tile color="white" class="pa-3 pb-12">
+            <v-card flat tile color="transparent" class="pa-3 pb-12">
               <contact-form />
             </v-card>
           </v-col>
@@ -129,6 +129,8 @@ export default {
 .map
   width: 100%
   height: 280px
+.cursor-default
+  cursor: default
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .main
     background: rgb(116,190,194)
