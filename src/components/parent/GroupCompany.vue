@@ -44,7 +44,7 @@ export default {
           description:
             "Fixh.meは、サービスプロバイダーを、電気機器、水道、電気などの家庭の問題に直面している人々に接続するプラットフォームです。 2018年に、現在カンボジアのプノンペンで事業を行っている100人以上のサービスプロバイダーと共に4人の創設メンバーから始めました。",
           imgUrl: "images/company/fixhme.png",
-          hrefTo: "https://fixh.me/en"
+          hrefTo: "https://fixh.me/"
         }
       ]
     };
