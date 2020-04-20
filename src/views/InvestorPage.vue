@@ -53,25 +53,6 @@
       </v-row>
     </v-container>
     <v-container>
-      <section-title>エコ・テクノロジーパーク参加</section-title>
-      <v-row class="left-right-card pb-3">
-        <v-col cols="12" sm="7" class="card-content">
-          <p class="card-text">
-            国連のSDGsの方向性に沿った形で、エコツーリズムを基盤に社会問題が発生しないようデザインされた学びとイノベーションの街づくりに参加しています。
-          </p>
-        </v-col>
-        <v-spacer />
-        <v-col cols="12" sm="5">
-          <v-img
-            class="card-img mx-auto"
-            width="100%"
-            contain
-            src="../assets/images/page_investor/image-4.png"
-          />
-        </v-col>
-      </v-row>
-    </v-container>
-    <v-container>
       <section-title>バーチャルカンパニーへ出資</section-title>
       <p>
         先端技術IT学科には、バーチャルカンパニー（VO）という仕組みがあります。大学内に起業された仮想的な企業です。<br />

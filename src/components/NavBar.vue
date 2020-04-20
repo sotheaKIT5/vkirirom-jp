@@ -65,6 +65,16 @@
             :ripple="{ class: 'primary--text' }"
             class="nav-btn pa-3"
             active-class="primary--text"
+            to="/investor"
+          >
+            <span>スタートアップ</span>
+          </v-card>
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
             to="/about"
           >
             <span>会社概要</span>
@@ -130,6 +140,10 @@
             {{ service.title }}
           </v-list-item>
         </v-list-group>
+        <v-divider />
+        <v-list-item active-class="primary--text" to="/investor">
+          <v-list-item-title>スタートアップ</v-list-item-title>
+        </v-list-item>
         <v-divider />
         <v-list-item active-class="primary--text" to="/about">
           <v-list-item-title>会社概要</v-list-item-title>
