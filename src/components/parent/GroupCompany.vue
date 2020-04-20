@@ -37,14 +37,14 @@ export default {
           description:
             "Jobifyは求人マッチングプラットフォームです。 私たちは、求職者、特に新卒の学生に、私たちの幅広い就職機会へのアクセスを提供します。 従業員の採用を検討している企業の場合、市場で最高の候補者がいることを保証します。",
           imgUrl: "images/company/jobify.png",
-          hrefTo: "https://jobify.works/"
+          hrefTo: "http://jobify.works/"
         },
         {
           title: "FIXH.ME",
           description:
             "Fixh.meは、サービスプロバイダーを、電気機器、水道、電気などの家庭の問題に直面している人々に接続するプラットフォームです。 2018年に、現在カンボジアのプノンペンで事業を行っている100人以上のサービスプロバイダーと共に4人の創設メンバーから始めました。",
           imgUrl: "images/company/fixhme.png",
-          hrefTo: "https://fixh.me/en"
+          hrefTo: "https://fixh.me/"
         }
       ]
     };

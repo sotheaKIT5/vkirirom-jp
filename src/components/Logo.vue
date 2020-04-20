@@ -3,7 +3,7 @@
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 806 291"
-      :style="'fill' + ':' + color + '; height: 45px'"
+      :style="'fill' + ':' + color + '; height: 45px; vertical-align: middle;'"
     >
       <title>a2a-digital-logo</title>
       <path
