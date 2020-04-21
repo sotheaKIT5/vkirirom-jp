@@ -1,21 +1,19 @@
 <template>
   <v-col cols="12" sm="6" class="pa-0">
-    <v-hover v-slot:default="{ hover }" open-delay="20">
-      <v-card flat tile class="card fill-height" :elevation="hover ? 5 : 1">
-        <v-card tile flat class="card-img">
-          <v-img contain class="image" :src="getAsset(imgUrl)" />
-        </v-card>
-        <div class="card-content">
-          <h4 class="card-title">
-            {{ title }}
-          </h4>
-          <p v-html="description" class="card-text"></p>
-          <span>
-            <slot />
-          </span>
-        </div>
+    <v-card flat tile class="card fill-height" elevation="1">
+      <v-card tile flat class="card-img">
+        <v-img contain class="image" :src="getAsset(imgUrl)" />
       </v-card>
-    </v-hover>
+      <div class="card-content">
+        <h4 class="card-title">
+          {{ title }}
+        </h4>
+        <p v-html="description" class="card-text"></p>
+        <span>
+          <slot />
+        </span>
+      </div>
+    </v-card>
   </v-col>
 </template>
 
@@ -48,11 +46,6 @@ export default {
 @import '~vuetify/src/styles/styles'
 .v-application .elevation-1
     box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2) !important
-.v-application .elevation-5
-    box-shadow: 0 5px 25px rgba(119, 115, 115, 0.3) !important
-.card
-  &:hover
-    z-index: 1
 .card-content
     display: flex
     flex-flow: column
