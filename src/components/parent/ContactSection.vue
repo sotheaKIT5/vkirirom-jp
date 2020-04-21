@@ -132,12 +132,13 @@ export default {
 .cursor-default
   cursor: default
 @media #{map-get($display-breakpoints, 'sm-and-up')}
-  .main
-    background: rgb(116,190,194)
-    background: linear-gradient(90deg, rgba(116,190,194,1) 0%, rgba(116,190,194,1) 50%, rgba(255,255,255,1) 50%)
   .title
     font-size: 24px
   .text
     font-size: 16px
     padding-left: 70px
+@media #{map-get($display-breakpoints, 'md-and-up')}
+  .main
+    background: rgb(116,190,194)
+    background: linear-gradient(90deg, rgba(116,190,194,1) 0%, rgba(116,190,194,1) 50%, rgba(255,255,255,1) 50%)
 </style>
