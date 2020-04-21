@@ -14,12 +14,13 @@
       </video>
       <div class="inner-hero">
         <h1 class="mx-auto">
-          新型コロナ対応を受けた緊急IT業務サポート<br />「クラウドDevチーム」
+          在宅があたりまえの時代に対応した新サービス<br />
+          「cloud crew」<br />
+          (ロゴあり)
         </h1>
         <p class="mx-2 mx-sm-auto">
-          の提供を開始いたしました。<br />
-          企業が必要な時に必要なだけエンジニアを活用できる<br />
-          ポストコロナ時代に適した従量課金型ITエンジニア供給サービスです。
+          いますぐに必要なだけのエンジニアを集められる、<br />
+          従量課金型のITエンジニア供給サービスです
         </p>
         <v-btn
           color="primary"
@@ -27,7 +28,7 @@
           class="btn mt-8 white--text"
           to="/contact"
         >
-          今すぐ試す
+          詳細を見る
         </v-btn>
       </div>
     </v-card>
