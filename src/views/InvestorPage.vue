@@ -87,28 +87,6 @@
         </card-type-six>
       </div>
     </v-container>
-    <v-container>
-      <section-title>キリロム工科大学の学生寮不動産投資</section-title>
-      <v-row class="left-right-card pb-3">
-        <v-col cols="12" sm="6" class="card-content">
-          <p class="card-text">
-            キリロム工科大学は全寮制大学ですが、学生寮を世界中の（個人）投資家の皆様に所有していただき、大学が長期間借り受ける形で運用しています。一番小さな学生寮は500万円以下で購入することができ、初期の契約は９年間固定、利回りは年間7%〜10%と日本よりも高い水準になっています。契約の解除権は投資家のみに付与されていますので、一年前の告知でいつでも自己利用や転売に切り替えることができるようになっています。学生寮オーナーには無料でキリロムのリゾートに宿泊する権利や学生との交流、学生寮オーナー間のコミュニティーへの参加などが投資の副次的なメリットとしてあります。詳細は学生寮オーナーズプログラムの専用ウェブサイトをご覧ください。
-            <br />
-            <br />
-            詳細は学生寮オーナーズプログラムの専用ウェブサイトをご覧ください
-          </p>
-        </v-col>
-        <v-spacer />
-        <v-col cols="12" sm="6">
-          <v-img
-            class="card-img mx-auto"
-            width="100%"
-            contain
-            src="../assets/images/page_investor/image-5.png"
-          />
-        </v-col>
-      </v-row>
-    </v-container>
   </div>
 </template>
 
