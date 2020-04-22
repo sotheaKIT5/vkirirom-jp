@@ -16,8 +16,13 @@
         <h1 class="mx-auto">
           在宅があたりまえの時代に対応した新サービス<br />
           「cloud crew」<br />
-          (ロゴあり)
         </h1>
+        <v-img
+          contain
+          width="145"
+          class="mx-auto my-3 icon"
+          src="../assets/images/cloud-crew.png"
+        />
         <p class="mx-2 mx-sm-auto">
           いますぐに必要なだけのエンジニアを集められる、<br />
           従量課金型のITエンジニア供給サービスです
@@ -106,6 +111,9 @@ export default {
 .btn
   text-shadow: none
   box-shadow: none
+.icon
+  -webkit-filter: drop-shadow(0 5px 5px rgba(0,0,0,0.8))
+  filter: drop-shadow(0 5px 5px rgba(0,0,0,0.8))
 @media #{map-get($display-breakpoints, 'sm-and-up')}
   .hero
     height: 100vh
