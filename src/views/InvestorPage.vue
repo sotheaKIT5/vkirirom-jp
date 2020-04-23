@@ -55,7 +55,7 @@
     <v-container>
       <section-title>バーチャルカンパニーへ出資</section-title>
       <p>
-        先端技術IT学科には、バーチャルカンパニー（VO）という仕組みがあります。大学内に起業された仮想的な企業です。<br />
+        先端技術IT学科には、バーチャルカンパニー（VC）という仕組みがあります。大学内に起業された仮想的な企業です。<br />
         カンボジアや日本に向けた新規事業や大学外の企業との共同事業・受託事業を展開しています。<br />
         そのVCに実際に投資してくれる投資家が見つかれば、そのままスタートアップ企業としてスピンアウトすることができます。
       </p>
@@ -141,8 +141,8 @@ export default {
           description:
             "Len of Realityは、仮想現実の最先端技術を通じて言語を学習する古典的な方法を革新する破壊的な教育プラットフォームプロバイダーです。",
           imgUrl: "images/page_investor/logo-12.png",
-          hrefTo: "http://www.lenofreality.com/",
-          tags: ["教育"]
+          tags: ["教育"],
+          btnVisibility: "none"
         },
         {
           title: "Zeal",
