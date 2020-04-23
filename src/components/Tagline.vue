@@ -16,7 +16,7 @@
           <p v-html="description" class="description" />
         </v-col>
         <v-col cols="12" sm="4">
-          <v-img height="260" contain :src="getAsset(imgSrc)" />
+          <v-img height="215" contain :src="getAsset(imgSrc)" />
         </v-col>
       </v-row>
     </v-container>
