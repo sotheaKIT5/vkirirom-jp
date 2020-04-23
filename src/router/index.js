@@ -49,6 +49,14 @@ export default new Router({
         import(/* webpackChunkName: "ContactPage" */ "@/views/ContactPage.vue")
     },
     {
+      path: "/cloud-crew",
+      name: "cloud-crew",
+      component: () =>
+        import(
+          /* webpackChunkName: "CloudCrewPage" */ "@/views/CloudCrewPage.vue"
+        )
+    },
+    {
       path: "/offshore-development",
       name: "offshore-development",
       component: () =>

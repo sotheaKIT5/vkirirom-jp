@@ -221,6 +221,7 @@ export default {
       duration: 1000,
       offset: 0,
       services: [
+        { title: "cloud crew", goTo: "/cloud-crew" },
         { title: "オフショア開発", goTo: "/offshore-development" },
         { title: "エンジニア採用", goTo: "/engineer-recruitment" }
       ]
