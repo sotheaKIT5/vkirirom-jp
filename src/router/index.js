@@ -31,12 +31,10 @@ export default new Router({
         import(/* webpackChunkName: "AboutPage" */ "@/views/AboutPage.vue")
     },
     {
-      path: "/investor",
-      name: "investor",
+      path: "/startup",
+      name: "startup",
       component: () =>
-        import(
-          /* webpackChunkName: "InvestorPage" */ "@/views/InvestorPage.vue"
-        )
+        import(/* webpackChunkName: "InvestorPage" */ "@/views/StartupPage.vue")
     },
     {
       path: "/news",

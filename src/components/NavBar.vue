@@ -65,7 +65,7 @@
             :ripple="{ class: 'primary--text' }"
             class="nav-btn pa-3"
             active-class="primary--text"
-            to="/investor"
+            to="/startup"
           >
             <span>スタートアップ</span>
           </v-card>
@@ -141,7 +141,7 @@
           </v-list-item>
         </v-list-group>
         <v-divider />
-        <v-list-item active-class="primary--text" to="/investor">
+        <v-list-item active-class="primary--text" to="/startup">
           <v-list-item-title>スタートアップ</v-list-item-title>
         </v-list-item>
         <v-divider />

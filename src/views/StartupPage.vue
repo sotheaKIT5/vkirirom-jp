@@ -94,7 +94,7 @@
 const SectionTitle = () => import("@/components/SectionTitle.vue");
 const CardTypeSix = () => import("@/components/CardTypeSix.vue");
 export default {
-  name: "InvestorPage",
+  name: "StartupPage",
   components: { CardTypeSix, SectionTitle },
   data() {
     return {
