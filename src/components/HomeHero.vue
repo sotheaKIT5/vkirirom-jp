@@ -68,6 +68,7 @@ export default {
 <style lang="sass" scoped>
 @import '~vuetify/src/styles/styles.sass'
 .hero
+  min-height: 700px
   height: 100vh
   padding-top: 80px
   margin-top: -80px
