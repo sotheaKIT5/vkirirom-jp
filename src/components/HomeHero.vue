@@ -31,7 +31,7 @@
           color="primary"
           x-large
           class="btn mt-8 white--text"
-          to="/contact"
+          to="/cloud-crew"
         >
           詳細を見る
         </v-btn>
