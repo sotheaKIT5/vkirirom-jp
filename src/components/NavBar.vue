@@ -1,5 +1,5 @@
 <template>
-  <v-app-bar :height="navbarHeight" fixed app style="z-index: 99">
+  <v-app-bar height="80" fixed app style="z-index: 99">
     <v-container class="d-flex pa-0">
       <logo />
       <v-spacer />
@@ -59,6 +59,16 @@
               </v-list-item>
             </v-list>
           </v-menu>
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
+            to="/startup"
+          >
+            <span>スタートアップ</span>
+          </v-card>
           <v-card
             flat
             v-ripple="{ center: true }"
@@ -130,6 +140,10 @@
             {{ service.title }}
           </v-list-item>
         </v-list-group>
+        <v-divider />
+        <v-list-item active-class="primary--text" to="/startup">
+          <v-list-item-title>スタートアップ</v-list-item-title>
+        </v-list-item>
         <v-divider />
         <v-list-item active-class="primary--text" to="/about">
           <v-list-item-title>会社概要</v-list-item-title>
@@ -207,6 +221,7 @@ export default {
       duration: 1000,
       offset: 0,
       services: [
+        { title: "cloud crew", goTo: "/cloud-crew" },
         { title: "オフショア開発", goTo: "/offshore-development" },
         { title: "エンジニア採用", goTo: "/engineer-recruitment" }
       ]
