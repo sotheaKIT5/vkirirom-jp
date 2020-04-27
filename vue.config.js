@@ -11,7 +11,8 @@ module.exports = {
         "/",
         "/contact",
         "/about",
-        "/investor",
+        "/startup",
+        "/cloud-crew",
         "/engineer-recruitment",
         "/offshore-development"
       ],
