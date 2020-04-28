@@ -1,17 +1,18 @@
 <template>
   <div>
     <v-card flat tile class="hero overflow-hidden">
-      <video
-        v-if="$vuetify.breakpoint.mdAndUp"
-        class="bg-vdo"
-        playsinline
-        autoplay
-        muted
-        loop
-        poster="@/assets/images/bg-img-hero.png"
-      >
-        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
-      </video>
+      <!--      <video-->
+      <!--        v-if="$vuetify.breakpoint.mdAndUp"-->
+      <!--        class="bg-vdo"-->
+      <!--        playsinline-->
+      <!--        autoplay-->
+      <!--        muted-->
+      <!--        loop-->
+      <!--        poster="@/assets/images/bg-img-hero.png"-->
+      <!--      >-->
+      <!--        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />-->
+      <!--      </video>-->
+      <v-img class="bg-img" src="../assets/images/bg-img-hero.png" />
       <div class="inner-hero">
         <h1 class="mx-auto">
           在宅があたりまえの時代に対応した新サービス<br />
@@ -86,13 +87,22 @@ export default {
   min-height: 100%
   width: auto
   height: auto
+.bg-img
+  position: absolute
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  min-width: 100%
+  min-height: 100%
+  width: auto
+  height: auto
 .inner-hero
   width: 100%
   position: absolute
   top: 50%
   left: 50%
   text-align: center
-  color: #ffffff
+  color: cadetblue
   -webkit-transform: translateX(-50%) translateY(-50%)
   transform: translateX(-50%) translateY(-50%)
   text-shadow: 0 5px 5px rgba(0,0,0,0.8)

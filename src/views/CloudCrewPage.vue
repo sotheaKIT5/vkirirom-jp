@@ -73,7 +73,8 @@
             color="primary"
             x-large
             class="btn white--text mx-auto"
-            to="/contact"
+            href="https://forms.gle/eTF87bc2VRfsgeqB6"
+            target="_blank"
           >
             今すぐ試す
           </v-btn>
@@ -117,7 +118,8 @@
           color="primary"
           x-large
           class="btn white--text mx-auto"
-          to="/contact"
+          href="https://forms.gle/eTF87bc2VRfsgeqB6"
+          target="_blank"
         >
           今すぐ試す
         </v-btn>
