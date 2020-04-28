@@ -17,6 +17,19 @@
             label="名"
           ></v-text-field>
         </v-col>
+        <v-col>
+          <span>ご相談内容を選択してください*</span>
+          <v-radio-group class="pl-3 mt-0" v-model="purpose" :mandatory="true">
+            <v-radio label="cloud crew" value="cloud crew"></v-radio>
+            <v-radio label="オフショア開発" value="オフショア開発"></v-radio>
+            <v-radio label="エンジニア採用" value="エンジニア採用"></v-radio>
+            <v-radio
+              label="バーチャルカンパニーへの出資検討"
+              value="バーチャルカンパニーへの出資検討"
+            ></v-radio>
+            <v-radio label="その他" value="その他"></v-radio>
+          </v-radio-group>
+        </v-col>
         <v-col cols="12">
           <v-text-field
             v-model="email"
@@ -70,12 +83,14 @@
 export default {
   name: "ContactForm",
   data: () => ({
+    purpose: "その他",
     dialog: false,
     valid: true,
     first_name: "",
     last_name: "",
     lnameRules: [v => v.length <= 32 || "姓は32文字以下にする必要があります。"],
     fnameRules: [v => v.length <= 32 || "名は32文字以下にする必要があります。"],
+    purposeRules: [v => !!v || "Not Empty"],
     message: "",
     messageRules: [v => !!v || "お問い合わせ内容を入力してください。"],
     email: "",
@@ -101,7 +116,8 @@ export default {
             first_name: this.first_name,
             last_name: this.last_name,
             email: this.email,
-            message: this.message
+            message: this.message,
+            purpose: this.purpose
           }
         )
         .then(function(response) {
