@@ -6,6 +6,43 @@
       :keywords="keywords"
     />
     <v-container>
+      <section-title
+        >スタートアップ（バーチャルカンパニー）へ出資</section-title
+      >
+      <p>
+        先端技術IT学科には、バーチャルカンパニー（VC）という仕組みがあります。大学内に起業された仮想的な企業です。<br />
+        カンボジアや日本に向けた新規事業や大学外の企業との共同事業・受託事業を展開しています。<br />
+        そのVCに実際に投資してくれる投資家が見つかれば、そのままスタートアップ企業としてスピンアウトすることができます。
+      </p>
+      <div class="d-flex flex-row flex-wrap mt-5 mt-sm-10">
+        <card-type-six
+          class="company-card"
+          v-for="(company, id) in companies"
+          :key="id"
+          :title="company.title"
+          :description="company.description"
+          :ceo="company.ceo"
+          :bizDesc="company.bizDesc"
+          :imgUrl="company.imgUrl"
+          btn-txt="続きを読む"
+          :card-url="company.goTo"
+          :hrefTo="company.hrefTo"
+          :btnVisibility="company.btnVisibility"
+        >
+          <v-chip
+            v-for="(tag, id) in company.tags"
+            :key="id"
+            class="chip ma-1 px-1 py-0"
+            color="#E6F0F6"
+            label
+            text-color="primary"
+          >
+            <span class="ma-0" v-html="tag" />
+          </v-chip>
+        </card-type-six>
+      </div>
+    </v-container>
+    <v-container>
       <section-title>キリロム工科大学との産学連携</section-title>
       <p>
         A2Aデジタルジャパンはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
@@ -51,41 +88,6 @@
           </v-card>
         </v-col>
       </v-row>
-    </v-container>
-    <v-container>
-      <section-title>バーチャルカンパニーへ出資</section-title>
-      <p>
-        先端技術IT学科には、バーチャルカンパニー（VC）という仕組みがあります。大学内に起業された仮想的な企業です。<br />
-        カンボジアや日本に向けた新規事業や大学外の企業との共同事業・受託事業を展開しています。<br />
-        そのVCに実際に投資してくれる投資家が見つかれば、そのままスタートアップ企業としてスピンアウトすることができます。
-      </p>
-      <div class="d-flex flex-row flex-wrap mt-5 mt-sm-10">
-        <card-type-six
-          class="company-card"
-          v-for="(company, id) in companies"
-          :key="id"
-          :title="company.title"
-          :description="company.description"
-          :ceo="company.ceo"
-          :bizDesc="company.bizDesc"
-          :imgUrl="company.imgUrl"
-          btn-txt="続きを読む"
-          :card-url="company.goTo"
-          :hrefTo="company.hrefTo"
-          :btnVisibility="company.btnVisibility"
-        >
-          <v-chip
-            v-for="(tag, id) in company.tags"
-            :key="id"
-            class="chip ma-1 px-1 py-0"
-            color="#E6F0F6"
-            label
-            text-color="primary"
-          >
-            <span class="ma-0" v-html="tag" />
-          </v-chip>
-        </card-type-six>
-      </div>
     </v-container>
   </div>
 </template>
