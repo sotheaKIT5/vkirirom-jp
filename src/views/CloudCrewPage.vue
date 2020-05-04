@@ -62,11 +62,10 @@
           ECサイト開発 SPA開発 業務システム運用保守<br />
           運用テスト アノテーション業務 動画編集<br />
           <br />
-          HTML, CSS, Javascript, PHP, テスト自動化Javascript, Adobe Photoshop,
-          Adobe Illustrator, Adobe Premiere Pro, Adobe After Effect, Adobe
-          Indesign, Figma, Adobe XD, Lumion,..<br />
-          Vue.jsやReact等のフレームワーク, Python, C, Scala, Node js, Mongo DB,
-          MySQL<br />
+          HTML, CSS, Javascript, PHP, テスト自動化Javascript,<br />
+          Vue.js,React, Python, C, Scala, Node js, Mongo DB, MySQL <br />
+          Adobe Photoshop, Adobe Illustrator, Adobe Premiere Pro, Adobe After
+          Effect, Adobe Indesign, Figma, Adobe XD, Lumion
         </p>
         <div class="d-flex">
           <v-btn
