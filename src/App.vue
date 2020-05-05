@@ -7,16 +7,20 @@
       </v-content>
       <vk-footer />
     </div>
+    <div>
+      <chatbot-btn />
+    </div>
   </v-app>
 </template>
 <script>
 const NavBar = () => import(/* webpackMode: "eager" */ "./components/NavBar");
 const VkFooter = () =>
   import(/* webpackMode: "eager" */ "./components/VkFooter");
+const ChatbotBtn = () => import("./components/parent/ChatbotBtn");
 
 export default {
   name: "App",
-  components: { NavBar, VkFooter }
+  components: { ChatbotBtn, NavBar, VkFooter }
 };
 </script>
 <style lang="sass">
@@ -31,7 +35,8 @@ ul
 p, span
   font-size: 14px
 .page
-  min-height: 90vh
+  min-height: 91.5vh
+
 @media #{map-get($display-breakpoints, 'md-and-up')}
   p, span
     font-size: 16px
