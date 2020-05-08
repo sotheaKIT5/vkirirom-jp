@@ -15,8 +15,8 @@
       <v-img class="bg-img" src="../assets/images/bg-img-hero.png" />
       <div class="inner-hero">
         <h1 class="mx-auto">
-          在宅があたりまえの時代に対応した新サービス<br />
-          「cloud crew」<br />
+          開発チームもクラウドでつくる時代<br />
+          「cloud crew」
         </h1>
         <v-img
           contain
@@ -25,11 +25,11 @@
           src="../assets/images/cloud-crew.png"
         />
         <p class="mx-2 mx-sm-auto">
-          いますぐに必要なだけのエンジニアを集められる、<br />
-          従量課金型のITエンジニア供給サービスです
+          必要なエンジニアをリモートですぐに集められる。<br />
+          超オンデマンドのITエンジニア供給サービスです。
         </p>
         <v-btn
-          color="primary"
+          color="#ff8c00"
           x-large
           class="btn mt-8 white--text"
           to="/cloud-crew"
