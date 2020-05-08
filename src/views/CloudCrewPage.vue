@@ -69,13 +69,13 @@
         </p>
         <div class="d-flex">
           <v-btn
-            color="primary"
+            color="#ff8c00"
             x-large
             class="btn white--text mx-auto"
             href="https://forms.gle/eTF87bc2VRfsgeqB6"
             target="_blank"
           >
-            今すぐ試す
+            問合せフォーム
           </v-btn>
         </div>
       </v-container>
@@ -114,13 +114,13 @@
       </v-row>
       <div class="d-flex">
         <v-btn
-          color="primary"
+          color="#ff8c00"
           x-large
           class="btn white--text mx-auto"
           href="https://forms.gle/eTF87bc2VRfsgeqB6"
           target="_blank"
         >
-          今すぐ試す
+          問合せフォーム
         </v-btn>
       </div>
     </v-container>
@@ -148,7 +148,7 @@ export default {
         "アフターコロナ, コロナ, cloud crew, A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       tagline: [
         "cloud crew",
-        "在宅があたりまえのポスト・コロナ時代に対応した新サービス<br />いますぐに必要なだけエンジニアを集められる<br />従量課金型ITエンジニア供給サービス",
+        "リモートがあたりまえのポスト・コロナ時代。<br />必要なエンジニアをリモートですぐに集められる。<br />超オンデマンドのITエンジニア供給サービス。",
         "images/cloud_crew/cloud-crew-color.png"
       ],
       helps: [
