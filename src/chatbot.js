@@ -526,7 +526,7 @@ export default function initBotApp() {
         first_name: userName,
         last_name: "",
         email: userEmail,
-        phoneNumber: userNumber,
+        tel: userNumber,
         message: "From Chatbot",
         purpose: services
       })
