@@ -1,7 +1,12 @@
 <template>
   <div>
     <h1 class="send-title">ご相談・お問い合わせ</h1>
-    <v-form ref="form" v-model="valid" :lazy-validation="lazy">
+    <v-form
+      ref="form"
+      v-model="valid"
+      :lazy-validation="lazy"
+      v-on:submit.prevent="checkIfRecaptchaVerified"
+    >
       <v-row>
         <v-col cols="12" sm="6">
           <v-text-field
@@ -47,41 +52,42 @@
             label="お問い合わせ内容*"
           ></v-textarea>
         </v-col>
-      </v-row>
-      <v-dialog v-model="dialog" max-width="360">
-        <template v-slot:activator="{ on }">
-          <v-btn
-            outlined
-            x-large
-            color="accent"
-            class="btn text-capitalize"
-            :disabled="!valid"
-            v-on="on"
-            @click="submitForm"
-            @click.stop="dialog = true"
+        <v-col cols="12">
+          <vue-recaptcha
+            ref="recaptcha"
+            @verify="onCaptchaVerified"
+            @expired="onCaptchaExpired"
+            :loadRecaptchaScript="true"
+            sitekey="6LcNNfQUAAAAAPXrGq9Y4K9uCisGeR_aEcSoLaIc"
           >
-            <span class="px-12">送信</span>
-          </v-btn>
-        </template>
-        <v-card>
-          <v-card-title class="headline">
-            お問合せありがとうございます。メッセージを承りました。
-          </v-card-title>
-          <v-card-actions>
-            <v-spacer></v-spacer>
-            <v-btn color="green darken-1" text @click="dialog = false">
-              ok
-            </v-btn>
-          </v-card-actions>
-        </v-card>
-      </v-dialog>
+          </vue-recaptcha>
+        </v-col>
+      </v-row>
+      <v-btn
+        outlined
+        x-large
+        color="accent"
+        class="btn text-capitalize"
+        :disabled="!valid || bot"
+        :loading="loading"
+        v-on="on"
+        @click="submit"
+        @click.stop="dialog = true"
+      >
+        <span class="px-12">送信</span>
+      </v-btn>
+      <div v-if="submitted" class="green--text pt-3">
+        {{ alert }}
+      </div>
     </v-form>
   </div>
 </template>
 
 <script>
+import VueRecaptcha from "vue-recaptcha";
 export default {
   name: "ContactForm",
+  components: { VueRecaptcha },
   data: () => ({
     purpose: "その他",
     dialog: false,
@@ -90,7 +96,7 @@ export default {
     last_name: "",
     lnameRules: [v => v.length <= 32 || "姓は32文字以下にする必要があります。"],
     fnameRules: [v => v.length <= 32 || "名は32文字以下にする必要があります。"],
-    purposeRules: [v => !!v || "Not Empty"],
+    purposeRules: [v => !!v || "ご相談内容が選択されていません。"],
     message: "",
     messageRules: [v => !!v || "お問い合わせ内容を入力してください。"],
     email: "",
@@ -102,34 +108,55 @@ export default {
           v
         ) || "メールアドレスに誤りがあります。"
     ],
-    lazy: false
+    lazy: false,
+    bot: true,
+    loading: false,
+    submitted: false,
+    alert: ""
   }),
 
   methods: {
-    submitForm() {
+    onCaptchaVerified: function() {
+      const self = this;
+      self.bot = false;
+    },
+    onCaptchaExpired: function() {
+      this.$refs.recaptcha.reset();
+    },
+    submit() {
       this.$refs.form.validate();
-      let currentObj = this;
-      this.axios
+      let self = this;
+      self.loading = true;
+      self.alert = "";
+      self.axios
         .post(
           "https://a2a-digital-backend.herokuapp.com/api/send-email-japan",
           {
-            first_name: this.first_name,
-            last_name: this.last_name,
-            email: this.email,
-            message: this.message,
-            purpose: this.purpose
+            first_name: self.first_name,
+            last_name: self.last_name,
+            email: self.email,
+            tel: "",
+            message: self.message,
+            purpose: self.purpose
           }
         )
         .then(function(response) {
-          currentObj.output = response.data;
+          self.output = response.data;
         })
         .catch(function(error) {
-          currentObj.output = error;
+          self.output = error;
+        })
+        .finally(() => {
+          self.loading = false;
+          self.submitted = true;
+          self.alert = "お問合せありがとうございます。メッセージを承りました。";
+          self.reset();
         });
-      this.reset();
     },
     reset() {
       this.$refs.form.reset();
+      this.$refs.recaptcha.reset();
+      this.purpose = "その他";
     }
   }
 };
