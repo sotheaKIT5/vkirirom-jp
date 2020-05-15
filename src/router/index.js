@@ -22,7 +22,8 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: () => import("@/views/HomePage.vue")
+      component: () =>
+        import(/* webpackChunkName: "HomePage" */ "@/views/HomePage.vue")
     },
     {
       path: "/about",
@@ -40,7 +41,15 @@ export default new Router({
       path: "/news",
       name: "news",
       component: () =>
-        import(/* webpackChunkName: "NewsPage" */ "@/views/NewsPage.vue")
+        import(/* webpackChunkName: "NewsPage" */ "@/views/News/index.vue")
+    },
+    {
+      path: "/news/:id",
+      name: "news_detail",
+      component: () =>
+        import(
+          /* webpackChunkName: "NewsDetailPage" */ "@/views/News/_id/index.vue"
+        )
     },
     {
       path: "/contact",
@@ -50,7 +59,7 @@ export default new Router({
     },
     {
       path: "/cloud-crew",
-      name: "cloud-crew",
+      name: "cloud_crew",
       component: () =>
         import(
           /* webpackChunkName: "CloudCrewPage" */ "@/views/CloudCrewPage.vue"
@@ -58,7 +67,7 @@ export default new Router({
     },
     {
       path: "/offshore-development",
-      name: "offshore-development",
+      name: "offshore_development",
       component: () =>
         import(
           /* webpackChunkName: "OffshoreDevelopmentPage" */ "@/views/OffshoreDevelopmentPage.vue"
@@ -66,7 +75,7 @@ export default new Router({
     },
     {
       path: "/engineer-recruitment",
-      name: "engineer-recruitment",
+      name: "engineer_recruitment",
       component: () =>
         import(
           /* webpackChunkName: "EngineerRecruitmentPage" */ "@/views/EngineerRecruitmentPage.vue"

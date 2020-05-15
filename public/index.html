@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="content-language" content="ja">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <link rel="icon" href="<%= BASE_URL %>favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="<%= BASE_URL %>img/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="<%= BASE_URL %>img/icons/favicon-16x16.png">
     <title>A2Aデジタルジャパン</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900">
-  
+
     <!-- Add to home screen for Android and modern mobile browsers -->
     <link rel="manifest" href="<%= BASE_URL %>manifest.json">
     <meta name="theme-color" content="#303030">
@@ -59,6 +60,7 @@
 
         gtag('config', 'UA-162521491-1');
     </script>
+    <link rel="prefetch" href="http://wp.a2a-digital.jp/wp-json/wp/v2/posts?per_page=9&page=1" />
 </head>
 <body>
 <noscript>

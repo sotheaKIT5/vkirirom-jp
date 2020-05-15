@@ -6,4 +6,4 @@ Disallow: /nogooglebot/
 User-agent: *
 Allow: /
 
-Sitemap: https://a2a-digital.com/sitemap.xml
+Sitemap: https://a2a-digital.jp/sitemap.xml
