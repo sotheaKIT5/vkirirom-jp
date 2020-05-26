@@ -126,11 +126,11 @@
 </template>
 
 <script>
-import CardTypeTwo from "../components/CardTypeTwo";
-import CustomerSection from "../components/parent/CustomerSection";
-import CloudCrewFlow from "../components/parent/CloudCrewFlow";
 const Tagline = () => import("@/components/Tagline.vue");
 const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeTwo = () => import("@/components/CardTypeTwo.vue");
+const CustomerSection = () => import("@/components/parent/CustomerSection.vue");
+const CloudCrewFlow = () => import("@/components/parent/CloudCrewFlow.vue");
 export default {
   name: "CloudCrewPage",
   components: {
