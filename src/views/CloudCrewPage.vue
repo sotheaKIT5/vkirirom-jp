@@ -81,6 +81,8 @@
         </div>
       </v-container>
     </v-card>
+    <customer-section />
+    <cloud-crew-flow />
     <v-container>
       <section-title>cloud crew 利用シーン・プラン</section-title>
       <v-row class="left-right-card pb-3">
@@ -125,11 +127,15 @@
 
 <script>
 import CardTypeTwo from "../components/CardTypeTwo";
+import CustomerSection from "../components/parent/CustomerSection";
+import CloudCrewFlow from "../components/parent/CloudCrewFlow";
 const Tagline = () => import("@/components/Tagline.vue");
 const SectionTitle = () => import("@/components/SectionTitle.vue");
 export default {
   name: "CloudCrewPage",
   components: {
+    CloudCrewFlow,
+    CustomerSection,
     // eslint-disable-next-line vue/no-unused-components
     CardTypeTwo,
     SectionTitle,
