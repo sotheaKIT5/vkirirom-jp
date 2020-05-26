@@ -72,21 +72,21 @@ export default {
       },
       customers: [
         {
-          image: "images/dummy/man-1.png",
+          image: "images/cloud_crew/man.png",
           name: "事例１",
           position: "",
           words:
             "リモートの学生インターンプロジェクトとしてウェブデザインのテストツール開発を行いました（2名*6ヶ月）。卒業後は彼ら自身がオフィス探しやリモートでの開発環境作り、セキュリティカメラの導入を行い、現在では業務委託契約で4名がカンボジア拠点で開発プロジェクトを進めています。"
         },
         {
-          image: "images/dummy/man-1.png",
+          image: "images/cloud_crew/woman.png",
           name: "事例２",
           position: "",
           words:
             "カンボジアで事業をしており、その国出身の優秀なエンジニアの確保ができました。8ヶ月間の在学中のインターン期間も経て会社の理念に共感しているのに加え、主要プロダクトの新機能開発やローカライゼーションのマネジメントを任せられる人材と仕事ができ、事業が拡大しています。"
         },
         {
-          image: "images/dummy/man-1.png",
+          image: "images/cloud_crew/man.png",
           name: "事例３",
           position: "",
           words:
