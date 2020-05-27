@@ -32,7 +32,7 @@ export default function initBotApp() {
           loading: true,
           action: [
             {
-              text: "Cloud Crew",
+              text: "ラボ型インターン",
               value: "cloud_crew"
             },
             {

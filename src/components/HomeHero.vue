@@ -16,7 +16,7 @@
       <div class="inner-hero">
         <h1 class="mx-auto">
           開発チームもクラウドでつくる時代<br />
-          「cloud crew」
+          「ラボ型インターン」
         </h1>
         <v-img
           contain

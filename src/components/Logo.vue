@@ -5,7 +5,6 @@
       viewBox="0 0 806 291"
       :style="'fill' + ':' + color + '; height: 45px; vertical-align: middle;'"
     >
-      <title>a2a-digital-logo</title>
       <path
         class="cls-1"
         d="M246.29,213.47q0,21.79-10.11,33.38t-29.25,11.58a41.54,41.54,0,0,1-15.81-3V232.54a22.66,22.66,0,0,0,14.07,4.77q16.73,0,16.73-24.82V148h24.37Z"

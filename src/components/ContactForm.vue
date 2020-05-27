@@ -25,7 +25,7 @@
         <v-col>
           <span>ご相談内容を選択してください*</span>
           <v-radio-group class="pl-3 mt-0" v-model="purpose" :mandatory="true">
-            <v-radio label="cloud crew" value="cloud crew"></v-radio>
+            <v-radio label="ラボ型インターン" value="ラボ型インターン"></v-radio>
             <v-radio label="オフショア開発" value="オフショア開発"></v-radio>
             <v-radio label="エンジニア採用" value="エンジニア採用"></v-radio>
             <v-radio
