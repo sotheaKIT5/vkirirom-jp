@@ -1,6 +1,6 @@
 <template>
   <v-container id="customer">
-    <section-title>cloud crew 事例</section-title>
+    <section-title>ラボ型インターン 事例</section-title>
     <h4 class="text-center font-weight-regular mb-5">
       インターン終了後、その学生を中心とした開発チームをカンボジアに設置している企業もあります。
     </h4>

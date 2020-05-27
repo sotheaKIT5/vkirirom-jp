@@ -1,7 +1,7 @@
 <template>
   <div class="bg">
     <v-container>
-      <section-title>cloud crew ご利用の流れ</section-title>
+      <section-title>ラボ型インターン ご利用の流れ</section-title>
       <v-row>
         <v-col cols="12" sm="2" class="pa-sm-0">
           <div class="parent">
