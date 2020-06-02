@@ -10,31 +10,51 @@
       :description="tagline[1]"
       :imgSrc="tagline[2]"
     />
-    <v-container>
-      <section-title>cloud crew 誕生の背景</section-title>
+    <v-container class="pb-10">
+      <section-title>ラボ型インターン 誕生の背景</section-title>
       <p>
-        いま世界は大きな変化のタイミングにあり、ITの重要度そして期待感は日増しに高まっています。顧客のニーズに最速で対応し課題を解決し続けられる企業のみが選ばれ、成長し続けます。<br />
+        <b>なぜカンボジア？</b><br />
+        カンボジアはベトナム・タイ・ラオスに囲まれた人口約1,600万人の小さな国です。<br />
+        アジアではトップクラスのGDP成長率をほこり、平均年齢は24.5才と若く活気があり、ITエンジニアを目指す若者が増えています。<br />
+        そんな中、A2A
+        Digitalの関連会社はカンボジアにてエンジニア養成機関（カンボジアの難関大学：キリロム工科大学）を設立し、<br />
+        現在では日本の成長企業にも優秀なエンジニアを育成・輩出しています。<br />
+        カンボジアには魅力的なIT企業が少ない分、海外の企業で力を発揮したいと思う若者は多いのです。<br />
         <br />
-        一方、日本国内でのエンジニアの獲得難易度は高止まりを続けており、コスト・リードタイムともに顧客ニーズとは逆行しているのが現状です。<br />
+        <b>カンボジアのエンジニアとプロジェクト？</b><br />
+        外国人エンジニアと、尚且つリモートでプロジェクトを遂行するのは至難の技。<br />
+        品質や納期のマネジメント、言語・文化習慣の違いによるコミュニケーションの壁、といった懸念から、<br />
+        二の足を踏んでいる企業も多いのではないでしょうか。<br />
         <br />
-        このような状況の中、<br />
-        「今すぐ開発したい案件があるが、獲得コストが高くリードタイムも長い」<br />
-        「企画の新規性が高く、新たに正社員雇用をするのは不安」<br />
-        「緊急案件があるが、瑣末なタスクに貴重なプロパーのリソースを割いている」<br />
-        といった悩みを解決するために、時々の開発ニーズに合わせて、いますぐに必要なだけのエンジニアをチーム編成し、開発に着手できるサービス「cloud
-        crew」を提供することにいたしました。<br />
+        <b>ラボ型インターンにトライするメリット</b><br />
+        A2A
+        digitalでは上記のような懸念事項を踏まえた上で、エンジニアの確保および貴社のグローバル化をご支援いたします。<br />
+        ラボ型インターンのプロジェクトの直接の成果物のほか、以下のようなメリットを享受いただけたらと考えています。<br />
+        ・採用の母数が無限大に。<br />
+        ・海外企業との協業や案件受注の可能性。<br />
+        ・組織のダイバーシティ、イノベーション、成長促進。<br />
         <br />
-        在宅勤務があたりまえになったいま、開発チームのクラウド化を推進しやすくもなっているのです。
+        今こそ国をまたぎ、本当に一緒に働きたい人を発掘・育成しませんか？<br />
+        アジアGDP成長率トップクラスのカンボジアから、選び抜かれたエンジニアの卵が本気で挑戦します。
       </p>
+      <div class="d-flex">
+        <v-btn
+          color="#ff8c00"
+          x-large
+          class="btn white--text mx-auto"
+          href="https://forms.gle/eTF87bc2VRfsgeqB6"
+          target="_blank"
+        >
+          問合せフォーム
+        </v-btn>
+      </div>
     </v-container>
     <v-card flat tile color="accent" class="pb-12">
       <v-container>
         <section-title class="white--text">
-          cloud crew 3つの特徴
+          A2A digitalのラボ型インターン 3つの特徴
         </section-title>
-        <h4 class="white--text font-weight-regular pb-7">
-          本サービスは、当社関連会社が運営する海外技術大学のネットワークを活用し、開発リソース確保を支援いたします。企業のニーズに合わせてITエンジニアのチームを即日編成します。余計な時間とコストをかけずに手軽に自社にエンジニアチームを作ることで、システム開発・運用を支援します。もちろん、即日解散も可能です。
-        </h4>
+        <!--<h4 class="white&#45;&#45;text font-weight-regular pb-7"></h4>-->
         <v-row no-gutters>
           <v-col cols="12" sm="4" md="4" v-for="(help, id) in helps" :key="id">
             <v-card tile color="#A5DBDE" elevation="1" class="pa-3 fill-height">
@@ -55,8 +75,7 @@
           </v-col>
         </v-row>
         <p class="my-7 white--text">
-          「cloud
-          crew」を通じて、システム開発案件への柔軟なリソース確保の成功事例を増やし、ITビジネスの発展に貢献してまいります。<br />
+          「ラボ型インターン」を通じて、システム開発案件への柔軟なリソース確保の成功事例を増やし、ITビジネスの発展に貢献してまいります。<br />
           <br />
           （ご依頼いただける業務例）<br />
           ECサイト開発 SPA開発 業務システム運用保守<br />
@@ -80,26 +99,23 @@
         </div>
       </v-container>
     </v-card>
+    <customer-section />
+    <cloud-crew-flow />
     <v-container>
-      <section-title>cloud crew 利用シーン・プラン</section-title>
+      <section-title>ラボ型インターン 利用シーン・プラン</section-title>
       <v-row class="left-right-card pb-3">
         <v-col cols="12" sm="7" class="card-content">
           <ul>
             <li>
-              cloud crewでは、以下のようなプランを用意しています。<br />
-              <br />
-              時間単位で簡易作業できるエンジニアがほしい<br />
-              オンラインかつ時間単位でタスクを行い、レポートもしくは納品ができる「ライト」プラン（1,200円/時間(税抜)〜）をおすすめします。<br /><br />
+              ラボ型インターンでは、以下のようなプランを用意しています。<br /><br />
             </li>
             <li>
-              開発案件をそのまま発注したい<br />
-              cloud
-              crewディレクターが開発案件とチームをマネジメントする「ディレクション」プラン（30万円/月(税抜)〜）をおすすめします。<br /><br />
+              1人あたり1,000-1,200usd/月<br />
+              120時間インターンします。<br /><br />
             </li>
+            <li>ブリッジSE（日本人インターン） 1,000usd-/月<br /><br /></li>
             <li>
-              cloud crewを自社のバーチャルエンジニア組織として活用したい<br />
-              編成されたcloud
-              crewごと、御社のエンジニア組織配下に置いて業務を遂行する「パートナー」プラン（都度見積もり）をご検討ください。
+              *採用には別途費用がかかります。
             </li>
           </ul>
         </v-col>
@@ -128,12 +144,16 @@
 </template>
 
 <script>
-import CardTypeTwo from "../components/CardTypeTwo";
 const Tagline = () => import("@/components/Tagline.vue");
 const SectionTitle = () => import("@/components/SectionTitle.vue");
+const CardTypeTwo = () => import("@/components/CardTypeTwo.vue");
+const CustomerSection = () => import("@/components/parent/CustomerSection.vue");
+const CloudCrewFlow = () => import("@/components/parent/CloudCrewFlow.vue");
 export default {
   name: "CloudCrewPage",
   components: {
+    CloudCrewFlow,
+    CustomerSection,
     // eslint-disable-next-line vue/no-unused-components
     CardTypeTwo,
     SectionTitle,
@@ -141,33 +161,33 @@ export default {
   },
   data() {
     return {
-      title: "cloud-crew | A2Aデジタルジャパン",
+      title: "ラボ型インターン | A2Aデジタルジャパン",
       description:
         "リモートがあたりまえのポスト・コロナ時代。必要なエンジニアをリモートですぐに集められる。超オンデマンドのITエンジニア供給サービス。",
       keywords:
-        "アフターコロナ, コロナ, cloud crew, A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
+        "アフターコロナ, コロナ, ラボ型インターン, cloud crew, A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       tagline: [
-        "cloud crew",
-        "リモートがあたりまえのポスト・コロナ時代。<br />必要なエンジニアをリモートですぐに集められる。<br />超オンデマンドのITエンジニア供給サービス。",
+        "ラボ型インターン",
+        "リモートが当たり前のポストコロナ時代。<br />今こそ国をまたぎ、本当に一緒に働きたい人を発掘・育成しませんか？<br />アジアGDP成長率トップのカンボジアから、選び抜かれたエンジニアの卵が本気で挑戦します。",
         "images/cloud_crew/cloud-crew-color.png"
       ],
       helps: [
         {
           number: "01",
-          title: "エンジニアリソース",
-          description:
-            "海外で運営しているエンジニア養成教育機関（カンボジアの難関大学：キリロム工科大学）と、その卒業生およびエンジニアネットワークを活用できます"
+          title: "変動費化",
+          description: "Withコロナの時代。開発コストを変動費化します。"
         },
         {
           number: "02",
-          title: "即日チーム編成・解散",
+          title: "質の揃ったエンジニアの確保",
           description:
-            "フォームに要件をご登録いただいた後、翌日にはチーム編成ができます。時間単位でエンジニアをご活用いただけます"
+            "私たちが運営しているエンジニア養成機関（カンボジアの難関大学：キリロム工科大学）が人材確保・育成支援します。"
         },
         {
           number: "03",
-          title: "スケーラブル",
-          description: "1名から200名まで、必要に応じてエンジニアを増減できます"
+          title: "グローバル化促進",
+          description:
+            "英語・リモートの開発プロジェクトが貴社の可能性を広げます。"
         }
       ]
     };

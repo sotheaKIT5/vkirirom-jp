@@ -32,7 +32,7 @@ export default function initBotApp() {
           loading: true,
           action: [
             {
-              text: "Cloud Crew",
+              text: "ラボ型インターン",
               value: "cloud_crew"
             },
             {
@@ -77,16 +77,12 @@ export default function initBotApp() {
           loading: true,
           action: [
             {
-              text: "時間単位で簡易作業できるエンジニアがほしい",
+              text: "ラボ型インターン(1人あたり1,000-1,200usd/月)",
               value: "cloud_service1_1"
             },
             {
-              text: "開発案件をそのまま発注したい",
+              text: "ブリッジSE（日本人インターン） 1,000usd-/月",
               value: "cloud_service1_2"
-            },
-            {
-              text: "自社のバーチャルエンジニア組織として活用したい",
-              value: "cloud_service1_3"
             }
           ]
         });
@@ -101,10 +97,6 @@ export default function initBotApp() {
           cust_choices.service2 = res.text;
           // eslint-disable-next-line no-undef
           fcloud_crew1_2();
-        } else if (res.value === "cloud_service1_3") {
-          cust_choices.service2 = res.text;
-          // eslint-disable-next-line no-undef
-          fcloud_crew1_3();
         }
       });
   };
@@ -219,10 +211,6 @@ export default function initBotApp() {
   };
   ////////////////////////////////////////////////////////////////// First 02 ///////////////////////////////////////////////////////////////
   var fcloud_crew1_2 = function() {
-    fperonal_info();
-  };
-  ////////////////////////////////////////////////////////////////// First 03 ///////////////////////////////////////////////////////////////
-  var fcloud_crew1_3 = function() {
     fperonal_info();
   };
   /////////////////////////////////////////////////////////////////// Second 01 ///////////////////////////////////////////////////////////////

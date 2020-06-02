@@ -6,9 +6,9 @@
       </v-col>
       <v-col cols="12" md="7" class=" main-text white--text">
         <h2 class="card-title pb-1 text-center text-md-left">{{ title }}</h2>
-        <h4 class="card-subtitle pb-4 text-center text-md-left">
-          {{ subtitle }}
-        </h4>
+        <!--        <h4 class="card-subtitle pb-4 text-center text-md-left">-->
+        <!--          {{ subtitle }}-->
+        <!--        </h4>-->
         <p>
           <q>{{ description }}</q>
         </p>
