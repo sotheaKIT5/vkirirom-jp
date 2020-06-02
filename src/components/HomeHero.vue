@@ -1,32 +1,26 @@
 <template>
   <div>
     <v-card flat tile class="hero overflow-hidden">
-      <!--      <video-->
-      <!--        v-if="$vuetify.breakpoint.mdAndUp"-->
-      <!--        class="bg-vdo"-->
-      <!--        playsinline-->
-      <!--        autoplay-->
-      <!--        muted-->
-      <!--        loop-->
-      <!--        poster="@/assets/images/bg-img-hero.png"-->
-      <!--      >-->
-      <!--        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />-->
-      <!--      </video>-->
-      <v-img class="bg-img" src="../assets/images/bg-img-hero.png" />
+      <!--<v-img class="bg-img" src="@/assets/images/bg-img-hero.png" />-->
+      <video
+        v-if="$vuetify.breakpoint.mdAndUp"
+        class="bg-vdo"
+        playsinline
+        autoplay
+        muted
+        loop
+        poster="@/assets/images/bg-img-hero.png"
+      >
+        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
+      </video>
       <div class="inner-hero">
         <h1 class="mx-auto">
-          開発チームもクラウドでつくる時代<br />
-          「ラボ型インターン」
+          カンボジア最難関の技術大学と産学連携 <br />
+          「ラボ型開発インターン」
         </h1>
-        <v-img
-          contain
-          width="145"
-          class="mx-auto my-3 icon"
-          src="../assets/images/cloud-crew.png"
-        />
         <p class="mx-2 mx-sm-auto">
-          必要なエンジニアをリモートですぐに集められる。<br />
-          超オンデマンドのITエンジニア供給サービスです。
+          カンボジア国内外のハッカソンで賞金獲得するレベルの学生が<br />
+          学内の開発インターンシップ経験を積んだあと、貴社のラボ型開発に挑戦します。
         </p>
         <v-btn
           color="#ff8c00"

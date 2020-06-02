@@ -20,11 +20,11 @@ export default {
   data() {
     return {
       title:
-        "A2Aデジタルジャパン | 開発チームもクラウドでつくる時代「cloud crew」",
+        "A2Aデジタルジャパン | 開発チームもクラウドでつくる時代「ラボ型インターン」",
       description:
-        "開発チームもクラウドでつくる時代「cloud crew」必要なエンジニアをリモートですぐに集められる。超オンデマンドのITエンジニア供給サービスです。",
+        "開発チームもクラウドでつくる時代「ラボ型インターン」必要なエンジニアをリモートですぐに集められる。超オンデマンドのITエンジニア供給サービスです。",
       keywords:
-        "アフターコロナ, コロナ, cloud crew, A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル"
+        "アフターコロナ, コロナ, ラボ型インターン, cloud crew, A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル"
     };
   }
 };
