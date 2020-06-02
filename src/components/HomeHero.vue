@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-card flat tile class="hero overflow-hidden">
-      <!--<v-img class="bg-img" src="@/assets/images/bg-img-hero.png" />-->
+      <v-img class="bg-img" src="@/assets/images/bg-img-hero.png" />
       <video
         v-if="$vuetify.breakpoint.mdAndUp"
         class="bg-vdo"
@@ -20,7 +20,7 @@
         </h1>
         <p class="mx-2 mx-sm-auto">
           カンボジア国内外のハッカソンで賞金獲得するレベルの学生が<br />
-          学内の開発インターンシップ経験を積んだあと、貴社のラボ型開発に挑戦します。
+          ソフトウェア開発経験を積んだあと、貴社のラボ型開発に挑戦します。
         </p>
         <v-btn
           color="#ff8c00"
