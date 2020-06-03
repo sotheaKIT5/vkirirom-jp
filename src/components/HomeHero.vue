@@ -1,18 +1,33 @@
 <template>
   <div>
     <v-card flat tile class="hero overflow-hidden">
-      <v-img class="bg-img" src="@/assets/images/bg-img-hero.png" />
-      <video
-        v-if="$vuetify.breakpoint.mdAndUp"
-        class="bg-vdo"
-        playsinline
-        autoplay
-        muted
-        loop
-        poster="@/assets/images/bg-img-hero.png"
+      <v-carousel
+        cycle
+        height="100vh"
+        class="bg-img"
+        hide-delimiters
+        :show-arrows="false"
       >
-        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />
-      </video>
+        <v-carousel-item
+          v-for="(slide, i) in slides"
+          :key="i"
+          :src="getAsset(slide.src)"
+          reverse-transition="slide-x-reverse-transition"
+          transition="slide-x-transition"
+        ></v-carousel-item>
+      </v-carousel>
+      <!--      <v-img class="bg-img" src="@/assets/images/bg-img-hero.png" />-->
+      <!--      <video-->
+      <!--        v-if="$vuetify.breakpoint.mdAndUp"-->
+      <!--        class="bg-vdo"-->
+      <!--        playsinline-->
+      <!--        autoplay-->
+      <!--        muted-->
+      <!--        loop-->
+      <!--        poster="@/assets/images/bg-img-hero.png"-->
+      <!--      >-->
+      <!--        <source src="@/assets/videos/bg-video.mp4" type="video/mp4" />-->
+      <!--      </video>-->
       <div class="inner-hero">
         <h1 class="mx-auto">
           カンボジア最難関の技術大学と産学連携 <br />
@@ -41,8 +56,39 @@ export default {
   data() {
     return {
       duration: 1000,
-      offset: 0
+      offset: 0,
+      slides: [
+        {
+          src: "images/slideshow/womentechmaker.jpg"
+        },
+        {
+          src: "images/slideshow/imaginecup.jpg"
+        },
+        {
+          src: "images/slideshow/smartapi-circle-1.jpg"
+        },
+        {
+          src: "images/slideshow/smartstart2.jpg"
+        },
+        {
+          src: "images/slideshow/smartapi-circle-2.jpg"
+        },
+        {
+          src: "images/slideshow/smartedu.jpg"
+        },
+        {
+          src: "images/slideshow/somjot.jpg"
+        },
+        {
+          src: "images/slideshow/smartstart.jpg"
+        }
+      ]
     };
+  },
+  methods: {
+    getAsset(path) {
+      return require("@/assets/" + path);
+    }
   },
   computed: {
     target() {
@@ -67,7 +113,6 @@ export default {
   height: 100vh
   padding-top: 80px
   margin-top: -80px
-  background-image: url("../assets/images/bg-img-hero.png")
   background-color: #000000
   background-position: center
   background-repeat: no-repeat
