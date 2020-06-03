@@ -169,7 +169,7 @@ export default {
       tagline: [
         "ラボ型インターン",
         "リモートが当たり前のポストコロナ時代。<br />今こそ国をまたぎ、本当に一緒に働きたい人を発掘・育成しませんか？<br />アジアGDP成長率トップのカンボジアから、選び抜かれたエンジニアの卵が本気で挑戦します。",
-        "images/cloud_crew/cloud-crew-color.png"
+        "images/page_engineer_recruitment/image-7.png"
       ],
       helps: [
         {
