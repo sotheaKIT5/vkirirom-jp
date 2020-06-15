@@ -111,7 +111,7 @@ export default {
           description:
             "Jobifyは求人マッチングプラットフォームを提供しています。 求職者、特に新卒の学生に、幅広い就職機会を提供しています。また、従業員の採用を検討している企業の場合、市場で最高の候補者を探すことができます。",
           imgUrl: "images/company/jobify.png",
-          hrefTo: "http://www.jobify.works/",
+          hrefTo: "https://www.jobify.works/en/index.html",
           tags: ["HR"]
         },
         {

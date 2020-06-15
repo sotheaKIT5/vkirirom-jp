@@ -64,7 +64,7 @@ export default {
         )
         .then(response => {
           this.post_detail = response.data;
-          this.featured_image = this.post_detail.better_featured_image.media_details.sizes.large.source_url;
+          this.featured_image = this.post_detail.better_featured_image.source_url;
           this.post_title = this.post_detail.title.rendered;
           this.post_content = this.post_detail.content.rendered;
           this.post_date = this.post_detail.date;
@@ -105,6 +105,8 @@ figcaption
   text-align: center
   font-weight: bold
   margin: 0
+.post
+  max-width: 900px !important
 .Masthead
   z-index: 0 !important
   height: 200px !important
