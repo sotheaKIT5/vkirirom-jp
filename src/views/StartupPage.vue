@@ -227,11 +227,13 @@ export default {
           btnVisibility: "none"
         },
         {
-          title: "ex-C4K",
+          title: "Portal",
           description:
-            "C4Kは、さまざまなリソースを活用して日常生活をにより便利にすることに重点を置いています。自動化システムや、機能をより簡単に使うための抽象的ユーザインターフェースを提供しています。",
-          imgUrl: "images/page_investor/logo-15.png",
-          tags: ["ITインフラ（ネットワーク）"],
+            "Portalは、利用可能なリソースを活用して素早くソリューションを提供するバーチャルカンパニーです。私たちの目的は、複雑な問題を簡素化・単純化し解決に導くことです。<br />" +
+            "スローガンは「Portal, the gateway to your solutions.」。<br />" +
+            "私たちはカンボジアの技術コミュニティのプラットフォーム作りに取り組んでおり、そこで技術者が課題を解決できるようサポートします。",
+          imgUrl: "images/page_investor/logo-19.png",
+          tags: ["ITメディア"],
           btnVisibility: "none"
         },
         {
