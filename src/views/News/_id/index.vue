@@ -1,9 +1,14 @@
 <template>
   <div>
+    <vue-headful
+      :title="post_title"
+      :description="briefDesc(description)"
+      :image="og_image"
+    />
     <div>
       <div style="position: relative">
         <parallax :speed-factor="0.2" direction="down" :parallax="true">
-          <img :src="featured_image" />
+          <v-img height="600" :src="featured_image" />
         </parallax>
       </div>
     </div>
@@ -49,7 +54,9 @@ export default {
       post_detail: [],
       featured_image: "",
       post_title: "",
+      description: "",
       post_content: "",
+      og_image: "",
       post_date: [],
       route: this.$router.currentRoute.params["id"]
     };
@@ -65,7 +72,9 @@ export default {
         .then(response => {
           this.post_detail = response.data;
           this.featured_image = this.post_detail.better_featured_image.source_url;
+          this.og_image = this.post_detail.better_featured_image.media_details.sizes.medium.source_url;
           this.post_title = this.post_detail.title.rendered;
+          this.description = this.post_detail.excerpt.rendered;
           this.post_content = this.post_detail.content.rendered;
           this.post_date = this.post_detail.date;
         })
@@ -82,6 +91,14 @@ export default {
           .toJSON()
           .slice(0, 10)
           .replace(/-/g, "/");
+    },
+    briefDesc(description) {
+      if (description.length >= 75) {
+        description = description.slice(3, 75) + "...";
+        return description;
+      } else {
+        return description;
+      }
     }
   },
   mounted() {
@@ -109,8 +126,8 @@ figcaption
   max-width: 900px !important
 .Masthead
   z-index: 0 !important
-  height: 200px !important
-  min-height: 100px !important
+  height: 300px !important
+  min-height: 300px !important
 .wp-block-image
   text-align: center
   pointer-events: none

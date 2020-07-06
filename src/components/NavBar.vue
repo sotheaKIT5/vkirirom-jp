@@ -69,16 +69,16 @@
           >
             <span>スタートアップ</span>
           </v-card>
-          <!--          <v-card-->
-          <!--            flat-->
-          <!--            v-ripple="{ center: true }"-->
-          <!--            :ripple="{ class: 'primary&#45;&#45;text' }"-->
-          <!--            class="nav-btn pa-3"-->
-          <!--            active-class="primary&#45;&#45;text"-->
-          <!--            to="/news"-->
-          <!--          >-->
-          <!--            <span>ニュース</span>-->
-          <!--          </v-card>-->
+          <v-card
+            flat
+            v-ripple="{ center: true }"
+            :ripple="{ class: 'primary--text' }"
+            class="nav-btn pa-3"
+            active-class="primary--text"
+            to="/news"
+          >
+            <span>ニュース</span>
+          </v-card>
           <v-card
             flat
             v-ripple="{ center: true }"
@@ -154,9 +154,9 @@
         <v-list-item active-class="primary--text" to="/startup">
           <v-list-item-title>スタートアップ</v-list-item-title>
         </v-list-item>
-        <!--        <v-list-item active-class="primary&#45;&#45;text" to="/news">-->
-        <!--          <v-list-item-title>ニュース</v-list-item-title>-->
-        <!--        </v-list-item>-->
+        <v-list-item active-class="primary--text" to="/news">
+          <v-list-item-title>ニュース</v-list-item-title>
+        </v-list-item>
         <v-divider />
         <v-list-item active-class="primary--text" to="/about">
           <v-list-item-title>会社概要</v-list-item-title>
