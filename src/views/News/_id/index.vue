@@ -1,5 +1,10 @@
 <template>
   <div>
+    <vue-headful
+      :title="post_title"
+      :description="description"
+      :image="og_image"
+    />
     <div>
       <div style="position: relative">
         <parallax :speed-factor="0.2" direction="down" :parallax="true">
@@ -49,9 +54,11 @@ export default {
       post_detail: [],
       featured_image: "",
       post_title: "",
+      description: "",
       post_content: "",
+      og_image: "",
       post_date: [],
-      route: this.$router.currentRoute.params["id"]
+      route: this.$router.currentRoute.params["id"],
     };
   },
 
@@ -65,7 +72,9 @@ export default {
         .then(response => {
           this.post_detail = response.data;
           this.featured_image = this.post_detail.better_featured_image.source_url;
+          this.og_image = this.post_detail.better_featured_image.media_details.sizes.medium.source_url;
           this.post_title = this.post_detail.title.rendered;
+          this.description = this.post_detail.excerpt.rendered;
           this.post_content = this.post_detail.content.rendered;
           this.post_date = this.post_detail.date;
         })
