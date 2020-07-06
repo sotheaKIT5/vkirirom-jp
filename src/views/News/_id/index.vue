@@ -3,7 +3,7 @@
     <div>
       <div style="position: relative">
         <parallax :speed-factor="0.2" direction="down" :parallax="true">
-          <img :src="featured_image" />
+          <v-img height="600" :src="featured_image" />
         </parallax>
       </div>
     </div>
@@ -109,8 +109,8 @@ figcaption
   max-width: 900px !important
 .Masthead
   z-index: 0 !important
-  height: 200px !important
-  min-height: 100px !important
+  height: 300px !important
+  min-height: 300px !important
 .wp-block-image
   text-align: center
   pointer-events: none
