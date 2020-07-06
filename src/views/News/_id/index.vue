@@ -58,7 +58,7 @@ export default {
       post_content: "",
       og_image: "",
       post_date: [],
-      route: this.$router.currentRoute.params["id"],
+      route: this.$router.currentRoute.params["id"]
     };
   },
 
