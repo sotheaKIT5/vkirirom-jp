@@ -13,6 +13,7 @@ module.exports = {
         "/about",
         "/startup",
         "/news",
+        "/news/109",
         "/cloud-crew",
         "/engineer-recruitment",
         "/offshore-development"
