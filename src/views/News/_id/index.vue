@@ -2,7 +2,7 @@
   <div>
     <vue-headful
       :title="post_title"
-      :description="description"
+      :description="briefDesc(description)"
       :image="og_image"
     />
     <div>
@@ -91,6 +91,14 @@ export default {
           .toJSON()
           .slice(0, 10)
           .replace(/-/g, "/");
+    },
+    briefDesc(description) {
+      if (description.length >= 75) {
+        description = description.slice(3, 75) + "...";
+        return description;
+      } else {
+        return description;
+      }
     }
   },
   mounted() {
