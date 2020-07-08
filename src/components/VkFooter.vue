@@ -7,7 +7,7 @@
           sm="6"
           class="align-self-center text-center text-sm-left pa-0"
         >
-          <logo color="#ffffff" />
+          <logo color_one="#ffffff" color_two="#ffffff" />
         </v-col>
         <v-col cols="12" sm="6" class="pa-0">
           <div class="text-center text-sm-right white--text">
