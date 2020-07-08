@@ -6,6 +6,26 @@
         WHAT EXCITES YOU? <br />
         CHECK HERE OUR AVAILABLE POSITION
       </h2>
+      <v-tabs>
+        <v-tab>
+          Option 1
+        </v-tab>
+        <v-tab>
+          Option 2
+        </v-tab>
+        <v-tab>
+          Option 3
+        </v-tab>
+        <v-tab-item>
+          <job-card
+            v-for="job in jobs"
+            :key="job.category"
+            :position="job.position"
+            :category="job.category"
+          />
+        </v-tab-item>
+      </v-tabs>
+
       <v-tabs v-model="category" background-color="primary" dark>
         <v-tab v-for="item in items" :key="item.tab">
           {{ item.tab }}
@@ -86,6 +106,14 @@ export default {
     return {
       selectedCategory: "All",
       category: null,
+      openingJobs: [
+        {
+          category: {
+            position: "Bill Gates",
+            location: "Shibuya, Tokyo, Japan"
+          }
+        }
+      ],
       jobs: [
         {
           position: "Bill Gates",

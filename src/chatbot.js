@@ -12,7 +12,7 @@ export default function initBotApp() {
   var userNumber;
 
   botui.message
-    .add({ content: "こんにちは、A2Aデジタルジャパンへようこそ！" })
+    .add({ content: "こんにちは、A2Aデジタルへようこそ！" })
     .then(() => {
       init();
     });

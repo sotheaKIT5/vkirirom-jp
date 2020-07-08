@@ -78,11 +78,11 @@ export default {
   components: { Tagline, SectionTitle, ServiceCard },
   data() {
     return {
-      title: "オフショア開発 | A2Aデジタルジャパン",
+      title: "オフショア開発 | A2Aデジタル",
       description:
         "私たちはユーザのご要望に合わせて様々なオフショアソフトウェア開発をご提供しています。",
       keywords:
-        "A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
+        "A2Aデジタル,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       tagline: [
         "オフショア開発",
         "私たちはユーザのご要望に合わせて様々なオフショアソフトウェア開発をご提供しています",

@@ -1,4 +1,4 @@
-# A2Aデジタルジャパン
+# A2Aデジタル
 
 ## Preview 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/8c2c2e76-8b22-4c98-bf6f-3f0daa7434ab/deploy-status)](https://app.netlify.com/sites/vkiriomjp/deploys) <br>

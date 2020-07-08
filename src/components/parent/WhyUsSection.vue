@@ -26,7 +26,7 @@
     <v-card flat tile color="accent" class="pb-12">
       <v-container>
         <section-title class="white--text">
-          課題に合わせたA2Aデジタルジャパンの活用
+          課題に合わせたA2Aデジタルの活用
         </section-title>
         <h4 class="white--text font-weight-regular pb-7">
           単なる外部業者としてではなく、<br />
