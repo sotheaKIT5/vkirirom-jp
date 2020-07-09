@@ -45,7 +45,7 @@
     <v-container>
       <section-title>キリロム工科大学との産学連携</section-title>
       <p>
-        A2Aデジタルジャパンはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
+        A2Aデジタルはキリロム工科大学と協同し、様々な先端ITテクノロジーを遂行しています。
       </p>
       <v-row>
         <v-col cols="12" sm="6" md="4">
@@ -100,11 +100,11 @@ export default {
   components: { CardTypeSix, SectionTitle },
   data() {
     return {
-      title: "企業・投資家の皆様 | A2Aデジタルジャパン",
+      title: "企業・投資家の皆様 | A2Aデジタル",
       description:
-        "A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。",
+        "A2AデジタルではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。",
       keywords:
-        "A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
+        "A2Aデジタル,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       companies: [
         {
           title: "Jobify",

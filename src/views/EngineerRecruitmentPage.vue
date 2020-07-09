@@ -12,7 +12,7 @@
     />
     <v-container>
       <p class="mt-12">
-        A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。新興国の優秀なITエンジニアを豊富にそろえており、その技術範囲はAI（人工知能）、ソフトウェア開発、ウェブ開発、デザイン、インフラエンジニア等多岐にわたります。
+        A2AデジタルではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。新興国の優秀なITエンジニアを豊富にそろえており、その技術範囲はAI（人工知能）、ソフトウェア開発、ウェブ開発、デザイン、インフラエンジニア等多岐にわたります。
         豊富な人材の中から、お客様のサービスに最もマッチした技術スキルのエンジニアをお探しいただくことができます。
       </p>
       <card-left-right
@@ -54,14 +54,14 @@ export default {
   components: { CardTypeOne, SectionTitle, CardLeftRight, Tagline },
   data() {
     return {
-      title: "エンジニア採用 | A2Aデジタルジャパン",
+      title: "エンジニア採用 | A2Aデジタル",
       description:
-        "A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。",
+        "A2AデジタルではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています。",
       keywords:
-        "A2Aデジタルジャパン,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
+        "A2Aデジタル,デジタル,IT開発,アジア,アジア・デジタルトランスフォーメーション,アジアDX,オフショア開発,業務改善,システム開発,リバースイノベーション,Reverse Innovation,技術革新,産学協同,産業革命4.0,研究開発,Research & Development,R&D,AI,人工知能,IoT,クラウドコンピューティング,Cloud Computing,RPA, Blockchain ,ブロックチェーン,PWA,VR/AR, Odoo ERP, Cyber Security,サイバーセキュリティ,アプリケーション開発,モバイル",
       tagline: [
         "エンジニア採用",
-        "A2AデジタルジャパンではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています",
+        "A2AデジタルではIT人材を求める企業様と外国人エンジニアを結び付けるサービスを提供しています",
         "images/page_engineer_recruitment/image-1.png"
       ],
       concepts: [
