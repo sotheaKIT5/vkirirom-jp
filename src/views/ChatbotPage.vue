@@ -1,7 +1,6 @@
 <template>
   <div id="chatbot">
     <div class="inner">
-      Hello
       <div class="chat">
         <chat-bot2 />
       </div>
