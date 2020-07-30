@@ -9,9 +9,7 @@
 </template>
 
 <script>
-// import ChatBot from "../components/ChatBot";
 import ChatBot2 from "../components/ChatBot2";
-// const ChatBot = () => import(/* webpackMode: "eager" */ "../components/ChatBot");
 export default {
   name: "AiBot",
   components: { ChatBot2 }
