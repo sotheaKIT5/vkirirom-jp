@@ -82,6 +82,20 @@ export default new Router({
         )
     },
     {
+      path: "/chatbot",
+      name: "chatbot",
+      component: () =>
+        import(/* webpackChunkName: "ChatbotPage" */ "@/views/ChatbotPage.vue")
+    },
+    {
+      path: "/slack-chat",
+      name: "slack-chat",
+      component: () =>
+        import(
+          /* webpackChunkName: "SlackChatPage" */ "@/views/SlackChatPage.vue"
+        )
+    },
+    {
       path: "*",
       redirect: "/"
     }
