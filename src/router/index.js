@@ -82,6 +82,12 @@ export default new Router({
         )
     },
     {
+      path: "/chatbot",
+      name: "chatbot",
+      component: () =>
+        import(/* webpackChunkName: "ChatbotPage" */ "@/views/ChatbotPage.vue")
+    },
+    {
       path: "*",
       redirect: "/"
     }
