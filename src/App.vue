@@ -7,7 +7,7 @@
       </v-content>
       <vk-footer />
     </div>
-    <div v-if="$route.path !== '/chatbot'">
+    <div v-if="$route.path !== '/chatbot' && $route.path !== '/slack-chat'">
       <chatbot-btn />
     </div>
   </v-app>
