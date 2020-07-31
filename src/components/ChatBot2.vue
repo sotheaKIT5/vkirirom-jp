@@ -93,4 +93,9 @@ export default {
         border-radius: 15px
         margin-top: 5px
         margin-bottom: 5px
+    .botui-actions-select
+     .botui-actions-buttons-button
+        background-color: #138690
+        border-radius: 10px
+        box-shadow: 0 0 2px 1px rgba(0,0,0,0.25)
 </style>
