@@ -14,44 +14,110 @@ export default function initBotApp() {
 
   botui.message
     .add({
-      content:
-        "A2A Digitalへようこそ！営業代行サービスにご興味お持ちいただきありがとうございます。"
+      delay: 300,
+      loading: true,
+      content: "A2A Digitalへようこそ！"
     })
     .then(() => {
-      init();
+      botui.message
+        .add({
+          delay: 300,
+          loading: true,
+          content:
+            "営業代行サービスにご興味お持ちいただきありがとうございます。以下ご回答頂いた内容に基づき、まずはメールにてご連絡いたします。"
+        })
+        .then(() => {
+          init();
+        });
     });
 
   var init = function() {
     return botui.message
       .add({
-        // second one
-        delay: 500, // wait 1 sec.
+        delay: 300,
         loading: true,
-        content: "ご質問の種類を選択してください。"
+        content: "ご質問の種類を選択してください。*複数選択できます"
       })
       .then(() => {
         return botui.action.button({
-          delay: 500,
-          loading: true,
           action: [
             {
               text: "サービスの詳細について",
-              value: "detail_of_service"
+              value: "type1"
             },
             {
               text: "価格について",
-              value: "about_price"
-            },
-            {
-              text: "その他",
-              value: "other"
+              value: "type2"
             }
           ]
         });
       })
       .then(res => {
-        question_type = res.text;
-        fcustomer_question();
+        if (res.value === "type1") {
+          return botui.action
+            .select({
+              action: {
+                placeholder: "サービスの詳細について",
+                value: "",
+                multipleselect: true,
+                options: [
+                  {
+                    value: "どんなリストがどれくらいあるのか知りたい",
+                    text: "どんなリストがどれくらいあるのか知りたい"
+                  },
+                  {
+                    value: "作業内容について知りたい",
+                    text: "作業内容について知りたい"
+                  },
+                  {
+                    value: "期待される成果について知りたい",
+                    text: "期待される成果について知りたい"
+                  }
+                ],
+                button: {
+                  label: "OK"
+                }
+              }
+            })
+            .then(function(res) {
+              question_type = res.value;
+              // eslint-disable-next-line no-console
+              console.log(question_type);
+              fcustomer_question();
+            });
+        } else if (res.value === "type2") {
+          return botui.action
+            .select({
+              action: {
+                placeholder: "価格について",
+                value: "",
+                multipleselect: true,
+                options: [
+                  {
+                    value: "価格表が欲しい",
+                    text: "価格表が欲しい"
+                  },
+                  {
+                    value: "見積もりが欲しい",
+                    text: "見積もりが欲しい"
+                  },
+                  {
+                    value: "その他",
+                    text: "その他"
+                  }
+                ],
+                button: {
+                  label: "OK"
+                }
+              }
+            })
+            .then(function(res) {
+              question_type = res.value;
+              // eslint-disable-next-line no-console
+              console.log(question_type);
+              fcustomer_question();
+            });
+        }
       });
   };
 
@@ -121,7 +187,6 @@ export default function initBotApp() {
       .then(() => {
         // wait till its shown
         return botui.action.text({
-          // show 'text' action
           action: {
             placeholder: "メールアドレス"
           }
@@ -157,7 +222,6 @@ export default function initBotApp() {
       .then(() => {
         // wait till its shown
         return botui.action.text({
-          // show 'text' action
           action: {
             placeholder: "メールアドレス"
           }
