@@ -45,6 +45,8 @@ export default {
   z-index: 0
   padding: 10px 10px
   box-shadow: 0 9.5px 12.7px 0 rgba(0,0,0,.05)
+.v-select .selected-tag
+  height: unset !important
 .botui-container
   font-family: inherit !important
   background-color: rgb(234, 238, 243) !important

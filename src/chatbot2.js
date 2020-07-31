@@ -127,7 +127,8 @@ export default function initBotApp() {
       .add({
         delay: 500,
         loading: true,
-        content: "ご質問の詳細について教えて下さい。"
+        content:
+          "ご質問の詳細についてご記載下さい。*ない場合は「なし」とご記入ください"
       })
       .then(() => {
         return botui.action.text({
@@ -268,7 +269,7 @@ export default function initBotApp() {
     return botui.message.add({
       delay: 500,
       loading: true,
-      content: "ざいました。担当よりメールでご連絡いたしありがとうごます。"
+      content: "ありがとうございました。担当よりメールにてご連絡いたします。"
     });
   };
 }
