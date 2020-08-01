@@ -11,6 +11,8 @@ export default function initBotApp() {
   var company_name = "";
   var customer_name = "";
   var customer_email = "";
+  var selected_type1 = false;
+  var selected_type2 = false;
 
   botui.message
     .add({
@@ -48,75 +50,163 @@ export default function initBotApp() {
             {
               text: "価格について",
               value: "type2"
+            },
+            {
+              text: "その他",
+              value: "type3"
             }
           ]
         });
       })
       .then(res => {
         if (res.value === "type1") {
-          return botui.action
-            .select({
-              action: {
-                placeholder: "サービスの詳細について",
-                value: "",
-                multipleselect: true,
-                options: [
-                  {
-                    value: "どんなリストがどれくらいあるのか知りたい",
-                    text: "どんなリストがどれくらいあるのか知りたい"
-                  },
-                  {
-                    value: "作業内容について知りたい",
-                    text: "作業内容について知りたい"
-                  },
-                  {
-                    value: "期待される成果について知りたい",
-                    text: "期待される成果について知りたい"
-                  }
-                ],
-                button: {
-                  label: "OK"
-                }
-              }
-            })
-            .then(function(res) {
-              question_type = res.value;
-              // eslint-disable-next-line no-console
-              console.log(question_type);
-              fcustomer_question();
-            });
+          ftype1();
         } else if (res.value === "type2") {
-          return botui.action
-            .select({
-              action: {
-                placeholder: "価格について",
-                value: "",
-                multipleselect: true,
-                options: [
-                  {
-                    value: "価格表が欲しい",
-                    text: "価格表が欲しい"
-                  },
-                  {
-                    value: "見積もりが欲しい",
-                    text: "見積もりが欲しい"
-                  },
-                  {
-                    value: "その他",
-                    text: "その他"
-                  }
-                ],
-                button: {
-                  label: "OK"
-                }
-              }
-            })
-            .then(function(res) {
-              question_type = res.value;
-              // eslint-disable-next-line no-console
-              console.log(question_type);
-              fcustomer_question();
-            });
+          ftype2();
+        } else if (res.value === "type3") {
+          ftype3();
+        }
+      });
+  };
+
+  // Function Type1
+  var ftype1 = () => {
+    return botui.action
+      .select({
+        action: {
+          placeholder: "サービスの詳細について（複数選択）",
+          value: "",
+          multipleselect: true,
+          options: [
+            {
+              value: "どんなリストがどれくらいあるのか知りたい",
+              text: "どんなリストがどれくらいあるのか知りたい"
+            },
+            {
+              value: "作業内容について知りたい",
+              text: "作業内容について知りたい"
+            },
+            {
+              value: "期待される成果について知りたい",
+              text: "期待される成果について知りたい"
+            }
+          ],
+          button: {
+            label: "OK"
+          }
+        }
+      })
+      .then(function(res) {
+        selected_type1 = true;
+        if (!selected_type2) {
+          question_type = res.value;
+          more_about_price();
+        } else {
+          question_type = res.value + ", " + question_type;
+          fcustomer_question();
+        }
+      });
+  };
+
+  // Function Type2
+  var ftype2 = () => {
+    return botui.action
+      .select({
+        action: {
+          placeholder: "価格について （複数選択）",
+          value: "",
+          multipleselect: true,
+          options: [
+            {
+              value: "価格表が欲しい",
+              text: "価格表が欲しい"
+            },
+            {
+              value: "見積もりが欲しい",
+              text: "見積もりが欲しい"
+            }
+          ],
+          button: {
+            label: "OK"
+          }
+        }
+      })
+      .then(function(res) {
+        selected_type2 = true;
+        if (!selected_type1) {
+          question_type = res.value;
+          more_about_service();
+        } else {
+          question_type = question_type + ", " + res.value;
+          fcustomer_question();
+        }
+      });
+  };
+
+  // Function Type3
+  var ftype3 = () => {
+    question_type = "その他";
+    fcustomer_question();
+  };
+
+  // Check is there more question about service
+  var more_about_service = () => {
+    return botui.message
+      .add({
+        delay: 300,
+        loading: true,
+        content: "他に聞きたいことはありますか？"
+      })
+      .then(() => {
+        return botui.action.button({
+          action: [
+            {
+              text: "サービスの詳細について",
+              value: "type1"
+            },
+            {
+              text: "特にない",
+              value: "no"
+            }
+          ]
+        });
+      })
+      .then(res => {
+        if (res.value === "type1") {
+          ftype1();
+        } else if (res.value === "no") {
+          fcustomer_question();
+        }
+      });
+  };
+
+  // Check is there more question about service
+  var more_about_price = () => {
+    return botui.message
+      .add({
+        delay: 300,
+        loading: true,
+        content: "他に聞きたいことはありますか？"
+      })
+      .then(() => {
+        return botui.action.button({
+          action: [
+            {
+              text: "価格について",
+              value: "type2"
+            },
+            {
+              text: "特にない",
+              value: "no"
+            }
+          ]
+        });
+      })
+      .then(res => {
+        if (res.value === "type2") {
+          ftype2();
+        } else if (res.value === "no") {
+          fcustomer_question();
         }
       });
   };
